@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gxdzwxfreelancework", "Gxdzwxfreelancework\Gxdzwxfreelancework.csproj", "{5F54EE6B-CCCC-4A2F-BB28-4D76150C6DE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gxdz.WechatFreelancework.Bll", "Gxdz.WechatFreelancework.Bll\Gxdz.WechatFreelancework.Bll.csproj", "{B8DDD4BC-2925-4FCA-BACF-2D80A9F02E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gxdz.WechatFreelancework.Dal", "Gxdz.WechatFreelancework.Dal\Gxdz.WechatFreelancework.Dal.csproj", "{97CB2267-4127-44D1-BE36-FEA06F5CFA42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gxdz.WechatFreelancework.Model", "Gxdz.WechatFreelancework.Model\Gxdz.WechatFreelancework.Model.csproj", "{76A5FEE6-23F8-4C75-9058-9769B03F294D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gxdz.WechatFreelancework.Utilities", "Gxdz.WechatFreelancework.Utilities\Gxdz.WechatFreelancework.Utilities.csproj", "{45883FE1-7CDD-41C3-BCEF-8BE8E98E8742}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F54EE6B-CCCC-4A2F-BB28-4D76150C6DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F54EE6B-CCCC-4A2F-BB28-4D76150C6DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F54EE6B-CCCC-4A2F-BB28-4D76150C6DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F54EE6B-CCCC-4A2F-BB28-4D76150C6DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DDD4BC-2925-4FCA-BACF-2D80A9F02E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DDD4BC-2925-4FCA-BACF-2D80A9F02E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DDD4BC-2925-4FCA-BACF-2D80A9F02E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DDD4BC-2925-4FCA-BACF-2D80A9F02E47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97CB2267-4127-44D1-BE36-FEA06F5CFA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CB2267-4127-44D1-BE36-FEA06F5CFA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CB2267-4127-44D1-BE36-FEA06F5CFA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CB2267-4127-44D1-BE36-FEA06F5CFA42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A5FEE6-23F8-4C75-9058-9769B03F294D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A5FEE6-23F8-4C75-9058-9769B03F294D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A5FEE6-23F8-4C75-9058-9769B03F294D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A5FEE6-23F8-4C75-9058-9769B03F294D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45883FE1-7CDD-41C3-BCEF-8BE8E98E8742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45883FE1-7CDD-41C3-BCEF-8BE8E98E8742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45883FE1-7CDD-41C3-BCEF-8BE8E98E8742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45883FE1-7CDD-41C3-BCEF-8BE8E98E8742}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

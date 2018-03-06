@@ -1,0 +1,251 @@
+﻿@{
+
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta charset="utf-8">
+    <title>电子联盟自由职业</title>
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/ectouch.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/swiper.min.css")" rel="stylesheet" />
+    @*<link href="@Url.Content("~/gxfa/statics/css/basic_app.css")" rel="stylesheet" />*@
+    @*<script type="text/javascript">var tpl = '~gxfa';</script>*@
+    <link href="@Url.Content("~/gxfreelance/statics/css/photoswipe.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/Scripts/Jquery/jquery-1.10.2.js")"></script>
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/swiper.min.js")"></script>
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/bootstrap.min.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/ectouch.js")"></script>
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery.json.js")"></script>
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/style.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/user.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery-ui-1.10.1.custom.min.js")"></script>
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery.scrollUp.min.js")"></script>
+
+    <script type="text/javascript" src="@Url.Content("https://cdn.bootcss.com/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js")"></script>
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery.lazyload.min.js")"></script>
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/common.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery.more.js")"></script>
+    <script src="@Url.Content("~/Scripts/packpageindex/SendPackage.js")"></script>
+</head>
+<body style="max-width:640px;">
+    <div id="loading">
+        <img src="@Url.Content("~/gxfreelance/statics/img/loading.gif")" />
+    </div>
+    <div class="con m-b7 new-maxbox">
+        <header class="header-max-box">
+            <div class="ect-header-banner dis-box">
+                <div class="box-flex">
+                    <div class="ect-header-text fl">
+                        <h4>欢迎进入<span class="color-red">电子联盟自由职业</span></h4>
+                        <p>关注公众号,享专属服务</p>
+                    </div>
+                </div>
+                <a class="btn-submit1 j-ewm-box" href="javascript:;">立即关注</a>
+            </div>
+            <div class="index-weixin-box">
+                <div><img src="@Url.Content("~/gxfreelance/statics/img/qrcode_for_gh_0c4db791f35d_430.jpg")" /> </div>
+                <p class="text-c">长按二维码关注公众微信</p>
+            </div>
+            <div class="index-bg-box"></div>
+        </header>
+        <div class="index-banner swiper-container box position-rel banner-first">
+            <div class="index-nav-box">
+                <ul class="dis-box">
+                    <li class="index-left-box"><a href="@Url.Action("GxFreelanceWxClassification","home")"><i class="iconfont icon-caidan color-whie"></i></a></li>
+                    <li class="box-flex n-input-index-box">
+                        <div class="index-search-box j-search-input" id="j-input-focus"><i class="iconfont icon-sousuo"></i>请输入您搜索的关键词!</div>
+                    </li>
+                    <li class="index-right-box"><i class="iconfont icon-xiaoxi1 color-whie n-xiaoxi-size"></i></a></li>
+                </ul>
+            </div>
+            <div class="swiper-wrapper">
+             
+                <div class="swiper-slide" swiper-slide-active style="width:640px;">
+                    <a target='_blank'>
+                        <img src="@Url.Content("~/gxfreelance/images/lunbo1.jpg")" border="0" />
+                    </a>
+                  
+                </div>
+                <div class="swiper-slide">
+                    <a target='_blank'>
+                        <img src="@Url.Content("~/gxfreelance/images/lunbo2.jpeg")" border="0" />
+
+                      
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a target='_blank'>
+                        <img src="@Url.Content("~/gxfreelance/images/lunbo3.jpg")" border="0" />
+                    
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination banner-first-pagination"></div>
+            <div class="linear"></div>
+        </div>
+        <div class="ect-pro-list user-order" style="border-bottom:none;">
+            <ul id="J_ItemList">
+                <li>
+                    <a href="@Url.Action("GxFreelanceWxExample", "home")">
+                        <img src="@Url.Content("~/gxfreelance/statics/img/1111111111.png")" class="pull-left" style="height:90px;width:auto;margin-left:1.5em">
+                        <dl>
+                            <dt>
+                                <h4 style="margin-left:2.0em;margin-top:1.2em">李经纬</h4>
+                            </dt>
+                            <dd style="font-size:15px;margin-left:2.0em">职位：体系工程师</dd>
+                            <dd style="font-size:15px;margin-left:2.0em">编号：117110022223</dd>
+                        </dl>
+                        <i class="pull-right fa fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("GxFreelanceWxExample", "home")">
+                        <img src="@Url.Content("~/gxfreelance/statics/img/2222222222.png")" class="pull-left" style="height:90px;width:auto;margin-left:1.5em">
+                        <dl>
+                            <dt>
+                                <h4 style="margin-left:2.0em;margin-top:1.2em">彭伟峰</h4>
+                            </dt>
+                            <dd style="font-size:15px;margin-left:2.0em">职位：软件工程师</dd>
+                            <dd style="font-size:15px;margin-left:2.0em">编号：117110022224</dd>
+                        </dl>
+                        <i class="pull-right fa fa-angle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("GxFreelanceWxExample", "home")">
+                        <img src="@Url.Content("~/gxfreelance/statics/img/3333333333.png")" class="pull-left" style="height:90px;width:auto;margin-left:1.5em">
+                        <dl>
+                            <dt>
+                                <h4 style="margin-left:2.0em;margin-top:1.2em">王曦晨</h4>
+                            </dt>
+                            <dd style="font-size:15px;margin-left:2.0em">职位：工艺工程师</dd>
+                            <dd style="font-size:15px;margin-left:2.0em">编号：117110022225</dd>
+                        </dl>
+                        <i class="pull-right fa fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer-nav dis-box">
+        <a href="@Url.Action("GxFreelanceWxIndex","Home")" class="box-flex nav-list active">
+            <i class="nav-box i-home"></i><span>首页</span>
+        </a>
+        <a href="@Url.Action("GxFreelanceWxClassification","Home")" class="box-flex nav-list">
+            <i class="nav-box i-cate"></i><span>分类</span>
+        </a>
+        <a href="@Url.Action("GxFreelanceWxLogin","Home")" class="box-flex nav-list">
+            <i class="nav-box i-flow"></i><span>注册</span>
+        </a>
+    </footer>
+    @*<div class="search-div ts-3">
+        <section class="search">
+            <form action="/v2/index.php?m=default&c=category&a=index&u=0" method="post">
+                <div class="text-all dis-box j-text-all">
+                    <a class="a-icon-back j-close-search" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou is-left-font"></i></a>
+                    <div class="box-flex input-text">
+                        <input class="j-input-text" type="text" name="name" placeholder="请输入搜索关键词！" id="newinput" autofocus="autofocus" /> >
+                        <i class="iconfont icon-guanbi2 is-null j-is-null"></i>
+                    </div>
+                    <button type="submit" class="btn-submit">搜索</button>
+                </div>
+            </form>
+        </section>
+        <section class="search-con">
+            <div class="swiper-scroll history-search">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>
+                            <label class="fl">热门搜索</label>
+                        </p>
+                        <ul class="hot-search a-text-more">
+                            <li class="w-3"><a href="/v2/index.php?m=default&c=category&a=index&keywords=%E7%BE%8E%E5%9B%BD&u=0"><span>美国</span></a></li>
+                            <li class="w-3"><a href="/v2/index.php?m=default&c=category&a=index&keywords=%E6%96%B0%E7%94%9F%E5%A9%B4%E5%84%BF&u=0"><span>新生婴儿</span></a></li>
+                        </ul>
+                        <p class="hos-search">
+                            <label class="fl">最近搜索</label>
+                            <span class="fr" onclick="javascript:clearHistroy();"><i class="iconfont icon-xiao10 is-xiao10 jian-top fr"></i></span>
+                        </p>
+
+                        <ul class="hot-search a-text-more a-text-one" id="search_histroy"></ul>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <footer class="close-search j-close-search">
+            点击关闭
+        </footer>
+    </div>*@
+    <script type="text/javascript">
+        //设置cookie
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function clearHistroy() {
+            setCookie('ECS[keywords]', '', -1);
+            document.getElementById("search_histroy").style.visibility = "hidden";
+        }
+    </script>
+
+    <script>
+
+    </script>
+
+    <script type="text/javascript">
+        //get_asynclist("/home/GxdzWxIndex", '~/gxdz/statics/img/loading.gif');
+        $(function ($) {
+            var mySwiper = new Swiper('.banner-first', {
+                pagination: '.banner-first-pagination',
+                loop: false,
+                grabCursor: true,
+                paginationClickable: true,
+                autoplayDisableOnInteraction: false,
+                autoplay: 3000
+            });
+        });
+        /*立即关注*/
+        if ($(".index-weixin-box").hasClass("index-weixin-box")) {
+            $(".index-banner").css({
+                "marginTop": "0rem",
+
+            })
+        } else {
+            $(".index-banner").css({
+                "marginTop": "0rem",
+
+            })
+        }
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        });
+    </script>
+</body>
+</html>
+

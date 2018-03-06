@@ -1,0 +1,182 @@
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.dll.config
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.pdb
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.Web.Infrastructure.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Newtonsoft.Json.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.Formatting.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.WebRequest.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Helpers.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.WebHost.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Mvc.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Razor.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Deployment.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Razor.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Newtonsoft.Json.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.Formatting.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.WebRequest.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Helpers.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.WebHost.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Mvc.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Razor.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Deployment.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Razor.xml
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Http.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.pdb
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.CSharp.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.ComponentModel.DataAnnotations.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Configuration.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Data.DataSetExtensions.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Data.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Drawing.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.EnterpriseServices.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Abstractions.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.ApplicationServices.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.DynamicData.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Entity.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Extensions.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Routing.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Services.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Xml.dll
+D:\MVC练手项目根据地\GxdzWx\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Xml.Linq.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.dll.config
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.pdb
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.CSharp.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.Web.Infrastructure.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Newtonsoft.Json.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.ComponentModel.DataAnnotations.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Configuration.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Data.DataSetExtensions.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Data.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Drawing.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.EnterpriseServices.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.Formatting.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.WebRequest.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Abstractions.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.ApplicationServices.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.DynamicData.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Entity.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Extensions.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Helpers.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.WebHost.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Mvc.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Razor.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Routing.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Services.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Deployment.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Razor.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Xml.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Xml.Linq.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Newtonsoft.Json.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.Formatting.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.WebRequest.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Helpers.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.WebHost.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Mvc.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Razor.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Deployment.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Razor.xml
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Helpers.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Http.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Mvc.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Razor.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.csprojResolveAssemblyReference.cache
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.dll
+G:\Visual Studio\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.pdb
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.dll.config
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdzwxfreelancework.pdb
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.CSharp.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Newtonsoft.Json.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Configuration.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Data.DataSetExtensions.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Data.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Drawing.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.EnterpriseServices.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.Formatting.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.WebRequest.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Abstractions.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.ApplicationServices.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.DynamicData.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Entity.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Extensions.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Helpers.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.WebHost.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Mvc.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Razor.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Routing.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Services.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Deployment.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Razor.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Xml.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Xml.Linq.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Newtonsoft.Json.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.Formatting.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Net.Http.WebRequest.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Helpers.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Http.WebHost.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Mvc.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.Razor.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Deployment.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\System.Web.WebPages.Razor.xml
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.Formatting.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Net.Http.WebRequest.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Helpers.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Http.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Http.WebHost.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.Razor.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.csprojResolveAssemblyReference.cache
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.dll
+C:\Users\yupeng\Desktop\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.pdb

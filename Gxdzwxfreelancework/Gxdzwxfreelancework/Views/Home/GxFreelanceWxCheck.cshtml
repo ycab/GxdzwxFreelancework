@@ -1,0 +1,79 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>电子联盟自由职业</title>
+    <link href="@Url.Content("~/gxfreelance/statics/css/bootstrap.min.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/font-awesome.min.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/swiper.min.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/ectouch.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/photoswipe.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/style.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/user.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/mobiscroll.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/mobiscroll_date.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/mobiscroll_date.js")" charset="gb2312"></script>
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/mobiscroll.js")"></script>
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery-2.1.4.min.js")"></script>
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/ectouch.js")"></script>
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/search.css")" rel="stylesheet" />
+</head>
+<body style="max-width:640px;">
+    <div class="con m-b7 new-maxbox">
+        <div class="ect-bg">
+            <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write">
+                <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a>
+                <span>注册确认</span>
+                <a href="javascript:;" onclick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune icon-write"></a>
+            </header>
+        </div>
+        <section class="ect-bg-colorf ect-padding-lr flow-done">
+            <i class="glyphicon glyphicon-ok"></i>
+            <p class="ect-margin-tb">您申请的自由职业正在审核！</p>
+            <p class="ect-margin-tb">申请时间为: <b>2017-12-07 19:36:00</b></p>
+            <p class="ect-margin-tb text-center">
+                <script type="text/javascript" src="/v2/data/assets/js/ap.js"></script>
+            </p>
+
+        </section>
+        <div class="hblank10" style="background-color:#F5F5F5;height:10px"></div>
+        <div class="box-flex" style="background-color:#F5F5F5;height:50px">
+            <a href="@Url.Action("GxFreelanceWxIndex","Home")">
+                <div class="fa-more" style="line-height:80px;height:80px; background-color:#1cbb7f"><h2 style="line-height:50px">返    回</h2></div>
+            </a>
+        </div>
+        <div class="hblank10" style="background-color:#F5F5F5;height:10px"></div>
+    </div>
+    <script type="text/javascript">
+        //设置cookie
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function clearHistroy() {
+            setCookie('ECS[keywords]', '', -1);
+            document.getElementById("search_histroy").style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

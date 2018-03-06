@@ -1,0 +1,166 @@
+*{margin:0; padding:0; font-weight:normal; list-style:none;}
+body{font-family:"Microsoft yahei";  line-height:30px;}
+
+a{text-decoration:none;color:#333}
+table ,tr,td{border:0; border-collapse:collapse;}
+input,textarea{border:1px solid #ccc; outline:none;font-family:"Microsoft yahei"; }
+h2,h3{font-size:1em}
+.clear{width:100%; height:0; overflow:hidden; clear:both;}
+.blank10{width:100%; height:10px; clear:both;}.blank20{width:100%; height:20px; clear:both;}
+.hblank10{width:100%; height:10px; clear:both;background:#efefef;}
+.right-arr{font-size:20px; color:#999; float:right;  transform: scale(1,2);    -ms-transform: scale(1,2);    -webkit-transform: scale(1,2);    -moz-transform: scale(1,2);    -o-transform: scale(1,2);}
+/*个人中心*/
+.main{width:100%; overflow:hidden;}
+.user-cen{width:100%; text-align:center;}
+.user-back-arr{font-size:25px; color:#3399ff; position:absolute; left:10px; top:10px;  transform: scale(1,2);
+    -ms-transform: scale(1,2);
+    -webkit-transform: scale(1,2);
+    -moz-transform: scale(1,2);
+    -o-transform: scale(1,2);}
+.user-top-info{width:90%; position:absolute; left:10px; top:60px;  height:70px;}
+.user-top-info .tx{width:70px; height:70px; line-height:70px; float:left;  border-radius:35px;}
+.user-top-info .name{float:left; color:#fff;  margin-left:10px;}
+.user-top-info .sta{ float:left; margin-left:10px; color:#fff; height:30px; background:#ff9933; line-height:30px; width:100px; text-align:center;}
+.user-top-info .rz{width:240px; float:left; margin-left:10px; margin-top:10px;}
+.user-top-info .rz img{width:30px; height:30px; float:left; margin-right:5px;}
+
+.user-jb-list{width:100%; float:left;}
+.user-jb-list li{width:25%; float:left; text-align:center;}
+.user-jb-list li img{width:90%;}
+.user-jb-list li p{line-height:20px; height:20px;}
+
+.user-cz{width:100%; height:50px; padding-top:10px; padding-bottom:10px; line-height:50px;}
+.user-cz .pic{float:left; margin-left:10px; height:50px; width:50px;}
+.user-cz .yuer{float:left; width:100px; margin-left:10px; }
+.user-cz .yuer span{float:right; color:red;}
+.user-cz .tx{float:right; margin-right:10px; background:#0066cc; color:#fff; line-height:30px; height:30px; border-radius:15px; margin-top:10px; text-align:center; width:60px}
+.user-cz .cz{float:right; margin-right:10px; background:#33cc33; color:#fff; line-height:30px; height:30px; border-radius:15px; margin-top:10px; text-align:center; width:60px;}
+.user-cz a{color:#fff;}
+
+.user-list{width:100%; float:left;}
+.user-list li{width:100%; height:50px; line-height:50px; padding-bottom:5px; padding-top:5px; border-bottom:1px solid #ccc;}
+.user-list li .pic{width:50px; height:50px; float:left; margin-left:10px;}
+.user-list p{float:left;margin-left:10px;}
+.user-list span{float:right; margin-right:10px; color:#999; font-size:30px;}
+.user-bot{width:95%; height:60px; margin:0 auto; line-height:60px; background:#0066cc; color:#fff; text-align:center;}
+.user-bot a{color:#fff;}
+
+
+/*充值明细*/
+
+
+/*方案超市*/
+.back-arr{font-size:25px; color:#333; position:absolute; left:10px; top:10px;  transform: scale(1,2);
+    -ms-transform: scale(1,2);
+    -webkit-transform: scale(1,2);
+    -moz-transform: scale(1,2);
+    -o-transform: scale(1,2);}
+header{width:100%; text-align:center; float:left; height:50px; line-height:50px; border-bottom:1px solid #ccc; font-size:18px}
+.facs-main{width:95%; margin:0 auto; }
+.facs-nav{width:100%; height:50px; line-height:50px; text-align:left; float:left;}
+.facs-main .name{width:100%; float:left; height:50px;}
+.facs-main .liuyan{width:100%; height:120px; line-height:25px; padding:5px}
+.yzf-bot{width:100%; background:#666; text-align:center; height:60px; color:#fff;position:absolute; bottom:0; left:0; line-height:60px;}
+
+.facs-qcz{width:100%; background:#eee; text-align:left; height:60px;position:absolute; bottom:0; left:0; line-height:60px;}
+.facs-qcz .left{float:left; text-indent:10px; }
+.facs-qcz .left span{color:red; margin-left:10px;}
+.facs-qcz .right{background:#0066cc; color:#fff; float:right;width:130px; text-align:center; }
+.facs-qcz .right a{color:#fff;}
+.hui{width:100%; height:100%; position:absolute; z-index:500; background:rgba(0,0,0,0.5); top:0; left:0;}
+.facs-tbox{width:90%; position:absolute; left:5%; top:200px; height:230px; background:#fff; border-radius:10px; text-align:center; z-index:999;  display:none;}
+.facs-tbox .close{width:20px; line-height:20px; height:20px; font-size:22px; float:right; margin:5px;}
+.facs-tbox .title{font-size:22px; width:100%; text-align:center;}
+.facs-tbox .title .je{font-size:16px; color:#999;}
+.facs-tbox .title .price{color:#ff0000; font-size:22px;}
+.facs-tbox .forget{width:90%; height:30px; line-height:30px; margin:0 auto; text-align:right; color:#999}
+.facs-tbox .password{width:90%; height:50px; margin:0 auto; }
+
+
+/*提现*/
+.tixian-main{width:100%; background:#fff; clear:both;}
+.tx-head{background:#fff;}
+.tx-head span{ margin-right:10px; font-size:0.9em; float:right;color:#999}
+.tx-head span a{color:#999}
+.tixian-main .box  {width:95%;  height:60px; line-height:60px; margin:0 auto; border-bottom:1px solid #ccc;}
+.tixian-main   .box .pic{float:left; width:30px; height:30px; margin-top:15px; }
+.tixian-main .box h2 {width:50%; float:left; font-size:1em;margin-left:10px; }
+.tixian-main  .box .sta {width:30px; height:30px; margin-top:15px; float:right;}
+.tixian-main  .price-box {width:95%; line-height:60px; margin:0 auto;}
+.tixian-main .price-box h2 {text-align:left; height:40px; line-height:40px;}
+.tixian-main .price-box .txje{line-height:50px; font-size:30px; color:#ff6600; text-align:center; border:0;}
+.tixian-main  .price {width:100%; clear:both; height:50px; text-align:center;   border-bottom:1px solid #ccc;}
+.tixian-main  .price span {float:left; font-size:16px;color:#999;  }
+.tixian-main  .yzm{width:100%; margin:0 auto;height:60px; line-height:60px; }
+.tixian-main  .yzm  span{float:left; margin-left:10px;}
+.tixian-main  .yzm  input{width:120px; border:0; float:left;   height:30px; margin-top:15px; margin-left:10px;}
+.tixian-main  .yzm .hq{width:100px; height:60px; background:#3399cc;float:right; text-align:center; color:#fff;}
+.tixian-yj{width:100%; height:60px; line-height:60px; text-align:center;}
+.tixian-but{width:95%;margin:0 auto; background:#0066cc; color:#fff; height:60px; line-height:60px; text-align:center;}
+.wjmm{width:95%; margin:0 auto; height:30px; line-height:30px; text-align:right; color:#999; font-size:0.9em}
+.wjmm a{color:#666;}
+.tixian-main h3{width:100%; text-align:center; height:50px; line-height:50px; color:#ff6600}
+.tixian-main .qrz{width:120px; height:50px; line-height:50px; color:#fff; background:#0066cc; margin:0 auto; text-align:center;}
+.tixian-main .mxlist{width:100%;  text-align:center; }
+.tixian-main  .mxlist li{width:95%; line-height:30px; height:60px; margin:0px auto; padding-bottom:5px; color:#999;padding-top:5px; text-align:left;  border-bottom:1px solid #eee; clear:both;}
+.tixian-main  .mxlist li .left{width:50%; float:left; }
+.tixian-main  .mxlist li .left span{font-size:1.1em; color:#333}
+.tixian-main  .mxlist li .right{width:50%; float:right; text-align:right; }
+.tixian-main  .mxlist li .right span{color:#0066cc; font-size:1.1em}
+
+
+
+
+
+/*密码管理*/
+.mmgl-main{width:100%; background:#fff; clear:both;}
+.mmgl-main .box  {width:95%;  height:60px; line-height:60px; margin:0 auto; border-bottom:1px solid #ccc;}
+.mmgl-main   .box .pic{float:left; width:30px; height:30px; margin-top:15px; }
+.mmgl-main .box h2 {width:50%; float:left; font-size:1em;margin-left:10px; }
+.mmgl-main  .box .sta {width:30px; height:30px; margin-top:15px; float:right;}
+.mmgl-main .ts{width:100%; height:50px; line-height:50px; text-indent:10px; background:#eee;}
+.mmgl-main .ts span{color:#3399cc;}
+
+
+
+/*支付认证*/
+
+.zfrz-main{width:100%; background:#fff; }
+.zfrz-main .box  {width:95%; margin:0 auto; height:60px; line-height:60px; border-bottom:1px solid #ccc;}
+.zfrz-main  .box .pic {width:30px; height:30px; margin-top:15px; float:left;}
+.zfrz-main  .box h2 {width:120px; float:left; margin-left:10px;}
+.zfrz-main .box .gray {float:right; font-size:0.88em; margin-right:10px; color:#999 }
+.zfrz-main  .box .blue {float:right; font-size:0.88em; margin-right:10px; color:#39c }
+.zfrz-main  .box .red  {float:right; font-size:0.88em; margin-right:10px; color:#ff0000; }
+.zfrz-main  .box input {width:200px;float:right;height:30px;margin-top:15px; border:0; text-align:right;}
+.zfrz-main   {}
+.zfrz-main   {}
+.zfrz-main   {}
+.zfrz-main   {}
+.zfrz-main   {}
+.zfrz-main   {}
+.zfrz-main   {}
+.zfrz-main   {}
+.zfrz-main   {}
+.zfrz-main   {}
+
+
+
+
+
+
+
+/*Iphone5 样式*/
+@media screen and (max-width: 370px) { 
+body {font-size:14px;}  
+
+.user-back-arr{font-size:30px; color:#3399ff; position:absolute; left:10px; top:0px;}
+.user-top-info{width:90%; position:absolute; left:10px; top:40px;  height:70px;}
+.user-top-info .rz{width:200px; float:left; margin-left:10px; margin-top:10px;}
+.user-top-info .rz img{width:25px; height:25px; float:left; margin-right:5px;}
+.user-list li{width:100%; height:40px; line-height:40px; padding-bottom:5px; padding-top:5px;}
+.user-list li .pic{width:40px; height:40px; float:left; margin-left:10px;}
+header{width:100%; text-align:center; float:left; height:50px; line-height:50px; border-bottom:1px solid #ccc; font-size:16px}
+.tixian-main .box  { height:50px; line-height:50px; }
+
+} 

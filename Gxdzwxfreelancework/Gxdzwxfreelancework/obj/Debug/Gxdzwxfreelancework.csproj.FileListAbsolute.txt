@@ -241,3 +241,11 @@ C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxf
 C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.csprojResolveAssemblyReference.cache
 C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.dll
 C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\obj\Debug\Gxdzwxfreelancework.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdz.WechatFreelancework.Bll.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdz.WechatFreelancework.Dal.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdz.WechatFreelancework.Model.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdz.WechatFreelancework.Utilities.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdz.WechatFreelancework.Bll.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdz.WechatFreelancework.Dal.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdz.WechatFreelancework.Model.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdzwxfreelancework\bin\Gxdz.WechatFreelancework.Utilities.pdb

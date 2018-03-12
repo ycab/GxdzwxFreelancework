@@ -8,7 +8,7 @@ using Gxdz.WechatFreelancework.Dal;
 using Gxdz.WechatFreelancework.Utilities;
 namespace Gxdz.WechatFreelancework.Dal
 {
-    class Login
+    public class LoginDal
     {
         public string CartIsBlank(string user_id)
         {

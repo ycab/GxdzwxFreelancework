@@ -5,7 +5,6 @@ using System.Text;
 using System.Configuration;
 using System.Data.OracleClient;
 using System.Data;
-
 namespace Gxdz.WechatFreelancework.Utilities
 {
 

@@ -1,0 +1,5 @@
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\bin\Debug\Gxdz.WechatFreelancework.Model.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\bin\Debug\Gxdz.WechatFreelancework.Model.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\obj\Debug\Gxdz.WechatFreelancework.Model.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\obj\Debug\Gxdz.WechatFreelancework.Model.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\obj\Debug\Gxdz.WechatFreelancework.Model.csprojResolveAssemblyReference.cache

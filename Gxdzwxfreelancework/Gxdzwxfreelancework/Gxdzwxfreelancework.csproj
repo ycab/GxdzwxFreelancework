@@ -453,6 +453,20 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Gxdzwxfreelancework.pubxml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gxdz.WechatFreelancework.Bll\Gxdz.WechatFreelancework.Bll.csproj">
+      <Project>{b8ddd4bc-2925-4fca-bacf-2d80a9f02e47}</Project>
+      <Name>Gxdz.WechatFreelancework.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gxdz.WechatFreelancework.Dal\Gxdz.WechatFreelancework.Dal.csproj">
+      <Project>{97cb2267-4127-44d1-be36-fea06f5cfa42}</Project>
+      <Name>Gxdz.WechatFreelancework.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gxdz.WechatFreelancework.Model\Gxdz.WechatFreelancework.Model.csproj">
+      <Project>{76a5fee6-23f8-4c75-9058-9769b03f294d}</Project>
+      <Name>Gxdz.WechatFreelancework.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

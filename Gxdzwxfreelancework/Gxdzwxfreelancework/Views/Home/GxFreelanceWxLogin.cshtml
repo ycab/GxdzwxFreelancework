@@ -245,8 +245,8 @@
         </table>
         <div class="hblank10"></div>
         <div class="box-flex" style="background-color:#eee;height:40px">
-            <a href="@Url.Action("GxFreelanceWxCheck","Home")">
-                <div class="fa-more" style="line-height:70px;height:70px; background-color:#1cbb7f"><h3 style="line-height:40px">提      交</h3></div>
+            <a >
+                <div id="submit" class="fa-more" style="line-height:70px;height:70px; background-color:#1cbb7f"><h3 style="line-height:40px">提      交</h3></div>
             </a>
         </div>
         <div class="hblank10"></div>
@@ -293,7 +293,7 @@
             $(this).parent().parent().parent().prev().children().eq(2).children().attr("zyid", id);
         });
     </script>
-    <script type="text/javascript">
+    @*<script type="text/javascript">
         $(function () {
             var index = 0;
             var uploader = WebUploader.create({
@@ -362,7 +362,7 @@
                 }
             });
         });
-    </script>
+    </script>*@
     <script>
         $("#submit1").click(function () {
             var userImg = $("#userImg").attr('src');
@@ -421,6 +421,40 @@
             })
         })
     </script>
+    <script type="text/javascript">
+    $(function () {
+    
+        $('#submit').click(function () {
+            var userinfo = {
+                username: "8",
+                pwd: "9"
+            };
+            var url = '@Url.Content("~/Home/GxFreelanceWxCheck")';
+            $.ajax({
+                type: 'post',
+                url: url,
+                data: userinfo,
+                success: function (data) {
+                    if (data == "ok") {
+                        var url = '@Url.Content("~/Home/GxFreelanceWxIndex")';
+                        window.location.href = url;
+                    }
+                    else {
+                        alert("账户或密码错误");
+                    }
+                },
+                error: function () {
+                    alert("error");
+                }
+            });
+        });
+    });
+
+    function submitTest() {
+        return false;
+    }
+    </script>
+
     <style>
         .default-img {
             float: left;

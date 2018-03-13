@@ -30,8 +30,6 @@ namespace Gxdzwxfreelancework.Controllers
         }
         public ActionResult GxFreelanceWxCheck()
         {
-            var account = Request["username"];
-            var pwd = Request["pwd"];
             return View();
         }
 

@@ -302,9 +302,7 @@
     <Content Include="Scripts\rotate\jquery.rotate.1-1.js" />
     <Content Include="Scripts\uploadfile\jquery.form.js" />
     <Content Include="Scripts\user\UserLogin.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

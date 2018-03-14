@@ -10,12 +10,10 @@ namespace Gxdz.WechatFreelancework.Bll
 {
     public class LoginBll
     {
-        LoginDal name = new LoginDal();
-        public string CartIsBlank(string user_id)
-        {
-            string responseText = "";
-            responseText = name.CartIsBlank(user_id);
-            return responseText;
-        }
+        //LoginDal name = new LoginDal();
+        //public string Register(string user_id)
+        //{
+
+        //}
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Gxdz.WechatFreelancework.Model
 {
-    public class Class1
+    public class user
     {
     }
 }

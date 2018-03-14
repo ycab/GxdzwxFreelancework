@@ -445,12 +445,16 @@
                     zhuanzhulingyu = $(this).text();
                 }
         })
-        $('#submit').click(function () {
+            $('#submit').click(function () {
+                var sex = $("input[name='sex']:checked").val();
+                var user_desc = $("#user_desc").val();
             var userinfo = {
                 zhiye: zhiye,
                 zhineng: zhineng,
                 xueli: xueli,
-                zhuanzhulingyu:zhuanzhulingyu
+                zhuanzhulingyu: zhuanzhulingyu,
+                sex: sex,
+                user_desc:user_desc
             };
             var url = '@Url.Content("~/Home/GxFreelanceWxCheck")';
             $.ajax({

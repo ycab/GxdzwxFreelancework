@@ -463,8 +463,12 @@
       <Name>Gxdz.WechatFreelancework.Dal</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gxdz.WechatFreelancework.Model\Gxdz.WechatFreelancework.Model.csproj">
-      <Project>{76a5fee6-23f8-4c75-9058-9769b03f294d}</Project>
+      <Project>{fee751a0-81ec-44b1-8bca-c6416aaa778e}</Project>
       <Name>Gxdz.WechatFreelancework.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gxdz.WechatFreelancework.Utilities\Gxdz.WechatFreelancework.Utilities.csproj">
+      <Project>{45883fe1-7cdd-41c3-bcef-8be8e98e8742}</Project>
+      <Name>Gxdz.WechatFreelancework.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -20,8 +20,6 @@ namespace Gxdzwxfreelancework.Controllers
         }
         public ActionResult GxFreelanceWxLogin()
         {
-            LoginBll name = new LoginBll();
-            name.CartIsBlank("8");
             return View();
         }
         public ActionResult GxFreelanceWxExample()
@@ -30,10 +28,16 @@ namespace Gxdzwxfreelancework.Controllers
         }
         public ActionResult GxFreelanceWxCheck()
         {
-            var zhiye = Request["zhiye"];
-            var zhineng = Request["zhineng"];
-            var xueli = Request["xueli"];
-            var zhuanzhulingyu = Request["zhuanzhulingyu"];
+            user user1 =new user();
+            user1.UserID = Guid.NewGuid().ToString("N");
+            user1.Profession = Request["zhiye"];
+            user1.Function = Request["zhineng"];
+            user1.Education = Request["xueli"];
+            user1.Field= Request["zhuanzhulingyu"];
+            user1.Sex = Request["sex"];
+            user1.Selfintroduction = Request["user_desc"];
+            LoginDal login = new LoginDal();
+            login.Register(user1);
             return View();
         }
 

@@ -30,6 +30,10 @@ namespace Gxdzwxfreelancework.Controllers
         }
         public ActionResult GxFreelanceWxCheck()
         {
+            var zhiye = Request["zhiye"];
+            var zhineng = Request["zhineng"];
+            var xueli = Request["xueli"];
+            var zhuanzhulingyu = Request["zhuanzhulingyu"];
             return View();
         }
 

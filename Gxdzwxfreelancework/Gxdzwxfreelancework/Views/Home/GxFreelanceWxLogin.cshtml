@@ -150,7 +150,7 @@
                         $("#zhineng").html("请选择");
                     } else {
                         $("#zhineng").attr("zyid", zhinengs);
-                        $("#zhineng").html('软件设计');
+                        $("#zhineng").html('其他');
                     }
                 </script>
 
@@ -456,18 +456,18 @@
                 sex: sex,
                 user_desc:user_desc
             };
-            var url = '@Url.Content("~/Home/GxFreelanceWxCheck")';
+            var url = '@Url.Content("~/Home/GxFreelanceWxRegister")';
             $.ajax({
                 type: 'post',
                 url: url,
                 data: userinfo,
                 success: function (data) {
                     if (data == "ok") {
-                       // var url = '@Url.Content("~/Home/Index")';
-                       // window.location.href = url;
+                        var url = '@Url.Content("~/Home/GxFreelanceWxCheck")';
+                        window.location.href = url;
                     }
                     else {
-                        alert("账户或密码错误");
+                        alert("注册失败");
                     }
                 },
                 error: function () {

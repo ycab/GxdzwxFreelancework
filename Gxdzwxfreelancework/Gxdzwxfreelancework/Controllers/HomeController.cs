@@ -28,17 +28,21 @@ namespace Gxdzwxfreelancework.Controllers
         }
         public ActionResult GxFreelanceWxCheck()
         {
-            user user1 =new user();
+            return View();
+        }
+        public string GxFreelanceWxRegister()   //用户注册
+        {
+            user user1 = new user();
             user1.UserID = Guid.NewGuid().ToString("N");
             user1.Profession = Request["zhiye"];
             user1.Function = Request["zhineng"];
             user1.Education = Request["xueli"];
-            user1.Field= Request["zhuanzhulingyu"];
+            user1.Field = Request["zhuanzhulingyu"];
             user1.Sex = Request["sex"];
             user1.Selfintroduction = Request["user_desc"];
-            LoginDal login = new LoginDal();
+            LoginBll login = new LoginBll();
             login.Register(user1);
-            return View();
+            return "ok";
         }
 
     }

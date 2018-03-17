@@ -14,7 +14,7 @@ namespace Gxdz.WechatFreelancework.Dal
         public string SortNameInfo()
         {
             string responseText = "";
-            string sql = "select * from GXFW_INFO";
+            string sql = "select * from GXFW_PROFESSION_CATEGORY";
             DataTable dt = OracleHelper.GetTable(sql, null);
             if (dt.Rows.Count != 0)
             {

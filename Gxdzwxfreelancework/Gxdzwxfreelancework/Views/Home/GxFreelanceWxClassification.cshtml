@@ -328,14 +328,14 @@
                 if (obj.msg == "success") {
                     if (SortName_Last == 0) {
                         $("#sortul").append(
-                                  "<li class='active' data-cat_id='" + obj.sortinfo[0].SEX + "'>" + obj.sortinfo[0].PROFESSION + "</li>"
+                                  "<li class='active' data-cat_id='" + obj.sortinfo[0].PROFESSION_ID+ "'>" + obj.sortinfo[0].PROFESSION_NAME + "</li>"
                                   );
                     }
                     for (var i = 1; i < obj.sortinfo.length; i++) {
                         var sortname = obj.sortinfo[i];
 
                         $("#sortul").append(
-                                 "<li  data-cat_id='" + sortname.SEX + "'>" + sortname.PROFESSION + "</li>"
+                                 "<li  data-cat_id='" + sortname.PROFESSION_ID+ "'>" + sortname.PROFESSION_NAME + "</li>"
 
                             );
                     }

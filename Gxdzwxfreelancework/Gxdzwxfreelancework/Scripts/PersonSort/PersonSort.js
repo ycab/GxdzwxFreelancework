@@ -56,3 +56,33 @@ function SortNameInfo() {
 
 
 }
+$(document).ready(function () {
+    //   SortNameInfo();
+
+    //因为使用ajax动态加载了dom，所以使用普通的click无法绑定click事件，用了$('id').on('click','id',function(){})委托形式
+    $('#sidebar').on('click', '#sortul li', function () {
+        $(this).addClass('active').siblings('li').removeClass('active');
+        var index = $(this).index();
+        $('.j-content').eq(index).show().siblings('.j-content').hide();
+        $(window).scrollTop(0);
+    })
+
+});
+
+function get_asynclist(url, src) {
+    SortNameInfo();
+    MiddleSortNameInfo();
+    $(window).scroll(function () {
+        if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+            //   SortNameInfo();
+            //取出所有div，并遍历
+            //  $("div").each(){
+            //判断每一个div，其css中display是否为block
+            //     if($(this).css("display")=="block"){
+            //  alert('您想要的元素');
+            //    }
+            //  };
+        }
+    });
+
+}

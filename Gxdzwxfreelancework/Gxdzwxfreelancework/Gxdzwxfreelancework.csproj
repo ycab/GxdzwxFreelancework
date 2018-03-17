@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonSortController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -297,6 +298,7 @@
     <Content Include="Scripts\Jquery\jquery.validate.js" />
     <Content Include="Scripts\Jquery\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\packpageindex\SendPackage.js" />
+    <Content Include="Scripts\PersonSort\PersonSort.js" />
     <Content Include="Scripts\rotate\CJL.0.1.min.js" />
     <Content Include="Scripts\rotate\ImageTrans.js" />
     <Content Include="Scripts\rotate\jquery.rotate.1-1.js" />

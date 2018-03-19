@@ -359,6 +359,44 @@
 
 
     }
+    ///初始化，异步加载中分类的名字信息
+    function MiddleSortNameInfo() {
+        $.ajax({
+            type: "POST",
+            url: rootUrl + "PersonSort/MiddleSortNameInfo?random=" + Math.floor(Math.random() * (100000 + 1)),
+            dataType: "json",
+            data: { middlesortname_last: MiddleSortName_Last, middlesortname_amount: MiddleSortName_Amount },
+            async: true,
+            success: function (obj) {
+                if (obj.msg == "success") {
+                    $("#showgoods").html("");
+                    $("#showgoods").append(
+                    "<section class='menu-right padding-all j-content' style='display:none'>"
+                        +"<h5>工艺工程师</h5>"
+                        +"<ul class='fb-list'>"
+                         +  "<a href=\"@Url.Action("GxFreelanceWxExample", "home")\">"
+                          +    "<li style='height:70px'>"
+                            +     "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\""+" style='float:left;height:80px;width:auto'>"
+                              +   "<div class='middle' style='width:41%;'>"
+                                +    "<h4>王曦晨</h4>"
+                                 +    "<p style='font-size:15px;margin-left:10px;margin-top:-0.5em’>编号：117110022225</p>"
+                                 +"</div>  </li>    </a>  </ul></section>"
+                
+                           );
+
+
+                }
+                else {
+                    $('#loading').hide();
+                }
+
+            },
+            error: function () {
+                alert("ajax wrong!");
+                $('#loading').hide();
+            }
+        });
+    }
     $(document).ready(function () {
         //   SortNameInfo();
 
@@ -374,7 +412,7 @@
 
     function get_asynclist(url, src) {
         SortNameInfo();
-       // MiddleSortNameInfo();
+        MiddleSortNameInfo();
         $(window).scroll(function () {
             if ($(window).scrollTop() == $(document).height() - $(window).height()) {
                 //   SortNameInfo();

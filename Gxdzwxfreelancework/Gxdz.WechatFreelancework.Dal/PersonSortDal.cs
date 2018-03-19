@@ -30,5 +30,25 @@ namespace Gxdz.WechatFreelancework.Dal
 
             return responseText;
         }
+        public string MiddleSortNameInfo()
+        {
+            string responseText = "";
+            string sql = "select * from GXFW_INFO";
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            if (dt.Rows.Count != 0)
+            {
+                responseText = JsonHelper.getRecordJson(dt);
+                responseText = "{\"msg\":\"success\",\"middlesortinfo\":[" + responseText + "]}";
+            }
+            else
+            {
+                responseText = "{\"msg\":\"fail\",\"failinfo\":\"查询出错\"}";
+            }
+
+
+
+            return responseText;
+        }
     }
+
 }

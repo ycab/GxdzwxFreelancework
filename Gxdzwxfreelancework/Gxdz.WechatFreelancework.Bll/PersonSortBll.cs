@@ -22,5 +22,14 @@ namespace Gxdz.WechatFreelancework.Bll
             responseText = SortInfoDal.SortNameInfo();
             return responseText;
         }
+        public string MiddleSortNameInfo()
+        {
+            string guid = Guid.NewGuid().ToString();
+            string responseText = "";
+            // int sortnamelast = Convert.ToInt32(sortname_last);//对于null不会报异常,使用int.Parse报异常
+            // int sortnameamount = Convert.ToInt32(sortname_amount);
+            responseText = SortInfoDal.MiddleSortNameInfo();
+            return responseText;
+        }
     }
 }

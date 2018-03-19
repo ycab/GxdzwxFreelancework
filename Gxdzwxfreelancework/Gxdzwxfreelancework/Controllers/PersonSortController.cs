@@ -30,6 +30,13 @@ namespace Gxdzwxfreelancework.Controllers
             responseText = SortInfoBll.SortNameInfo();
             return Content(responseText);
         }
+        public ActionResult MiddleSortNameInfo()
+        {
+            string responseText = "";
+
+            responseText = SortInfoBll.MiddleSortNameInfo();
+            return Content(responseText);
+        }
 
     }
 }

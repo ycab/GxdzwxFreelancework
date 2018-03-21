@@ -369,22 +369,56 @@
             async: true,
             success: function (obj) {
                 if (obj.msg == "success") {
+                    var middleinfo = obj.middlesortinfo;//middleinfo是整个信息
                     $("#showgoods").html("");
-                    $("#showgoods").append(
-                    "<section class='menu-right padding-all j-content' style='display:none'>"
-                        +"<h5>工艺工程师</h5>"
-                        +"<ul class='fb-list'>"
-                         +  "<a href=\"@Url.Action("GxFreelanceWxExample", "home")\">"
-                          +    "<li style='height:70px'>"
-                            +     "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\""+" style='float:left;height:80px;width:auto'>"
-                              +   "<div class='middle' style='width:41%;'>"
-                                +    "<h4>王曦晨</h4>"
-                                 +    "<p style='font-size:15px;margin-left:10px;margin-top:-0.5em'>编号：117110022225</p>"
-                                 +"</div>  </li>    </a>  </ul></section>"
-                
-                           );
+                    for (var i = 0; i < middleinfo.length; i++) {
+                        var middle = middleinfo[i];//{parentid:1,parentname:'',info:[{:'',...},{},{}]}
+                        //var parentid = middle.parentid;middle是一个职业的所有信息
+                        var profession_name = middle.profession_name;
+                        var profession_id = middle.profession_id;
+                        var info = middle.info;//[{:'',.....},{},{}]某个职业单条数据的集合.例如：info[0].USER_NAME，某职业第一条数据的人名
+                        if (i == 0) {
+                            $("#showgoods").append(
+                            "<section class='menu-right padding-all j-content' data-parentid='"+profession_id+"'>"
+                           + "<h5>" + profession_name + "</h5>"
+                           + "</section>");
+
+                        }
+                        else {
+                            $("#showgoods").append(
+                            "<section class='menu-right padding-all j-content' style='display:none' data-parentid='" + profession_id + "'>"
+                            + "<h5>" + profession_name + "</h5>"
+                            + "</section>");
+                        }
+                        var domli="";
+                        for (var j = 0; j < info.length; j++) {
+                            domli += "<ul class='fb-list'>"
+                                     + "<a href=\"@Url.Action("GxFreelanceWxExample", "home")\">"
+                                       + "<li style='height:70px'>"
+                                         + "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\"" + " style='float:left;height:80px;width:auto'>"
+                                          + "<div class='middle' style='width:41%;'>"
+                                            + "<h4>"+info[j].USER_NAME+"</h4>"
+                                             + "<p style='font-size:15px;margin-left:10px;margin-top:-0.5em'>编号：117110022225</p>"
+                                           + "</div>  </li>    </a>  </ul>"
+
+                        }
+                        $("section[data-parentid='" + profession_id + "']").append(domli);
+                        @*$("#showgoods").append(
+                        "<section class='menu-right padding-all j-content' style='display:none'>"
+                            + "<h5>工艺工程师</h5>"
+                            + "<ul class='fb-list'>"
+                             + "<a href=\"@Url.Action("GxFreelanceWxExample", "home")\">"
+                              + "<li style='height:70px'>"
+                                + "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\"" + " style='float:left;height:80px;width:auto'>"
+                                  + "<div class='middle' style='width:41%;'>"
+                                    + "<h4>王曦晨</h4>"
+                                     + "<p style='font-size:15px;margin-left:10px;margin-top:-0.5em'>编号：117110022225</p>"
+                                     + "</div>  </li>    </a>  </ul></section>"
+
+                               );*@
 
 
+                    }
                 }
                 else {
                     $('#loading').hide();
@@ -428,7 +462,7 @@
 
     }
 
-    </script>
+</script>
 
 </body>
 </html>

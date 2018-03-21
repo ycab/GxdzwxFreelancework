@@ -65,6 +65,21 @@ namespace Gxdz.WechatFreelancework.Dal
 
             return responseText;
         }
+        public user GetPersonInfo(string user_id)//获取单个人员的整体信息
+        {
+            string sql = string.Format("select * from GXFW_INFO t where USER_ID='{0}' ", user_id);
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            user user1=new user();
+            user1.UserID = dt.Rows[0]["USER_ID"].ToString();
+            user1.UserName = dt.Rows[0]["USER_NAME"].ToString();
+            user1.Profession = dt.Rows[0]["PROFESSION"].ToString();
+            user1.Sex = dt.Rows[0]["SEX"].ToString();
+            user1.Selfintroduction = dt.Rows[0]["SELFINTRODUCTION"].ToString();
+            user1.Field = dt.Rows[0]["FIELD"].ToString();
+            user1.Education = dt.Rows[0]["EDUCATION"].ToString();
+            user1.Function = dt.Rows[0]["FUNCTION"].ToString();
+            return user1;
+        }
     }
 
 }

@@ -65,57 +65,51 @@
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>姓名：</p>
                     </div>
-                    <div class="weui_cell_ft">李经纬</div>
-                </div>
-                <div class="weui_cell">
-                    <div class="weui_cell_bd weui_cell_primary">
-                        <p>编号：</p>
-                    </div>
-                    <div class="weui_cell_ft">117110022223</div>
+                    <div class="weui_cell_ft">@Session["user_name"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>性别：</p>
                     </div>
-                    <div class="weui_cell_ft">男</div>
+                    <div class="weui_cell_ft">@Session["sex"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
-                        <p>年龄：</p>
+                        <p>编号：</p>
                     </div>
-                    <div class="weui_cell_ft">30</div>
+                    <div class="weui_cell_ft">@Session["user_id"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>职业：</p>
                     </div>
-                    <div class="weui_cell_ft">高级工程师</div>
+                    <div class="weui_cell_ft">@Session["profession"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>职能：</p>
                     </div>
-                    <div class="weui_cell_ft">软件设计</div>
+                    <div class="weui_cell_ft">@Session["function"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>学历：</p>
                     </div>
-                    <div class="weui_cell_ft">大学本科</div>
+                    <div class="weui_cell_ft">@Session["education"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>专注领域：</p>
                     </div>
-                    <div class="weui_cell_ft">软件开发</div>
+                    <div class="weui_cell_ft">@Session["field"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
-                        <p>历史项目：</p>
+                        <p>个人介绍：</p>
                     </div>                    
                 </div>
                 <article style="margin-left:10px">
-                    <p style="margin-left:10px;text-indent:2.0em">玄武公安、玄微警、玄武城管、电子联盟、固高MES系统</p>
+                    <p style="margin-left:10px;text-indent:2.0em">@Session["selfintroduction"]</p>
                 </article>
             </div>
 
@@ -124,6 +118,9 @@
             </div>
         </div>
     </div>
+    <script>
 
+
+    </script>
 </body>
 </html>

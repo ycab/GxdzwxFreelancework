@@ -447,7 +447,7 @@
     <Content Include="Views\Home\GxFreelanceWxLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\GxFreelanceWxExample.cshtml" />
+    <Content Include="Views\PersonSort\PersonInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\GxFreelanceWxCheck.cshtml" />

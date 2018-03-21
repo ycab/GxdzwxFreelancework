@@ -393,7 +393,8 @@
                         var domli="";
                         for (var j = 0; j < info.length; j++) {
                             domli += "<ul class='fb-list'>"
-                                     + "<a href=\"@Url.Action("GxFreelanceWxExample", "home")\">"
+                                      + '<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');">'
+                                   
                                        + "<li style='height:70px'>"
                                          + "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\"" + " style='float:left;height:80px;width:auto'>"
                                           + "<div class='middle' style='width:41%;'>"
@@ -461,6 +462,12 @@
         });
 
     }
+    function person_list(user_id) {
+
+
+        window.location.href = rootUrl + "PersonSort/PersonInfo?user_id=" + user_id + "&random=" + Math.floor(Math.random() * (100000 + 1));
+    }
+
 
 </script>
 

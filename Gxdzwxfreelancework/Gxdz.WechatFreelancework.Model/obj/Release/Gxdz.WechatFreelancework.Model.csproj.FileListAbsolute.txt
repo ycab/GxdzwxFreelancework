@@ -1,0 +1,4 @@
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\bin\Release\Gxdz.WechatFreelancework.Model.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\bin\Release\Gxdz.WechatFreelancework.Model.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\obj\Release\Gxdz.WechatFreelancework.Model.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Model\obj\Release\Gxdz.WechatFreelancework.Model.pdb

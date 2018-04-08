@@ -95,13 +95,12 @@
                 <tr id="" class="list">
                     <td colspan="4">
                         <ul class="table-list">
-                            <li id="1">工程师</li>
-                            <li id="2">高级工程师</li>
-                            <li id="3">项目主管</li>
-                            <li id="4">部门经理</li>
-                            <li id="5">事业部总经理/总监</li>
-                            <li id="6">总工/副总工程师</li>
-                            <li id="7">公司总裁/副总裁/董事</li>
+                            <li value="101">体系工程师</li>
+                            <li value="102">硬件开发工程师</li>
+                            <li value="103">品质工程师</li>
+                            <li value="104">pcb设计工程师</li>
+                            <li value="105">射频设计工程师</li>
+                            <li value="106">工艺工程师</li>
                         </ul>
                     </td>
                 </tr>
@@ -124,22 +123,22 @@
                 <tr id="" class="list">
                     <td colspan="4">
                         <ul class="table-list">
-                            <li id="9">电路设计</li>
-                            <li id="10">软件设计</li>
-                            <li id="11">系统架构</li>
-                            <li id="12">技术管理</li>
-                            <li id="13">技术支持</li>
-                            <li id="14">测试测量</li>
-                            <li id="15">生产/制造</li>
-                            <li id="16">采购工程师</li>
-                            <li id="17">采购管理</li>
-                            <li id="18">供应链管理</li>
-                            <li id="19">供应商认证/选型/质量</li>
-                            <li id="20">市场销售</li>
-                            <li id="21">公司管理</li>
-                            <li id="22">科研人员/学者</li>
-                            <li id="23">媒体/咨询/市场研究</li>
-                            <li id="24">其他</li>
+                            <li value="201">电路设计</li>
+                            <li value="202">软件设计</li>
+                            <li value="203">系统架构</li>
+                            <li value="204">技术管理</li>
+                            <li value="205">技术支持</li>
+                            <li value="206">测试测量</li>
+                            <li value="207">生产/制造</li>
+                            <li value="208">采购工程师</li>
+                            <li value="209">采购管理</li>
+                            <li value="210">供应链管理</li>
+                            <li value="211">供应商认证/选型/质量</li>
+                            <li value="212">市场销售</li>
+                            <li value="213">公司管理</li>
+                            <li value="214">科研人员/学者</li>
+                            <li value="215">媒体/咨询/市场研究</li>
+                            <li value="216">其他</li>
                         </ul>
                     </td>
                 </tr>
@@ -150,7 +149,7 @@
                         $("#zhineng").html("请选择");
                     } else {
                         $("#zhineng").attr("zyid", zhinengs);
-                        $("#zhineng").html('软件设计');
+                        $("#zhineng").html('其他');
                     }
                 </script>
 
@@ -163,16 +162,16 @@
                 <tr id="" class="list">
                     <td colspan="4">
                         <ul class="table-list">
-                            <li id="25">小学</li>
-                            <li id="26">中专</li>
-                            <li id="27">初中</li>
-                            <li id="28">高职</li>
-                            <li id="29">高中</li>
-                            <li id="30">大专</li>
-                            <li id="31">大学本科</li>
-                            <li id="32">硕士</li>
-                            <li id="33">博士</li>
-                            <li id="34">其他</li>
+                            <li value="301">小学</li>
+                            <li value="302">中专</li>
+                            <li value="303">初中</li>
+                            <li value="304">高职</li>
+                            <li value="305">高中</li>
+                            <li value="306">大专</li>
+                            <li value="307">大学本科</li>
+                            <li value="308">硕士</li>
+                            <li value="309">博士</li>
+                            <li value="310">其他</li>
                         </ul>
                     </td>
                 </tr>
@@ -197,19 +196,19 @@
                 <tr id="" class="list">
                     <td colspan="4">
                         <ul class="table-list">
-                            <li id="46">嵌入式硬件</li>
-                            <li id="47">电源技术</li>
-                            <li id="48">接口</li>
-                            <li id="49">储存</li>
-                            <li id="50">通信协议</li>
-                            <li id="51">自动控制</li>
-                            <li id="52">传感器</li>
-                            <li id="53">电路保护与EMC</li>
-                            <li id="54">人机交互</li>
-                            <li id="311">嵌入式软件</li>
-                            <li id="328">电路设计</li>
-                            <li id="331">软件开发</li>
-                            <li id="332">其他</li>
+                            <li value="401">嵌入式硬件</li>
+                            <li value="402">电源技术</li>
+                            <li value="403">接口</li>
+                            <li value="404">储存</li>
+                            <li value="405">通信协议</li>
+                            <li value="406">自动控制</li>
+                            <li value="407">传感器</li>
+                            <li value="408">电路保护与EMC</li>
+                            <li value="409">人机交互</li>
+                            <li value="410">嵌入式软件</li>
+                            <li value="411">电路设计</li>
+                            <li value="412">软件开发</li>
+                            <li value="413">其他</li>
                         </ul>
                     </td>
                 </tr>
@@ -244,21 +243,18 @@
             </tbody>
         </table>
         <div class="hblank10"></div>
-        <div class="box-flex" style="background-color:#eee;height:40px">
-            <a href="@Url.Action("GxFreelanceWxCheck","Home")">
-                <div class="fa-more" style="line-height:70px;height:70px; background-color:#1cbb7f"><h3 style="line-height:40px">提      交</h3></div>
+        <div id="submit" class="box-flex" style="background-color:#eee;height:40px">
+            <a>
+                <div class="fa-more" style="line-height:70px;height:70px; background-color:#1cbb7f"><h3 style="line-height:40px">我要加入自由职业</h3></div>
             </a>
         </div>
         <div class="hblank10"></div>
     </div>
     <footer class="footer-nav dis-box">
-        <a href="@Url.Action("GxFreelanceWxIndex","Home")" class="box-flex nav-list">
-            <i class="nav-box i-home"></i><span>首页</span>
-        </a>
         <a href="@Url.Action("GxFreelanceWxClassification","Home")" class="box-flex nav-list">
             <i class="nav-box i-cate"></i><span>分类</span>
         </a>
-        <a href="@Url.Action("GxFreelangceWxLogin","Home")" class="box-flex nav-list active">
+        <a  class="box-flex nav-list active">
             <i class="nav-box i-flow"></i><span>注册</span>
         </a>
     </footer>
@@ -277,7 +273,7 @@
             $(this).addClass("on");
         })
 
-        $('.choose').click(function () {
+        $('.choose').click(function () {   //针对choose样式操作
             $(this).toggleClass('xz');
             $(this).next().toggle();
         });
@@ -293,7 +289,7 @@
             $(this).parent().parent().parent().prev().children().eq(2).children().attr("zyid", id);
         });
     </script>
-    <script type="text/javascript">
+    @*<script type="text/javascript">
         $(function () {
             var index = 0;
             var uploader = WebUploader.create({
@@ -362,7 +358,7 @@
                 }
             });
         });
-    </script>
+    </script>*@
     <script>
         $("#submit1").click(function () {
             var userImg = $("#userImg").attr('src');
@@ -421,6 +417,67 @@
             })
         })
     </script>
+    <script type="text/javascript">
+        $(function () {
+            var zhiye = "";
+            var zhineng = "";
+            var xueli = "";
+            var zhuanzhulingyu = "";
+            
+            $("ul li").click(function () {
+                var val = 0;
+                val = $(this).val();
+                if((val>100)&&(val<199))
+                {
+                    zhiye = $(this).text();
+                }
+                if ((val > 200) && (val < 299)) {
+                    zhineng = $(this).text();
+                }
+                if ((val > 300) && (val < 399)) {
+                    xueli = $(this).text();
+                }
+                if ((val > 400) && (val < 499)) {
+                    zhuanzhulingyu = $(this).text();
+                }
+        })
+            $('#submit').click(function () {
+                var sex = $("input[name='sex']:checked").val();
+                var user_desc = $("#user_desc").val();
+            var userinfo = {
+                zhiye: zhiye,
+                zhineng: zhineng,
+                xueli: xueli,
+                zhuanzhulingyu: zhuanzhulingyu,
+                sex: sex,
+                user_desc:user_desc
+            };
+            var url = '@Url.Content("~/Home/GxFreelanceWxRegister")';
+            $.ajax({
+                type: 'post',
+                url: url,
+                data: userinfo,
+                success: function (data) {
+                    if (data == "ok") {
+                        var url = '@Url.Content("~/Home/GxFreelanceWxCheck")';
+                        window.location.href = url;
+                    }
+                    else {
+                        alert("注册失败");
+                    }
+                },
+                error: function () {
+                    alert("error");
+                }
+            });
+        });
+    });
+
+    function submitTest() {
+        return false;
+    }
+    </script>
+
     <style>
         .default-img {
             float: left;

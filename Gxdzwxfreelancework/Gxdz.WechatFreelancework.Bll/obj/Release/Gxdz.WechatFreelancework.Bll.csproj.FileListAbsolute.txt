@@ -1,0 +1,13 @@
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Gxdz.WechatFreelancework.Bll.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Gxdz.WechatFreelancework.Bll.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Gxdz.WechatFreelancework.Dal.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Gxdz.WechatFreelancework.Model.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Gxdz.WechatFreelancework.Utilities.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Newtonsoft.Json.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Gxdz.WechatFreelancework.Dal.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Gxdz.WechatFreelancework.Model.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Gxdz.WechatFreelancework.Utilities.pdb
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\bin\Release\Newtonsoft.Json.xml
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\obj\Release\Gxdz.WechatFreelancework.Bll.csprojResolveAssemblyReference.cache
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\obj\Release\Gxdz.WechatFreelancework.Bll.dll
+C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Bll\obj\Release\Gxdz.WechatFreelancework.Bll.pdb

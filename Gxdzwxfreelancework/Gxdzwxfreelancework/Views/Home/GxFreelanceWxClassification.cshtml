@@ -125,9 +125,6 @@
 
     </div>
     <footer class="footer-nav dis-box">
-        <a href="@Url.Action("GxFreelanceWxIndex","Home")" class="box-flex nav-list">
-            <i class="nav-box i-home"></i><span>首页</span>
-        </a>
         <a href="@Url.Action("GxFreelanceWxClassification","Home")" class="box-flex nav-list active">
             <i class="nav-box i-cate"></i><span>分类</span>
         </a>
@@ -398,8 +395,8 @@
                                        + "<li style='height:70px'>"
                                          + "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\"" + " style='float:left;height:80px;width:auto'>"
                                           + "<div class='middle' style='width:41%;'>"
-                                            + "<h4>"+info[j].USER_NAME+"</h4>"
-                                             + "<p style='font-size:15px;margin-left:10px;margin-top:-0.5em'>编号：117110022225</p>"
+                                            + "<h4>姓名："+info[j].USER_ID+"</h4>"
+                                             + "<p style='font-size:15px;margin-left:10px;margin-top:-0.5em'>编号：" + info[j].USER_ID + "</p>"
                                            + "</div>  </li>    </a>  </ul>"
 
                         }

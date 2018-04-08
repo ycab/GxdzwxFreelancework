@@ -6,23 +6,35 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>G:\Visual Studio\publish\gxdzfreelancework</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\yupeng\Desktop\freelanceworkfabu</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="bin/Gxdz.WechatFreelancework.Bll.dll">
+      <publishTime>03/25/2018 16:58:48</publishTime>
+    </File>
+    <File Include="bin/Gxdz.WechatFreelancework.Dal.dll">
+      <publishTime>03/25/2018 16:58:48</publishTime>
+    </File>
+    <File Include="bin/Gxdz.WechatFreelancework.Model.dll">
+      <publishTime>03/25/2018 16:58:47</publishTime>
+    </File>
+    <File Include="bin/Gxdz.WechatFreelancework.Utilities.dll">
+      <publishTime>03/25/2018 16:58:47</publishTime>
+    </File>
     <File Include="bin/Gxdzwxfreelancework.dll">
-      <publishTime>12/25/2017 21:42:38</publishTime>
+      <publishTime>03/25/2018 16:58:49</publishTime>
     </File>
     <File Include="bin/Microsoft.CSharp.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.ComponentModel.DataAnnotations.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>
@@ -49,7 +61,7 @@
       <publishTime>07/09/2013 11:04:48</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>12/22/2017 13:14:18</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Net.Http.WebRequest.dll">
       <publishTime>07/09/2013 11:04:48</publishTime>
@@ -73,19 +85,19 @@
       <publishTime>03/18/2010 19:31:26</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>12/22/2017 13:14:18</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
-      <publishTime>12/22/2017 13:14:20</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Web.Routing.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>
@@ -94,13 +106,13 @@
       <publishTime>03/18/2010 19:31:26</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>12/22/2017 13:14:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/System.Xml.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>
@@ -109,7 +121,7 @@
       <publishTime>03/18/2010 19:31:26</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Net.Http.Formatting.resources.dll">
-      <publishTime>12/22/2017 13:14:22</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Net.Http.resources.dll">
       <publishTime>07/09/2013 11:34:42</publishTime>
@@ -118,811 +130,817 @@
       <publishTime>07/09/2013 11:34:40</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Helpers.resources.dll">
-      <publishTime>12/22/2017 13:14:20</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Http.resources.dll">
-      <publishTime>12/22/2017 13:14:22</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Http.WebHost.resources.dll">
-      <publishTime>12/22/2017 13:14:22</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Mvc.resources.dll">
-      <publishTime>12/22/2017 13:14:22</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.Razor.resources.dll">
-      <publishTime>12/22/2017 13:14:20</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.Deployment.resources.dll">
-      <publishTime>12/22/2017 13:14:20</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.Razor.resources.dll">
-      <publishTime>12/22/2017 13:14:20</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="bin/zh-Hans/System.Web.WebPages.resources.dll">
-      <publishTime>12/22/2017 13:14:20</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>12/08/2017 10:39:54</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>12/08/2017 10:39:54</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>12/08/2017 10:39:50</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>12/22/2017 13:14:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/1475869586530689271.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/1475869618740468734.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/1475947014493634167.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/1500889452157.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/1507450205496.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/16295_thumb_G_1441858522474.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/19925_thumb_G_1442265123473.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/19933_thumb_G_1442265125678.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/20160920001.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/20160920008_hui.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/20160926001.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/555c6c90Ncb4fe515.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/55e5a38fN0b84386b.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/55faac79Nfa9eb602.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/downarrows.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/gwc.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/heart_03.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/icon1.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/icon2.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/iconall.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/iconfont-xiao1.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/icon_tabbar.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/index-theme-icon1.gif">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/index-theme-icon1.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/index-theme-icon2.gif">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/index-theme-icon2.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/index-theme-icon3.gif">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/index-theme-icon3.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/index-theme-icon4.gif">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/index-theme-icon4.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/logo.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/logo1.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/logo2.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/lunbo1.jpg">
-      <publishTime>12/22/2017 14:21:54</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/lunbo2.jpeg">
-      <publishTime>12/22/2017 14:22:06</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/lunbo3.jpg">
-      <publishTime>12/22/2017 14:22:22</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav/nav_0.png">
-      <publishTime>12/08/2017 10:55:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav/nav_1.png">
-      <publishTime>12/08/2017 10:55:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav/nav_2.png">
-      <publishTime>12/08/2017 10:55:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav/nav_3.png">
-      <publishTime>12/08/2017 10:55:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav/nav_4.png">
-      <publishTime>12/08/2017 10:55:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav/nav_5.png">
-      <publishTime>12/08/2017 10:55:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav/nav_6.png">
-      <publishTime>12/08/2017 10:55:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav/nav_7.png">
-      <publishTime>12/08/2017 10:55:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/nav_0_副本.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/pcblogo.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/timg %281%29.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/timg.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/uer_header_bg.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/user-1.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/user-2.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/vcode.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/weixin.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/weixin.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/xuqiu.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/zhifb.png">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/传感器.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/images/电容.jpg">
-      <publishTime>12/08/2017 10:55:00</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/layer/layer.js">
-      <publishTime>12/08/2017 10:55:30</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/layer/skin/default/icon.png">
-      <publishTime>12/08/2017 10:55:46</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/layer/skin/layer.css">
-      <publishTime>12/08/2017 10:55:40</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/app_sec.css">
-      <publishTime>12/08/2017 14:30:16</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/basic.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/basic_app.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/bootstrap.min.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/brand.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/ectouch.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/font-awesome.min.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/iconfont.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/jquery-ui-1.10.1.custom.min.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/LArea.css">
-      <publishTime>12/08/2017 19:36:46</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/layer.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/member.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/mobiscroll.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/mobiscroll_date.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/my_style.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/photoswipe.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/search.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/style.css">
-      <publishTime>12/10/2017 14:54:12</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/swiper.min.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/user.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/css/zyUpload.css">
-      <publishTime>12/08/2017 10:56:04</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/fonts/fontawesome-webfont.woff">
-      <publishTime>12/08/2017 10:56:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/fonts/glyphicons-halflings-regular.eot">
-      <publishTime>12/08/2017 10:56:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/fonts/glyphicons-halflings-regular.svg">
-      <publishTime>12/08/2017 10:56:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>12/08/2017 10:56:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/fonts/glyphicons-halflings-regular.woff">
-      <publishTime>12/08/2017 10:56:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/fonts/glyphicons-halflings-regular.woff2">
-      <publishTime>12/08/2017 10:56:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/fonts/iconfont.css">
-      <publishTime>12/08/2017 10:56:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/fonts/iconfont.woff">
-      <publishTime>12/08/2017 10:56:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/0.jpg">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/1111111111.png">
-      <publishTime>12/08/2017 11:33:48</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/19924_thumb_G_1442265123150.jpg">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/19934_thumb_G_1442265126667.jpg">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/2016092027.jpg">
-      <publishTime>12/08/2017 19:52:32</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/2222222222.png">
-      <publishTime>12/08/2017 11:33:48</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/3333333333.png">
-      <publishTime>12/08/2017 11:33:48</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/avatar.jpg">
-      <publishTime>12/08/2017 19:34:34</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/bejing.png">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/brand-list-img2.gif">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/downarrows.png">
-      <publishTime>12/08/2017 19:52:32</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/ec-icon.png">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/ewm.png">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/iconall.png">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/loading.gif">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/loading_shop.png">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/no_picture.gif">
-      <publishTime>12/08/2017 10:56:28</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/img/qrcode_for_gh_0c4db791f35d_430.jpg">
-      <publishTime>12/25/2017 20:21:17</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/bootstrap.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/code-photoswipe-1.0.11.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/common.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/ectouch.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/jquery-2.1.4.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/jquery-ui-1.10.1.custom.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/jquery.json.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/jquery.lazyload.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/jquery.more.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/jquery.scrollUp.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/jquery.ui.touch-punch.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/LArea.js">
-      <publishTime>12/08/2017 20:11:48</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/LAreaData1.js">
-      <publishTime>12/08/2017 20:11:48</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/LAreaData2.js">
-      <publishTime>12/08/2017 20:11:48</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/layer.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/lefttime.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/mobiscroll.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/mobiscroll_date.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/my_js.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/shopping_flow.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/simple-inheritance.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/swiper.min.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/TouchSlide.1.1.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/utils.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/validform.js">
-      <publishTime>12/08/2017 10:56:38</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>12/22/2017 13:14:22</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="Scripts/Jquery/jquery-1.10.2.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/Jquery/jquery-1.9.1.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/Jquery/jquery.unobtrusive-ajax.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/Jquery/jquery.validate.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/Jquery/jquery.validate.unobtrusive.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/packpageindex/SendPackage.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
+    </File>
+    <File Include="Scripts/PersonSort/PersonSort.js">
+      <publishTime>03/17/2018 20:34:05</publishTime>
     </File>
     <File Include="Scripts/rotate/CJL.0.1.min.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/rotate/ImageTrans.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/rotate/jquery.rotate.1-1.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/uploadfile/jquery.form.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Scripts/user/UserLogin.js">
-      <publishTime>12/08/2017 10:58:36</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxCheck.cshtml">
-      <publishTime>12/22/2017 14:16:44</publishTime>
+      <publishTime>03/25/2018 19:53:20</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxClassification.cshtml">
-      <publishTime>12/25/2017 20:54:09</publishTime>
+      <publishTime>03/25/2018 19:46:59</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxExample.cshtml">
       <publishTime>12/25/2017 21:38:21</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxIndex.cshtml">
-      <publishTime>12/25/2017 20:52:34</publishTime>
+      <publishTime>03/23/2018 18:09:07</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxLogin.cshtml">
-      <publishTime>12/22/2017 14:17:32</publishTime>
+      <publishTime>03/25/2018 19:58:54</publishTime>
+    </File>
+    <File Include="Views/PersonSort/PersonInfo.cshtml">
+      <publishTime>03/21/2018 20:42:54</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>12/22/2017 13:14:14</publishTime>
+      <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/25/2017 21:42:39</publishTime>
+      <publishTime>03/25/2018 16:58:51</publishTime>
     </File>
     <File Include="weui-master/.gitignore">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/.travis.yml">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/bower.json">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/CHANGELOG.md">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/example.css">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/example.js">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/icon_nav_actionSheet.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/icon_nav_article.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/icon_nav_button.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/icon_nav_cell.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/icon_nav_dialog.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/icon_nav_icons.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/icon_nav_msg.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/icon_nav_toast.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/images/vcode.jpg">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/index.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/actionSheet.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/button.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/cell.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/dialog1.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/dialog2.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/grid.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/icons.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/progress.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/qrcode.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/result.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/text.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/toast1.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/snapshot/toast2.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/example/zepto.min.js">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/style/jquery-weui.css">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/style/jquery-weui.js">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/style/jquery-weui.min.js">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/style/style.css">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/style/weui.css">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/style/weui.min.css">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/dist/style/weui.min.js">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/gulpfile.js">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/package.json">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/README.md">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/example.js">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/example.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/actionsheet.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/article.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/button.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/cell.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/dialog.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/home.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/icons.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/msg.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/progress.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/fragment/toast.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/icon_nav_actionSheet.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/icon_nav_article.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/icon_nav_button.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/icon_nav_cell.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/icon_nav_dialog.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/icon_nav_icons.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/icon_nav_msg.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/icon_nav_toast.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/images/vcode.jpg">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/index.html">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/button.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/cell.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/dialog1.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/dialog2.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/grid.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/icons.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/progress.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/qrcode.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/result.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/text.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/toast1.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/snapshot/toast2.png">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/example/zepto.min.js">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_button/weui_btn_default.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_button/weui_btn_disabled.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_button/weui_btn_global.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_button/weui_btn_plain.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_button/weui_btn_primary.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_button/weui_btn_warn.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_button/weui_button.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui-check/weui_checkbox.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui-check/weui_check_common.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui-check/weui_radio.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_access.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_cell_global.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_check.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_form.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_form/weui_form_common.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_form/weui_select.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_form/weui_select_after.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_form/weui_select_before.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_form/weui_vcode.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_switch.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_cell/weui_uploader.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_grid/weui_grid.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_page/weui_article.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_page/weui_msg.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_progress/weui_progress.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_tips/weui_actionsheet.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_tips/weui_dialog.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_tips/weui_mask.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="weui-master/src/style/widget/weui_tips/weui_toast.less">
-      <publishTime>12/08/2017 10:57:16</publishTime>
+      <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
   </ItemGroup>
 </Project>

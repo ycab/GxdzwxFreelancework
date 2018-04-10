@@ -56,546 +56,232 @@
     <script src="@Url.Content("~/gxfreelance/statics/js/common.js")"></script>
     <script src="@Url.Content("~/gxfreelance/statics/js/jquery.more.js")"></script>
     <script src="@Url.Content("~/Scripts/packpageindex/SendPackage.js")"></script>
+    <link href="@Url.Content("~/weui-master/dist/style/weui.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/weui-master/dist/style/weui.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/weui-master/dist/example/example.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/weui-master/dist/example/example.js")"></script>
 </head>
 <body style="max-width:640px;">
     <div class="con m-b7 new-maxbox">
         <div class="ect-bg">
             <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write">
+                <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a>
                 <span>自由职业注册</span>
             </header>
         </div>
-        <div class="hblank10" style="background-color:white"></div>
-        <table class="grzx-list" cellpadding="0" cellspacing="0" style="background-color:white">
-            <tbody>
-                <tr height="50">
-                    <td width="10"></td>
-                    <td width="80">
-                        <img id="userImg" src="@Url.Content("~/gxfreelance/statics/img/avatar.jpg")" onerror="nofind('/Public/Home/images/avatar.jpg');" class="user-pic">
-                    </td>
-                    <td><span class="right webuploader-container" id="sctx"><div class="webuploader-pick">上传头像</div><div id="rt_rt_1c0qcc1o7b5sg9g1o0ov701s2e1" style="position: absolute; top: 81px; left: 336px; width: 60px; height: 50px; overflow: hidden; bottom: auto; right: auto;"><input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div></span></td>
-                    <td width="40"></td>
-                </tr>
+        <form method="post" id="theForm" name="theForm" enctype="multipart/form-data" onsubmit="return checkInfo(this)" action="">
+            <div class="bd">
+                @*<div class="weui_cells_title">昵称</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="nick_name" class="weui_input" type="text" style="border:none;" placeholder="请输入昵称" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">个性签名</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="signature" class="weui_input" type="text" style="border:none;" placeholder="请输入个性签名" value="" />
+                        </div>
+                    </div>
+                </div>*@
+                <div class="weui_cells_title">头像</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div class="weui_uploader">
+                                <div class="weui_uploader_hd weui_cell">
+                                    <div class="weui_cell_ft js_counter_chat_head">0/1</div>
+                                </div>
+                                <div class="weui_uploader_bd">
+                                    <ul class="weui_uploader_files view_chat_head">
+                                        @*预览图插入到这*@
+                                        @*<li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                            <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                            <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                            <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                                                <div class="weui_uploader_status_content">
+                                                    <i class="weui_icon_warn"></i>
+                                                </div>
+                                            </li>
+                                            <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                                                <div class="weui_uploader_status_content">50%</div>
+                                            </li>*@
+                                    </ul>
+                                    <div class="weui_uploader_input_wrp">
+                                        <input id="chat_head" name="chat_head" class="weui_uploader_input js_file_chat_head" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="weui_cells_title">姓名</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name=" name " class="weui_input" type="text" style="border:none;" placeholder="请输入姓名" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">身份证号</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="id_number" class="weui_input" type="number" pattern="[0-9]*" placeholder="请输入身份证号" value="" />
+                        </div>
+                    </div>
+                </div>*@
+                <div class="weui_cells_title">性别</div>
+                <div class="weui_cells">
+                    <div class="weui_cell weui_cell_select">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" name="sex">
+                                <option selected="" value="女">女</option>
+                                <option value="男">男</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="weui_cells_title">年龄</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="age" class="weui_input" type="number" pattern="[0-9]*" placeholder="请输入年龄" value="" />
+                        </div>
+                    </div>
+                </div>*@
+                <div class="weui_cells_title">职业</div>
+                <div class="weui_cells">
+                    <div class="weui_cell weui_cell_select">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" name="industry_involved">
+                                <option selected="" value="体系工程师">体系工程师</option>
+                                <option value="硬件开发工程师">硬件开发工程师</option>
+                                <option value="品质工程师">品质工程师</option>
+                                <option value="pcb设计工程师">pcb设计工程师</option>
+                                <option value="射频设计工程师">射频设计工程师</option>
+                                <option value="工艺工程师">工艺工程师</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
-                <tr height="50">
-                    <td width="10"></td>
-                    <td width="80">性别</td>
-                    <td><div class="right"><label><input name="sex" type="radio" value="男">男</label><label><input name="sex" type="radio" value="女" checked="">女</label></div></td>
-                    <td width="40"></td>
-                </tr>
 
+                <div class="weui_cells_title">职能</div>
+                <div class="weui_cells">
+                    <div class="weui_cell weui_cell_select">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" name="function">
+                                <option selected="" value="电路设计">电路设计</option>
+                                <option value="软件设计">软件设计</option>
+                                <option value="系统架构">系统架构</option>
+                                <option value="技术管理">技术管理</option>
+                                <option value="技术支持">技术支持</option>
+                                <option value="测试测量">测试测量</option>
+                                <option value="生产/制造">生产/制造</option>
+                                <option value="采购工程师">采购工程师</option>
+                                <option value="采购管理">采购管理</option>
+                                <option value="供应链管理">供应链管理</option>
+                                <option value="供应商认证/选型/质量">供应商认证/选型/质量</option>
+                                <option value="市场销售">市场销售</option>
+                                <option value="科研人员/学者">科研人员/学者</option>
+                                <option value="媒体/咨询/市场研究">媒体/咨询/市场研究</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="weui_cells_title">学历</div>
+                <div class="weui_cells">
+                    <div class="weui_cell weui_cell_select">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" name="education">
+                                <option selected="" value="小学">小学</option>
+                                <option value="初中">初中</option>
+                                <option value="中专">中专</option>
+                                <option value="高职">高职</option>
+                                <option value="高中">高中</option>
+                                <option value="大专">大专</option>
+                                <option value="大学本科">大学本科</option>
+                                <option value="硕士">硕士</option>
+                                <option value="博士">博士</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
-                <tr height="50" class="choose">
-                    <td width="10"></td>
-                    <td width="80">职业</td>
-                    <td><span class="right" id="zhiye" zyid="8">其它</span></td>
-                    <td width="40"><p><img src="@Url.Content("~/gxfreelance/statics/img/downarrows.png")" class="arrow"></p></td>
-                </tr>
+                <div class="weui_cells_title">专注领域</div>
+                <div class="weui_cells">
+                    <div class="weui_cell weui_cell_select">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" name="field">
+                                <option selected="" value="嵌入式硬件">嵌入式硬件</option>
+                                <option value="电源技术">电源技术</option>
+                                <option value="接口">接口</option>
+                                <option value="储存">储存</option>
+                                <option value="通信协议">通信协议</option>
+                                <option value="自动控制">自动控制</option>
+                                <option value="传感器">传感器</option>
+                                <option value="电路保护与EMC">电路保护与EMC</option>
+                                <option value="人机交互">人机交互</option>
+                                <option value="嵌入式软件">嵌入式软件</option>
+                                <option value="电路设计">电路设计</option>
+                                <option value="软件开发">软件开发</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-cells__title">个人介绍</div>
+                <div class="weui-cells weui-cells_form">
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <textarea name="selfintroduction" class="weui-textarea" placeholder="请输入文本" rows="3"></textarea>
+                            <div class="weui-textarea-counter"><span>0</span>/200</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_dialog_alert" style="display: none;">
+                    <div class="weui_mask"></div>
+                    <div class="weui_dialog">
+                        <div class="weui_dialog_hd">
+                            <strong class="weui_dialog_title">警告</strong>
+                        </div>
+                        <div class="weui_dialog_bd">弹窗内容，告知当前页面信息等</div>
+                        <div class="weui_dialog_ft">
+                            <a href="javascript:;" class="weui_btn_dialog primary">确定</a>
+                        </div>
+                    </div>
+                </div>
 
-                <tr id="" class="list">
-                    <td colspan="4">
-                        <ul class="table-list">
-                            <li value="101">体系工程师</li>
-                            <li value="102">硬件开发工程师</li>
-                            <li value="103">品质工程师</li>
-                            <li value="104">pcb设计工程师</li>
-                            <li value="105">射频设计工程师</li>
-                            <li value="106">工艺工程师</li>
-                        </ul>
-                    </td>
-                </tr>
-                <script>
-                    var zhiye = "8";
-                    if (zhiye == '' || zhiye == null) {
-                        $("#zhiye").attr("zyid", "-1");
-                        $("#zhiye").html("请选择");
-                    } else {
-                        $("#zhiye").attr("zyid", zhiye);
-                        $("#zhiye").html('其它');
-                    }
-                </script>
-                <tr height="50" class="choose">
-                    <td width="10"></td>
-                    <td width="80">职能</td>
-                    <td><span class="right" id="zhineng" zyid="10">其他</span></td>
-                    <td width="40"><p><img src="@Url.Content("~/gxfreelance/statics/img/downarrows.png")" class="arrow"></p></td>
-                </tr>
-                <tr id="" class="list">
-                    <td colspan="4">
-                        <ul class="table-list">
-                            <li value="201">电路设计</li>
-                            <li value="202">软件设计</li>
-                            <li value="203">系统架构</li>
-                            <li value="204">技术管理</li>
-                            <li value="205">技术支持</li>
-                            <li value="206">测试测量</li>
-                            <li value="207">生产/制造</li>
-                            <li value="208">采购工程师</li>
-                            <li value="209">采购管理</li>
-                            <li value="210">供应链管理</li>
-                            <li value="211">供应商认证/选型/质量</li>
-                            <li value="212">市场销售</li>
-                            <li value="213">公司管理</li>
-                            <li value="214">科研人员/学者</li>
-                            <li value="215">媒体/咨询/市场研究</li>
-                            <li value="216">其他</li>
-                        </ul>
-                    </td>
-                </tr>
-                <script>
-                    var zhinengs = "10";
-                    if (zhinengs == '' || zhinengs == null) {
-                        $("#zhineng").attr("zyid", "-1");
-                        $("#zhineng").html("请选择");
-                    } else {
-                        $("#zhineng").attr("zyid", zhinengs);
-                        $("#zhineng").html('其他');
-                    }
-                </script>
-
-                <tr height="50" class="choose">
-                    <td width="10"></td>
-                    <td width="80">学历</td>
-                    <td><span class="right" id="chanpinfuwu" zyid="28">其他</span></td>
-                    <td width="40"><p><img src="@Url.Content("~/gxfreelance/statics/img/downarrows.png")" class="arrow"></p></td>
-                </tr>
-                <tr id="" class="list">
-                    <td colspan="4">
-                        <ul class="table-list">
-                            <li value="301">小学</li>
-                            <li value="302">中专</li>
-                            <li value="303">初中</li>
-                            <li value="304">高职</li>
-                            <li value="305">高中</li>
-                            <li value="306">大专</li>
-                            <li value="307">大学本科</li>
-                            <li value="308">硕士</li>
-                            <li value="309">博士</li>
-                            <li value="310">其他</li>
-                        </ul>
-                    </td>
-                </tr>
-                <script>
-                    var products = "28";
-                    // console.log(products);
-                    if (products == '' || products == null) {
-                        $("#chanpinfuwu").attr("zyid", "-1");
-                        $("#chanpinfuwu").html("请选择");
-                    } else {
-                        $("#chanpinfuwu").attr("zyid", products);
-                        $("#chanpinfuwu").html('其他');
-                    }
-                </script>
-
-                <tr height="50" class="choose">
-                    <td width="10"></td>
-                    <td width="80">专注领域</td>
-                    <td><span class="right" id="zhuanzhulingyu" zyid="54">其他</span></td>
-                    <td width="40"><p><img src="@Url.Content("~/gxfreelance/statics/img/downarrows.png")" class="arrow"></p></td>
-                </tr>
-                <tr id="" class="list">
-                    <td colspan="4">
-                        <ul class="table-list">
-                            <li value="401">嵌入式硬件</li>
-                            <li value="402">电源技术</li>
-                            <li value="403">接口</li>
-                            <li value="404">储存</li>
-                            <li value="405">通信协议</li>
-                            <li value="406">自动控制</li>
-                            <li value="407">传感器</li>
-                            <li value="408">电路保护与EMC</li>
-                            <li value="409">人机交互</li>
-                            <li value="410">嵌入式软件</li>
-                            <li value="411">电路设计</li>
-                            <li value="412">软件开发</li>
-                            <li value="413">其他</li>
-                        </ul>
-                    </td>
-                </tr>
-                <script>
-                    var skills = "54";
-                    if (skills == '' || skills == null) {
-                        $("#zhuanzhulingyu").attr("zyid", "-1");
-                        $("#zhuanzhulingyu").html("请选择");
-                    } else {
-                        $("#zhuanzhulingyu").attr("zyid", skills);
-                        $("#zhuanzhulingyu").html('其他');
-                    }
-                </script>
-                @*<tr height="50" id="area">
-                        <td width="10"></td>
-                        <td width="80">地区</td>
-                        <td><span class="right"> <input id="demo1" type="text" readonly="" placeholder="城市选择特效" value=" 江苏,南京,玄武区"><span></span></span></td>
-                        <td width="40"><p><img src="~/gxfreelance/statics/img/downarrows.png" class="arrow" onclick="$('#demo1').click();"></p></td>
-                    </tr>*@
-
-                <tr height="50" class="noline">
-                    <td width="10"></td>
-                    <td width="80">个人介绍</td>
-                    <td><span class="right"><span></span></span></td>
-                    <td width="40"></td>
-                </tr>
-                <tr height="50">
-                    <td width="10"></td>
-                    <td colspan="2"><textarea style="" id="user_desc" value=""></textarea></td>
-                    <td width="40"></td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="hblank10"></div>
-        <div id="submit" class="box-flex" style="background-color:#eee;height:40px">
-            <a>
-                <div class="fa-more" style="line-height:70px;height:70px; background-color:#1cbb7f"><h3 style="line-height:40px">我要加入自由职业</h3></div>
-            </a>
-        </div>
-        <div class="hblank10"></div>
+                <div class="weui_cells weui-btn-area" id="publish">
+                    <button type="submit" name="submit" class="btn-submit box-flex submit">
+                        我要加入自由职业
+                    </button>
+                    <input name="publish_id" type="hidden" value="done" />
+                </div>
+                <div class="weui_cells weui-btn-area" style="margin-bottom:10px">
+                    <a class="weui_btn weui_btn_default" style="color:#1cbb7f" onclick="second()">返回</a>
+                </div>
+            </div>
+        </form>
     </div>
-    <footer class="footer-nav dis-box">
-        <a href="@Url.Action("GxFreelanceWxClassification","Home")" class="box-flex nav-list">
-            <i class="nav-box i-cate"></i><span>分类</span>
-        </a>
-        <a  class="box-flex nav-list active">
-            <i class="nav-box i-flow"></i><span>注册</span>
-        </a>
-    </footer>
-    <script>
-        $('#search-kind').click(function () {
-            $("#search-kind ul").toggle();
-        })
-        $("#search-kind ul li").click(function () {
-            var v = $(this).html();
-            $("#search-kind span").html(v);
-        });
-
-
-        $("#task-list li").click(function () {
-            $(this).siblings().removeClass("on");
-            $(this).addClass("on");
-        })
-
-        $('.choose').click(function () {   //针对choose样式操作
-            $(this).toggleClass('xz');
-            $(this).next().toggle();
-        });
-
-        $(".table-list li").click(function () {
-            var va = $(this).text();
-            var id = $(this).attr('id');
-            $(".table-list li").removeClass('on');
-            $(this).addClass('on');
-            $(this).parent().parent().parent().hide();
-            $(this).parent().parent().parent().prev().toggleClass('xz');
-            $(this).parent().parent().parent().prev().children().eq(2).children().html(va);
-            $(this).parent().parent().parent().prev().children().eq(2).children().attr("zyid", id);
-        });
-    </script>
-    @*<script type="text/javascript">
-        $(function () {
-            var index = 0;
-            var uploader = WebUploader.create({
-                // 选完文件后，是否自动上传。
-                auto: true,
-                // swf文件路径
-                swf: "/Public/Home/js/webuploader/uploader.swf",
-                // 文件接收服务端
-                // server: "http://www.52solution.com/index.php/Home/Users/uploadImg.html",
-                server: "/index.php/Home/Users/uploadImg.html",
-                // 选择文件的按钮，可选
-                pick: '#sctx',
-                // 只允许选择图片文件
-                accept: {
-                    title: 'Images',
-                    extensions: 'gif,jpg,jpeg,bmp,png',
-                    mimeTypes: 'image/*'
-                }
-            });
-
-            // 文件上传过程中
-            uploader.on('uploadProgress', function (file, percentage) {
-                index = layer.load();
-            });
-            // 文件上传成功
-            uploader.on('uploadSuccess', function (file, data) {
-
-                if (data.status == 1) {
-                    var img_url = data.thumb;
-                    $("#userImg").attr("src", img_url);
-                    // $("#userImg").css("width","120px");
-                    layer.close(index);
-                } else {
-                    layer.msg('上传失败，请重试', { icon: 5 });
-                }
-            });
-            // 上传失败
-            uploader.on('uploadError', function (file) {
-                layer.msg('上传失败，请重试', { icon: 5 });
-            });
-            // 上传完成
-            uploader.on('uploadComplete', function (file) {
-                layer.close(index);
-            });
-            //当validate不通过时，会以派送错误事件的形式通知
-            uploader.on('error', function (type) {
-                switch (type) {
-                    case 'Q_EXCEED_NUM_LIMIT':
-                        alert("错误：上传文件数量过多！");
-                        break;
-                    case 'Q_EXCEED_SIZE_LIMIT':
-                        alert("错误：文件总大小超出限制！");
-                        break;
-                    case 'F_EXCEED_SIZE':
-                        alert("错误：文件大小超出限制！");
-                        break;
-                    case 'Q_TYPE_DENIED':
-                        alert("错误：禁止上传该类型文件！");
-                        break;
-                    case 'F_DUPLICATE':
-                        alert("错误：请勿重复上传该文件！");
-                        break;
-                    default:
-                        alert('错误代码：' + type);
-                        break;
-                }
-            });
-        });
-    </script>*@
-    <script>
-        $("#submit1").click(function () {
-            var userImg = $("#userImg").attr('src');
-            var sex = $("input[name='sex']:checked").val();
-            var work = $("#zhiye").attr('zyid');
-            var functions = $("#zhineng").attr('zyid');
-            var product = $("#chanpinfuwu").attr('zyid');
-            var skill = $("#zhuanzhulingyu").attr('zyid');
-            var hardsystem = $("#xinpianshuxing").attr('zyid');
-            var area = $.trim($("#demo1").val());
-            var user_desc = $("#user_desc").val();
-            var eid = "";
-            var id = $.trim(eid);
-            // console.log(id);
-            /*if(sex == '' || sex == undefined){
-                layer.msg('请选择性别');
-                return false;
-            }*/
-            if (work == '' || work == undefined || work == '-1') {
-                layer.msg('请选择职业');
-                return false;
-            }
-            if (functions == '' || functions == undefined || functions == '-1') {
-                layer.msg('请选择职能');
-                return false;
-            }
-            if (product == '' || product == undefined || product == '-1') {
-                layer.msg('请选择产品服务');
-                return false;
-            }
-            if (skill == '' || skill == undefined || skill == '-1') {
-                layer.msg('请选择专注领域');
-                return false;
-            }
-            if (hardsystem == '' || hardsystem == undefined || hardsystem == '-1') {
-                layer.msg('请选择芯片属性');
-                return false;
-            }
-            if (area == '' || area == undefined || area == '-1' || area == "请选择") {
-                layer.msg('请选择地区');
-                return false;
-            }
-            $.post("/index.php/Home/Users/saveUserCenter.html", { userImg: userImg, sex: sex, work: work, functions: functions, product: product, skill: skill, hardsystem: hardsystem, area: area, user_desc: user_desc }, function (data) {
-                if (data['status'] != '1') {
-                    layer.msg('请检查您的信息');
-                    return false;
-                }
-                if (id != '' && !isNaN(id)) {
-                    layer.msg("修改成功！");
-                    window.location.href = "/index.php/Home/Task/detail.html";
-
-                } else {
-                    layer.msg("修改成功");
-                    window.location.href = "/index.php/Home/Users/UserInfo.html";
-                }
-            })
-        })
-    </script>
     <script type="text/javascript">
-        $(function () {
-            var zhiye = "";
-            var zhineng = "";
-            var xueli = "";
-            var zhuanzhulingyu = "";
-            
-            $("ul li").click(function () {
-                var val = 0;
-                val = $(this).val();
-                if((val>100)&&(val<199))
-                {
-                    zhiye = $(this).text();
-                }
-                if ((val > 200) && (val < 299)) {
-                    zhineng = $(this).text();
-                }
-                if ((val > 300) && (val < 399)) {
-                    xueli = $(this).text();
-                }
-                if ((val > 400) && (val < 499)) {
-                    zhuanzhulingyu = $(this).text();
-                }
-        })
-            $('#submit').click(function () {
-                var sex = $("input[name='sex']:checked").val();
-                var user_desc = $("#user_desc").val();
-            var userinfo = {
-                zhiye: zhiye,
-                zhineng: zhineng,
-                xueli: xueli,
-                zhuanzhulingyu: zhuanzhulingyu,
-                sex: sex,
-                user_desc:user_desc
-            };
-            var url = '@Url.Content("~/Home/GxFreelanceWxRegister")';
-            $.ajax({
-                type: 'post',
-                url: url,
-                data: userinfo,
-                success: function (data) {
-                    if (data == "ok") {
-                        var url = '@Url.Content("~/Home/GxFreelanceWxCheck")';
-                        window.location.href = url;
-                    }
-                    else {
-                        alert("注册失败");
-                    }
-                },
-                error: function () {
-                    alert("error");
-                }
-            });
-        });
-    });
-
-    function submitTest() {
-        return false;
-    }
+        //设置cookie
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + "; " + expires;
+        }
+        function clearHistroy() {
+            setCookie('ECS[keywords]', '', -1);
+            document.getElementById("search_histroy").style.visibility = "hidden";
+        }
     </script>
-
-    <style>
-        .default-img {
-            float: left;
-            height: 40px;
-            margin-top: 0px;
-        }
-
-        .grzx-list {
-            line-height: 50px;
-            width: 100%;
-            font-size: 15px;
-        }
-
-            .grzx-list tr td p {
-                line-height: 50px;
-            }
-
-            .grzx-list p img {
-                margin-top: 8px;
-            }
-
-            .grzx-list p {
-                border: 0;
-            }
-
-            .grzx-list tr td {
-                border-bottom: 1px solid #ccc;
-            }
-
-                .grzx-list tr td .right {
-                    float: right;
-                }
-
-                    .grzx-list tr td .right label {
-                        margin-left: 10px;
-                        float: left;
-                    }
-
-                        .grzx-list tr td .right label input {
-                            width: 20px;
-                            height: 20px;
-                            border: 1px solid #ccc;
-                            background: none;
-                            margin-top: 15px;
-                            float: left;
-                            margin-right: 5px;
-                        }
-
-        .table-list {
-            width: 100%;
-        }
-
-        .list {
-            display: none;
-        }
-
-            .list .on {
-                color: #0066cc;
-            }
-
-        .table-list li {
-            width: 100%;
-            height: 50px;
-            line-height: 50px;
-            background: #f5f5f5;
-            text-indent: 10px;
-            border-bottom: 1px solid #fff;
-        }
-
-        .xz p img {
-            -webkit-transform: rotate(180deg); /*Safari 4+,Google Chrome 1+ */
-            -moz-transform: rotate(180deg); /*Firefox 3.5+*/
-            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie*/
-        }
-
-        textarea {
-            width: 100%;
-            height: 100px;
-            border: 1px solid #ccc;
-            outline: none;
-            margin: 0 auto;
-            margin-bottom: 10px;
-            margin-left: 0;
-            float: left;
-            margin-left: 10px;
-        }
-
-        .grzx-list .noline td {
-            border: 0;
-        }
-
-        .right input {
-            height: 50px;
-            line-height: 50px;
-            border: 0;
-            outline: none;
-            background: none;
-            font-size: 15px;
-        }
-    </style>
-    <style>
-        .cnt-bq {
-            width: 100%;
-            height: 30px;
-            line-height: 30px;
-            float: left;
-            color: #666;
-            text-align: left;
-            text-indent: 10px;
-            margin-bottom: 50px;
-            background: #f5f5f5;
-        }
-
-            .cnt-bq span {
-                float: right;
-                margin-right: 10px;
-            }
-    </style>
-    @*<div class="gearArea"><div class="area_ctrl slideInUp"><div class="area_btn_box"><div class="area_btn larea_cancel">取消</div><div class="area_btn larea_finish">确定</div></div><div class="area_roll_mask"><div class="area_roll"><div><div class="gear area_province" data-areatype="area_province" val="1" data-len="34" top="-2em" style="transform: translate3d(0px, -2em, 0px);"><div class="tooth" ref="2">北京市</div><div class="tooth" ref="20">广东省</div><div class="tooth" ref="21">广西壮族自治区</div><div class="tooth" ref="22">海南省</div><div class="tooth" ref="23">重庆市</div><div class="tooth" ref="24">四川省</div><div class="tooth" ref="25">贵州省</div><div class="tooth" ref="26">云南省</div><div class="tooth" ref="27">西藏自治区</div><div class="tooth" ref="28">陕西省</div><div class="tooth" ref="29">甘肃省</div><div class="tooth" ref="30">青海省</div><div class="tooth" ref="31">宁夏回族自治区</div><div class="tooth" ref="32">新疆维吾尔自治区 </div><div class="tooth" ref="33">香港特别行政区</div><div class="tooth" ref="34">台湾省</div><div class="tooth" ref="19">湖南省</div><div class="tooth" ref="18">湖北省</div><div class="tooth" ref="3">天津市</div><div class="tooth" ref="4">河北省</div><div class="tooth" ref="5">山西省</div><div class="tooth" ref="6">内蒙古自治区</div><div class="tooth" ref="7">辽宁省</div><div class="tooth" ref="8">吉林省</div><div class="tooth" ref="9">黑龙江省</div><div class="tooth" ref="10">上海市</div><div class="tooth" ref="11">江苏省</div><div class="tooth" ref="12">浙江省</div><div class="tooth" ref="13">安徽省</div><div class="tooth" ref="14">福建省</div><div class="tooth" ref="15">江西省</div><div class="tooth" ref="16">山东省</div><div class="tooth" ref="17">河南省</div><div class="tooth" ref="2046">澳门特别行政区</div></div><div class="area_grid"></div></div><div><div class="gear area_city" data-areatype="area_city" val="13" data-len="23" top="-26em" style="transform: translate3d(0px, -26em, 0px);"><div class="tooth" ref="5977">从化市</div><div class="tooth" ref="5976">增城市</div><div class="tooth" ref="246">河源市</div><div class="tooth" ref="247">阳江市</div><div class="tooth" ref="248">清远市</div><div class="tooth" ref="249">东莞市</div><div class="tooth" ref="250">中山市</div><div class="tooth" ref="251">潮州市</div><div class="tooth" ref="252">揭阳市</div><div class="tooth" ref="253">云浮市</div><div class="tooth" ref="245">汕尾市</div><div class="tooth" ref="244">梅州市</div><div class="tooth" ref="243">惠州市</div><div class="tooth" ref="234">深圳市</div><div class="tooth" ref="235">珠海市</div><div class="tooth" ref="236">汕头市</div><div class="tooth" ref="237">韶关市</div><div class="tooth" ref="238">佛山市</div><div class="tooth" ref="239">江门市</div><div class="tooth" ref="240">湛江市</div><div class="tooth" ref="241">茂名市</div><div class="tooth" ref="242">肇庆市</div><div class="tooth" ref="233">广州市</div></div><div class="area_grid"></div></div><div><div class="gear area_county" data-areatype="area_county" val="3" data-len="6" top="-6em" style="transform: translate3d(0px, -6em, 0px);"><div class="tooth" ref="501">罗湖区</div><div class="tooth" ref="502">福田区</div><div class="tooth" ref="503">盐田区</div><div class="tooth" ref="504">南山区</div><div class="tooth" ref="505">宝安区</div><div class="tooth" ref="506">龙岗区</div></div><div class="area_grid"></div></div></div></div></div></div>*@
 </body>
 </html>

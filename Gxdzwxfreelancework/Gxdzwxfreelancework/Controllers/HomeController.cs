@@ -44,6 +44,20 @@ namespace Gxdzwxfreelancework.Controllers
             login.Register(user1);
             return "ok";
         }
+        public string Register()   //用户注册2.0测试版本
+        {
+            user user1 = new user();
+            user1.UserID = Guid.NewGuid().ToString("N");
+            user1.Profession = Request["profession"];
+            user1.Function = Request["function"];
+            user1.Education = Request["education"];
+            user1.Field = Request["field"];
+            user1.Sex = Request["sex"];
+            user1.Selfintroduction = Request["selfintroduction"];
+            LoginBll login = new LoginBll();
+            login.Register(user1);
+            return "ok";
+        }
 
     }
 }

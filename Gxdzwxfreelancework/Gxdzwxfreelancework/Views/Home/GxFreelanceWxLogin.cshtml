@@ -60,6 +60,10 @@
     <link href="@Url.Content("~/weui-master/dist/style/weui.min.css")" rel="stylesheet" />
     <link href="@Url.Content("~/weui-master/dist/example/example.css")" rel="stylesheet" />
     <script src="@Url.Content("~/weui-master/dist/example/example.js")"></script>
+
+    <script type="text/javascript">var rootUrl = "@Url.Content("~")";//获取根路径，防止iis部署位置不同</script>
+
+    <script src="@Url.Content("~/Scripts/Home/GxFreelanceWxlogin.js")"></script>
 </head>
 <body style="max-width:640px;">
     <div class="con m-b7 new-maxbox">
@@ -87,7 +91,7 @@
                         </div>
                     </div>
                 </div>*@
-                <div class="weui_cells_title">头像</div>
+                @*<div class="weui_cells_title">头像</div>
                 <div class="weui_cells weui_cells_form">
                     <div class="weui_cell">
                         <div class="weui_cell_bd weui_cell_primary">
@@ -96,7 +100,7 @@
                                     <div class="weui_cell_ft js_counter_chat_head">0/1</div>
                                 </div>
                                 <div class="weui_uploader_bd">
-                                    <ul class="weui_uploader_files view_chat_head">
+                                    <ul class="weui_uploader_files view_chat_head">*@
                                         @*预览图插入到这*@
                                         @*<li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
                                             <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
@@ -109,7 +113,7 @@
                                             <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
                                                 <div class="weui_uploader_status_content">50%</div>
                                             </li>*@
-                                    </ul>
+                                    @*</ul>
                                     <div class="weui_uploader_input_wrp">
                                         <input id="chat_head" name="chat_head" class="weui_uploader_input js_file_chat_head" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" />
                                     </div>
@@ -117,7 +121,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*@
                 @*<div class="weui_cells_title">姓名</div>
                 <div class="weui_cells weui_cells_form">
                     <div class="weui_cell">
@@ -157,7 +161,7 @@
                 <div class="weui_cells">
                     <div class="weui_cell weui_cell_select">
                         <div class="weui_cell_bd weui_cell_primary">
-                            <select class="weui_select" name="industry_involved">
+                            <select class="weui_select" name="profession">
                                 <option selected="" value="体系工程师">体系工程师</option>
                                 <option value="硬件开发工程师">硬件开发工程师</option>
                                 <option value="品质工程师">品质工程师</option>

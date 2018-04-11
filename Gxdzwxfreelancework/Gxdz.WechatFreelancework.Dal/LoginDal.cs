@@ -18,5 +18,6 @@ namespace Gxdz.WechatFreelancework.Dal
             int flag = OracleHelper.ExecuteNonQuery(sql, null);
             return flag.ToString();
         }
+
     }
 }

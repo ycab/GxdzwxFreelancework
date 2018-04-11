@@ -325,14 +325,14 @@
                 if (obj.msg == "success") {
                     if (SortName_Last == 0) {
                         $("#sortul").append(
-                                  "<li class='active' data-cat_id='" + obj.sortinfo[0].PROFESSION_ID+ "'>" + obj.sortinfo[0].PROFESSION_NAME + "</li>"
+                                  "<li class='active' data-cat_id='" + obj.sortinfo[0].PROFESSION_ID + "'>" + obj.sortinfo[0].PROFESSION_NAME + "</li>"
                                   );
                     }
                     for (var i = 1; i < obj.sortinfo.length; i++) {
                         var sortname = obj.sortinfo[i];
 
                         $("#sortul").append(
-                                 "<li  data-cat_id='" + sortname.PROFESSION_ID+ "'>" + sortname.PROFESSION_NAME + "</li>"
+                                 "<li  data-cat_id='" + sortname.PROFESSION_ID + "'>" + sortname.PROFESSION_NAME + "</li>"
 
                             );
                     }
@@ -376,7 +376,7 @@
                         var info = middle.info;//[{:'',.....},{},{}]某个职业单条数据的集合.例如：info[0].USER_NAME，某职业第一条数据的人名
                         if (i == 0) {
                             $("#showgoods").append(
-                            "<section class='menu-right padding-all j-content' data-parentid='"+profession_id+"'>"
+                            "<section class='menu-right padding-all j-content' data-parentid='" + profession_id + "'>"
                            + "<h5>" + profession_name + "</h5>"
                            + "</section>");
 
@@ -387,11 +387,11 @@
                             + "<h5>" + profession_name + "</h5>"
                             + "</section>");
                         }
-                        var domli="";
+                        @*var domli="";
                         for (var j = 0; j < info.length; j++) {
                             domli += "<ul class='fb-list'>"
                                       + '<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');">'
-                                   
+
                                        + "<li style='height:70px'>"
                                          + "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\"" + " style='float:left;height:80px;width:auto'>"
                                           + "<div class='middle' style='width:41%;'>"
@@ -400,21 +400,20 @@
                                            + "</div>  </li>    </a>  </ul>"
 
                         }
+                        $("section[data-parentid='" + profession_id + "']").append(domli);*@
+
+                        var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
+                        for (var j = 0; j < info.length; j++) {
+
+
+                            domli += '<li class="w-3" id="' + info[j].USER_ID + '">' +
+                            '<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');"></a>' +
+                            '<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\" /><span style="font-size:12px">' + info[j].USER_ID + '</span>' +
+                            '</li>';
+
+                        }
+                        domli += '</ul>';
                         $("section[data-parentid='" + profession_id + "']").append(domli);
-                        @*$("#showgoods").append(
-                        "<section class='menu-right padding-all j-content' style='display:none'>"
-                            + "<h5>工艺工程师</h5>"
-                            + "<ul class='fb-list'>"
-                             + "<a href=\"@Url.Action("GxFreelanceWxExample", "home")\">"
-                              + "<li style='height:70px'>"
-                                + "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\"" + " style='float:left;height:80px;width:auto'>"
-                                  + "<div class='middle' style='width:41%;'>"
-                                    + "<h4>王曦晨</h4>"
-                                     + "<p style='font-size:15px;margin-left:10px;margin-top:-0.5em'>编号：117110022225</p>"
-                                     + "</div>  </li>    </a>  </ul></section>"
-
-                               );*@
-
 
                     }
                 }

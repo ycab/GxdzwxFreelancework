@@ -43,6 +43,17 @@ namespace Gxdz.WechatFreelancework.Dal
                     string profession_id = dt.Rows[i]["PROFESSION_ID"].ToString();
                     string sql1 = string.Format("select * from GXFW_INFO t where PROFESSION='{0}' ", profession_name);
                     DataTable dt1 = OracleHelper.GetTable(sql1, null);
+                    for (int j = 0; j < dt1.Rows.Count; j++)//查询用户姓名和图片
+                    {
+                        string sql2 = string.Format("select * from GX_USER_MEMBER_PERSONAL t where USER_ID='{0}' ", dt1.Rows[j]["USER_ID"]);
+                        DataTable dt2 = OracleHelper.GetTable(sql2, null);
+                        if (dt2.Rows.Count != 0)
+                        {
+                            dt1.Rows[j]["USER_NAME"] = dt2.Rows[0]["NAME"];
+                            dt1.Rows[j]["CHAT_HEAD"] = dt2.Rows[0]["CHAT_HEAD"];
+                        }
+                        
+                    }
                     string response = JsonHelper.getRecordJson(dt1);
                     if (i == dt.Rows.Count - 1)
                     {

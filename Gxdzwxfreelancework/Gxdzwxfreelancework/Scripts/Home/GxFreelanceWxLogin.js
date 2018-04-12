@@ -37,11 +37,12 @@ var clickevent = function () {
                 }
                 else if(data=="registered")
                 {
-                    alert("您已注册，请不要重复注册");
+                    alert("您已注册，无需重复注册");
                 }
                 else
                 {
                     alert("注册成功");
+                    window.location.href = rootUrl + "Home/GxFreelanceWxClassification";
                 }
             }
         })

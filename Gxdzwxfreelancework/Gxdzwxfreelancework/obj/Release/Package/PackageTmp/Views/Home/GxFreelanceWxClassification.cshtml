@@ -402,18 +402,33 @@
                         }
                         $("section[data-parentid='" + profession_id + "']").append(domli);*@
 
+                        @*保存版本  var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
+                        for (var j = 0; j < info.length; j++) {
+
+
+                            domli += '<li class="w-3" id="' + info[j].USER_ID + '">' +
+                            '<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');"></a>' +
+                            '<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\" /><span style="font-size:12px">' + info[j].USER_NAME + '</span>' +
+                            '</li>';
+
+                        }
+                        domli += '</ul>';
+                        $("section[data-parentid='" + profession_id + "']").append(domli);*@
+                        var domain_name = "http://egov.jinyuc.com";
+                        var server_imgurl1 = "/gxdzwx/gxdzimages/gxdzwxlogin/personal/chat_head/";
                         var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
                         for (var j = 0; j < info.length; j++) {
 
 
                             domli += '<li class="w-3" id="' + info[j].USER_ID + '">' +
                             '<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');"></a>' +
-                            '<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\" /><span style="font-size:12px">' + info[j].USER_ID + '</span>' +
+                            '<img src="' + domain_name + server_imgurl1 + info[j].CHAT_HEAD + '" style=\"height:80px;width:80px\"/><span style="font-size:12px">' + info[j].USER_NAME + '</span>' +
                             '</li>';
 
                         }
                         domli += '</ul>';
                         $("section[data-parentid='" + profession_id + "']").append(domli);
+
 
                     }
                 }

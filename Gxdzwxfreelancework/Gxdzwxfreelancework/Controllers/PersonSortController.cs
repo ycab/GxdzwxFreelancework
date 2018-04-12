@@ -50,6 +50,7 @@ namespace Gxdzwxfreelancework.Controllers
             Session["education"] = user1.Education;
             Session["field"] = user1.Field;
             Session["selfintroduction"] = user1.Selfintroduction;
+            Session["chathead"] = user1.ChatHead;
             return View();
         }
 

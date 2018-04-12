@@ -22,6 +22,7 @@ namespace Gxdz.WechatFreelancework.Model
         public virtual string Field { get; set; }
 
         public virtual string Selfintroduction { get; set; }
+        public virtual string ChatHead { get; set; }
 
     }
 }

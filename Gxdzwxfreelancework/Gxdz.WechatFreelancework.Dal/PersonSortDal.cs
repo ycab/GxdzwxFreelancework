@@ -50,7 +50,17 @@ namespace Gxdz.WechatFreelancework.Dal
                         if (dt2.Rows.Count != 0)
                         {
                             dt1.Rows[j]["USER_NAME"] = dt2.Rows[0]["NAME"];
-                            dt1.Rows[j]["CHAT_HEAD"] = dt2.Rows[0]["CHAT_HEAD"];
+                            string jpg = dt2.Rows[0]["CHAT_HEAD"].ToString();
+                            if (dt2.Rows[0]["CHAT_HEAD"].ToString()=="")
+                            {
+                                dt1.Rows[j]["CHAT_HEAD"] = "avatar.jpg";
+                            }
+                            else
+                            {
+                                
+                                dt1.Rows[j]["CHAT_HEAD"] = dt2.Rows[0]["CHAT_HEAD"];
+                            }
+                          
                         }
                         
                     }
@@ -82,13 +92,30 @@ namespace Gxdz.WechatFreelancework.Dal
             DataTable dt = OracleHelper.GetTable(sql, null);
             user user1=new user();
             user1.UserID = dt.Rows[0]["USER_ID"].ToString();
-            user1.UserName = dt.Rows[0]["USER_NAME"].ToString();
+           // user1.UserName = dt.Rows[0]["USER_NAME"].ToString();
             user1.Profession = dt.Rows[0]["PROFESSION"].ToString();
             user1.Sex = dt.Rows[0]["SEX"].ToString();
             user1.Selfintroduction = dt.Rows[0]["SELFINTRODUCTION"].ToString();
             user1.Field = dt.Rows[0]["FIELD"].ToString();
             user1.Education = dt.Rows[0]["EDUCATION"].ToString();
             user1.Function = dt.Rows[0]["FUNCTION"].ToString();
+            string sql2 = string.Format("select * from GX_USER_MEMBER_PERSONAL t where USER_ID='{0}' ", dt.Rows[0]["USER_ID"]);
+            DataTable dt2 = OracleHelper.GetTable(sql2, null);
+           if (dt2.Rows.Count != 0)
+            {
+                 user1.UserName = dt2.Rows[0]["NAME"].ToString();
+                 string jpg = dt2.Rows[0]["CHAT_HEAD"].ToString();
+                 if (dt2.Rows[0]["CHAT_HEAD"].ToString()=="")
+                {
+                    user1.ChatHead = "avatar.jpg";
+                 }
+                 else
+                 {
+                                
+                   user1.ChatHead = dt2.Rows[0]["CHAT_HEAD"].ToString();
+                  }
+                          
+           }
             return user1;
         }
     }

@@ -43,6 +43,7 @@
     <script src="@Url.Content("~/gxfreelance/statics/js/common.js")"></script>
     <script src="@Url.Content("~/gxfreelance/statics/js/jquery.more.js")"></script>
     <script src="@Url.Content("~/Scripts/packpageindex/SendPackage.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery-2.1.4.min.js")"></script>
     <link href="@Url.Content("~/weui-master/dist/style/weui.css")" rel="stylesheet" />
     <link href="@Url.Content("~/weui-master/dist/style/weui.min.css")" rel="stylesheet" />
     <link href="@Url.Content("~/weui-master/dist/example/example.css")" rel="stylesheet" />
@@ -56,8 +57,8 @@
                 <span>信息详情</span>
             </header>
         </div>
-        <div class="photo-container" style="margin-top:10px;text-align:center;background-color:white">
-            <img src="@Url.Content("~/gxfreelance/statics/img/1111111111.png")" style="height:100px;width:auto" />
+        <div id="show_chathead" class="photo-container" style="margin-top:10px;text-align:center;background-color:white">
+            @*<img src="@Url.Content("~/gxfreelance/statics/img/1111111111.png")" style="height:100px;width:auto" />*@
         </div>
         <div class="bd">
             <div class="weui_cells">
@@ -118,9 +119,15 @@
             </div>
         </div>
     </div>
-    <script>
+    <script type ="text/javascript">
 
-
-    </script>
+        $(document).ready(function () {
+        var domain_name = "http://egov.jinyuc.com";
+        var server_imgurl1 = "/gxdzwx/gxdzimages/gxdzwxlogin/personal/chat_head/";
+        var chathead="@Session["chathead"]";
+        var  domli='<img src="' + domain_name + server_imgurl1 +chathead+ '" style=\"height:100px;width:auto\" />'
+        $("#show_chathead").append(domli);
+        });
+        </script>
 </body>
 </html>

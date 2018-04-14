@@ -301,6 +301,7 @@
     <Content Include="Scripts\Jquery\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\packpageindex\SendPackage.js" />
     <Content Include="Scripts\PersonSort\PersonSort.js" />
+    <Content Include="Scripts\Register\Personal.js" />
     <Content Include="Scripts\rotate\CJL.0.1.min.js" />
     <Content Include="Scripts\rotate\ImageTrans.js" />
     <Content Include="Scripts\rotate\jquery.rotate.1-1.js" />
@@ -456,6 +457,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Gxdzwxfreelancework.pubxml" />
+    <Content Include="Views\Home\GxFreelanceWxPersonal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Gxdz.WechatFreelancework.Bll\Gxdz.WechatFreelancework.Bll.csproj">

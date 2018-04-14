@@ -43,12 +43,12 @@ namespace Gxdzwxfreelancework.Filter
                     }
                     else
                     {
-                        //string login_flag = CookieHelper.GetCookieValue("login_flag");
-                        //if (login_flag != "1")
-                        //{
-                        //    //非会员，跳转登陆页面
-                        //    System.Web.HttpContext.Current.Response.Redirect(url2);
-                        //}
+                        string login_flag = CookieHelper.GetCookieValue("login_flag");
+                        if (login_flag != "1")
+                        {
+                            //非会员，跳转登陆页面
+                            System.Web.HttpContext.Current.Response.Redirect(url2);
+                        }
 
 
                     }

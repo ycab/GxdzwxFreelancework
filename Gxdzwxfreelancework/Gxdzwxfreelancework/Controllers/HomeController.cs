@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.IO;
 using System.Web.Mvc;
 using Gxdz.WechatFreelancework.Bll;
 using Gxdz.WechatFreelancework.Dal;
@@ -12,6 +13,7 @@ namespace Gxdzwxfreelancework.Controllers
 {
     public class HomeController : Controller
     {
+        LoginBll LoginInfoBll = new LoginBll();
         public ActionResult GxFreelanceWxIndex(string openid)
         {
             return View();
@@ -66,7 +68,7 @@ namespace Gxdzwxfreelancework.Controllers
                         if (user_name == "")//信息未完善
                         {
                             System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"请先完善会员信息\")" + "</script>");
-                            return View("GxFreelanceWxClassification");
+                            return View("GxFreelanceWxPersonal");
                         }
 
                         else
@@ -128,19 +130,58 @@ namespace Gxdzwxfreelancework.Controllers
 
           
         }
-        public ActionResult RedirectToRegisterUser()
+        public ActionResult RedirectToRegisterUser()//重定向至用户注册界面
         {
             string url = Session["RegisterUrl"].ToString();
             System.Web.HttpContext.Current.Response.Redirect(url);
             return View();
         }
-        public ActionResult RedirectToFinishRegisterUser()
+        public ActionResult RedirectToFinishRegisterUser()//重定向至完善信息界面
         {
             string openid = CookieHelper.GetCookieValue("openid");
             string url3 = System.Web.HttpContext.Current.Request.Url.AbsoluteUri;//获取当前url端木雲 2018/3/26 21:22:46
             string url4 = "http://egov.jinyuc.com/gxdzwx/gxdzwxlogin/Register/GxLoginRegisterPersonal/?openid= " + openid + "&url1=" + url3;
             System.Web.HttpContext.Current.Response.Redirect(url4);
             return View();
+        }
+        public ActionResult SetPersonalInfo(PersonalInfoModel Personal)
+        {
+            string responseText = "";
+            GetUserInfoDal getuserinfodal = new GetUserInfoDal();
+            string openid = CookieHelper.GetCookieValue("openid");
+            string user_id = getuserinfodal.GetUserID(openid);
+            string fileExt = "";
+            List<string> filename = new List<string>();
+            //string chat_head_name = Request["chat_head_name"];
+            //string id_card_name = Request["id_card_name"];
+            int cnt = System.Web.HttpContext.Current.Request.Files.Count;
+            for (int i = 0; i < cnt; i++)
+            {
+                HttpPostedFile hpf = System.Web.HttpContext.Current.Request.Files[i];
+                string filenames = Path.GetFileName(hpf.FileName);
+                fileExt = Path.GetExtension(hpf.FileName).ToLower();//带.的后缀
+                filename.Add(filenames);
+                string fileFilt = ".jpg|.jpeg|.png|.JPG|.PNG|......";
+                if ((fileFilt.IndexOf(fileExt) <= -1) || (fileExt == "") || (hpf.ContentLength > 4 * 1024 * 1024))
+                    continue;
+                //  string filepath = HttpContext.Server.MapPath("../xwhz_uploadimages/template/" + filenames);
+                ///string filepath = context.Server.MapPath("E:\\inetpub\\wwwroot\\sj_uploadimage\\ZJZ_PIC\\" + hpf.FileName);
+                if (i == 0)
+                {
+                    hpf.SaveAs("D:\\MVCRoot\\gxdzwx\\gxdzimages\\gxdzwxlogin\\personal\\chat_head\\" + filenames);
+                    //                    hpf.SaveAs("G:\\Visual Studio\\image\\" + filenames);
+                }
+                if (i == 1)
+                {
+                    hpf.SaveAs("D:\\MVCRoot\\gxdzwx\\gxdzimages\\gxdzwxlogin\\personal\\id_card\\" + filenames);
+                    //                    hpf.SaveAs("G:\\Visual Studio\\image\\" + filenames);
+                }
+                //               hpf.SaveAs("G://Visual Studio//IMP");
+                //  var mappedPath = System.Web.Hosting.HostingEnvironment.MapPath("~/");
+                //  hpf.SaveAs(filepath);
+            }
+            responseText = LoginInfoBll.SetPersonalInfo(Personal, filename, user_id);
+            return Content(responseText);
         }
 
     }

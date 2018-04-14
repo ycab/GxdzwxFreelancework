@@ -18,5 +18,15 @@ namespace Gxdz.WechatFreelancework.Bll
             responseText = LoginInfoDal.Register(user1);
             return responseText;
         }
+        /// <summary>
+        /// 填写个人会员信息
+        /// </summary>
+        /// <returns></returns>
+        public string SetPersonalInfo(PersonalInfoModel personal, List<string> filename, string user_id)
+        {
+            string responText = "";
+            responText = LoginInfoDal.SetPersonalInfo(personal, filename, user_id);
+            return responText;
+        }
     }
 }

@@ -4,4 +4,3 @@ C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.We
 C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Utilities\obj\Debug\Gxdz.WechatFreelancework.Utilities.dll
 C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Utilities\obj\Debug\Gxdz.WechatFreelancework.Utilities.pdb
 C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Utilities\bin\Debug\Newtonsoft.Json.xml
-C:\Users\yupeng\Documents\GitHub\GxdzwxFreelancework\Gxdzwxfreelancework\Gxdz.WechatFreelancework.Utilities\obj\Debug\Gxdz.WechatFreelancework.Utilities.csprojResolveAssemblyReference.cache

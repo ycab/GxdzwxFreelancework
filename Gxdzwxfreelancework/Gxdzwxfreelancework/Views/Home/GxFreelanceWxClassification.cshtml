@@ -12,7 +12,10 @@
     <meta charset="utf-8">
     <title>电子联盟自由职业</title>
     <link href="@Url.Content("~/gxfreelance/statics/css/ectouch.css")" rel="stylesheet" />
-
+    <link href="@Url.Content("~/weui-master/dist/style/weui.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/weui-master/dist/style/weui.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/weui-master/dist/example/example.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/weui-master/dist/example/example.js")"></script>
     <script type="text/javascript">var rootUrl = "@Url.Content("~")";//获取根路径，防止iis部署位置不同</script>
     @*<script src="@Url.Content("~/Scripts/PersonSort/PersonSort.js")"></script>*@
 </head>
@@ -416,20 +419,35 @@
                         $("section[data-parentid='" + profession_id + "']").append(domli);*@
                         var domain_name = "http://egov.jinyuc.com";
                         var server_imgurl1 = "/gxdzwx/gxdzimages/gxdzwxlogin/personal/chat_head/";
-                        var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
+                        //var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
+                        var domli = '<div class="weui-cells">';
                         for (var j = 0; j < info.length; j++) {
+                            domli += ' <a class="weui-cell weui-cell_access" href="javascript:;"onclick="javascript:person_list(\'' + info[j].USER_ID + '\');">' +
+                                               ' <div class="weui-cell__bd">'+
+                                                 '<p>'+info[j].USER_ID+'</p>'+
+                                                  ' </div>'+
+                                                ' <div class="weui-cell__ft">' + info[j].USER_NAME + '</div>' +
+                                                '</a>'
 
-
-                            domli += '<li class="w-3" id="' + info[j].USER_ID + '">' +
-                            '<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');"></a>' +
-                            '<img src="' + domain_name + server_imgurl1 + info[j].CHAT_HEAD + '" style=\"height:80px;width:80px\"/><span style="font-size:12px">' + info[j].USER_NAME + '</span>' +
-                            '</li>';
+                            //domli += '<li class="w-3" id="' + info[j].USER_ID + '">' +
+                            //'<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');"></a>' +
+                            //'<img src="' + domain_name + server_imgurl1 + info[j].CHAT_HEAD + '" style=\"height:80px;width:80px\"/><span style="font-size:12px">' + info[j].USER_NAME + '</span>' +
+                            //'</li>';
 
                         }
-                        domli += '</ul>';
+                        domli += '</div>';
+                       // domli += '</ul>';
+                       
+
+                        //var domli2 = '<div class="weui-cells">'+
+                        //                     ' <a class="weui-cell weui-cell_access" href="javascript:;">'+
+                        //                       ' <div class="weui-cell__bd">'+
+                        //                         '<p>'+info[j].USER_ID+'</p>'+
+                        //                          ' </div>'+
+                        //                        ' <div class="weui-cell__ft">' + info[j].USER_NAME + '</div>' +
+                        //                        '</a>'+
+                        //                      '</div>';
                         $("section[data-parentid='" + profession_id + "']").append(domli);
-
-
                     }
                 }
                 else {

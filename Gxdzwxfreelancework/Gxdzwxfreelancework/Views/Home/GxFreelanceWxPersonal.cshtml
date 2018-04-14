@@ -1,0 +1,245 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>电子联盟会员资料完善</title>
+    <link href="@Url.Content("~/gxfreelance/statics/css/bootstrap.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/font-awesome.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/swiper.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/ectouch.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/photoswipe.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/style.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/user.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery-2.1.4.min.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/ectouch.js")"></script>
+    <link href="@Url.Content("~/gxfreelance/statics/css/search.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/weui-master/dist/style/weui.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/weui-master/dist/style/weui.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/weui-master/dist/example/example.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/weui-master/dist/example/example.js")"></script>
+    <script src="@Url.Content("~/Scripts/uploadfile/jquery.form.js")"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+    <script type="text/javascript">var rootUrl = "@Url.Content("~")";//获取根路径，防止iis部署位置不同</script>
+    <script>
+        var user_id = "@ViewBag.user_id";
+    </script>
+    <script src="@Url.Content("~/Scripts/Register/Personal.js")"></script>
+</head>
+<body style="max-width:640px;">
+    <div class="con m-b7 new-maxbox">
+        <div class="ect-bg">
+            <header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write">
+                <a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a>
+                <span>个人会员</span>
+            </header>
+        </div>
+        <form method="post" id="theForm" name="theForm" enctype="multipart/form-data" onsubmit="return checkInfo(this)" action="">
+            <div class="bd">
+                <div class="weui_cells_title">昵称<span style="color:red">*(必填)</span></div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="nick_name" class="weui_input" type="text" style="border:none;" placeholder="请输入昵称" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">个性签名</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="signature" class="weui_input" type="text" style="border:none;" placeholder="请输入个性签名" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">头像<span style="color:red">*(必填)</span></div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div class="weui_uploader">
+                                <div class="weui_uploader_hd weui_cell">
+                                    <div class="weui_cell_ft js_counter_chat_head">0/1</div>
+                                </div>
+                                <div class="weui_uploader_bd">
+                                    <ul class="weui_uploader_files view_chat_head">
+                                        @*预览图插入到这*@
+                                        @*<li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                            <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                            <li class="weui_uploader_file" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)"></li>
+                                            <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                                                <div class="weui_uploader_status_content">
+                                                    <i class="weui_icon_warn"></i>
+                                                </div>
+                                            </li>
+                                            <li class="weui_uploader_file weui_uploader_status" style="background-image:url(http://shp.qpic.cn/weixinsrc_pic/pScBR7sbqjOBJomcuvVJ6iacVrbMJaoJZkFUIq4nzQZUIqzTKziam7ibg/)">
+                                                <div class="weui_uploader_status_content">50%</div>
+                                            </li>*@
+                                    </ul>
+                                    <div class="weui_uploader_input_wrp">
+                                        <input id="chat_head" name="chat_head" class="weui_uploader_input js_file_chat_head" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">姓名<span style="color:red">*(必填)</span></div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="name" class="weui_input" type="text" style="border:none;" placeholder="请输入姓名" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">身份证号</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="id_number" class="weui_input" type="text" style="border:none;" placeholder="请输入身份证号" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">性别</div>
+                <div class="weui_cells">
+                    <div class="weui_cell weui_cell_select">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" name="sex">
+                                <option selected="" value="女">女</option>
+                                <option value="男">男</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">行业</div>
+                <div class="weui_cells">
+                    <div class="weui_cell weui_cell_select">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" name="industry_involved">
+                                <option selected="" value="工业">工业</option>
+                                <option value="农业">农业</option>
+                                <option value="电子产品">电子产品</option>
+                                <option value="电信">电信</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">公司</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="company" class="weui_input" type="text" style="border:none;" placeholder="请输入公司名称" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">职业</div>
+                <div class="weui_cells">
+                    <div class="weui_cell weui_cell_select">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <select class="weui_select" name="profession">
+                                <option selected="" value="软件工程师">软件工程师</option>
+                                <option value="硬件工程师">硬件工程师</option>
+                                <option value="学生">学生</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weui_cells_title">电话</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="tel" class="weui_input" type="text" style="border:none;" placeholder="请输入电话号码" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">传真 </div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="fax" class="weui_input" type="text" style="border:none;" placeholder="请输入传真号码" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">邮箱</div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <input name="email" class="weui_input" type="text" style="border:none;" placeholder="请输入邮箱号码" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="weui_cells_title">身份证照<span style="color:red">*(必填)</span></div>
+                <div class="weui_cells weui_cells_form">
+                    <div class="weui_cell">
+                        <div class="weui_cell_bd weui_cell_primary">
+                            <div class="weui_uploader">
+                                <div class="weui_uploader_hd weui_cell">
+                                    <div class="weui_cell_ft js_counter_id_card">0/1</div>
+                                </div>
+                                <div class="weui_uploader_bd">
+                                    <ul class="weui_uploader_files view_id_card"></ul>
+                                    <div class="weui_uploader_input_wrp">
+                                        <input id="id_card" name="id_card" class="weui_uploader_input js_file_id_card" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weui_dialog_alert" style="display: none;">
+                    <div class="weui_mask"></div>
+                    <div class="weui_dialog">
+                        <div class="weui_dialog_hd">
+                            <strong class="weui_dialog_title">警告</strong>
+                        </div>
+                        <div class="weui_dialog_bd">弹窗内容，告知当前页面信息等</div>
+                        <div class="weui_dialog_ft">
+                            <a href="javascript:;" class="weui_btn_dialog primary">确定</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weui_cells weui-btn-area" id="publish">
+                    <a class="btn-submit box-flex submit">
+                        提交
+                    </a>
+                </div>
+                <div class="weui_cells weui-btn-area" style="margin-bottom:10px">
+                    <a class="weui_btn weui_btn_default" style="color:#1cbb7f" onclick="second()">返回</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+    //设置cookie
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+    function clearHistroy() {
+        setCookie('ECS[keywords]', '', -1);
+        document.getElementById("search_histroy").style.visibility = "hidden";
+    }
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $(".open-two-box i").click(function () {
+            $(".open-two-box").hide();
+        });
+    });
+    function second() {
+        window.location.href = "@Url.Action("GxFreelanceWxClassification", "Home")";
+    }
+
+    </script>
+
+</body>
+</html>

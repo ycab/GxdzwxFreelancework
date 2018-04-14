@@ -49,7 +49,7 @@ namespace Gxdz.WechatFreelancework.Dal
                         DataTable dt2 = OracleHelper.GetTable(sql2, null);
                         if (dt2.Rows.Count != 0)
                         {
-                            dt1.Rows[j]["USER_NAME"] = dt2.Rows[0]["NAME"];
+                            dt1.Rows[j]["USER_NAME"] = dt2.Rows[0]["NICK_NAME"];
                             string jpg = dt2.Rows[0]["CHAT_HEAD"].ToString();
                             if (dt2.Rows[0]["CHAT_HEAD"].ToString()=="")
                             {
@@ -103,7 +103,7 @@ namespace Gxdz.WechatFreelancework.Dal
             DataTable dt2 = OracleHelper.GetTable(sql2, null);
            if (dt2.Rows.Count != 0)
             {
-                 user1.UserName = dt2.Rows[0]["NAME"].ToString();
+                 user1.UserName = dt2.Rows[0]["NICK_NAME"].ToString();
                  string jpg = dt2.Rows[0]["CHAT_HEAD"].ToString();
                  if (dt2.Rows[0]["CHAT_HEAD"].ToString()=="")
                 {

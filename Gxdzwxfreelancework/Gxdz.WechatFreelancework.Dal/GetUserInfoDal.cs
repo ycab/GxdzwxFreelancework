@@ -26,14 +26,14 @@ namespace Gxdz.WechatFreelancework.Dal
             }
             return userid;
         }
-        public string GetUserName(string userid)//根据userid得到个人会员表中的用户名
+        public string GetUserName(string userid)//根据userid得到个人会员表中的用户昵称
         {
             string sql = string.Format("select * from GX_USER_MEMBER_PERSONAL  where USER_ID='{0}' ", userid);
             DataTable dt = OracleHelper.GetTable(sql, null);
             string username = "";
             if (dt.Rows.Count != 0)
             {
-                username = dt.Rows[0]["NAME"].ToString();
+                username = dt.Rows[0]["NICK_NAME"].ToString();
             }
             else
             {

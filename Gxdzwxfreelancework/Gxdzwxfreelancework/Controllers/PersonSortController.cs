@@ -35,6 +35,9 @@ namespace Gxdzwxfreelancework.Controllers
             string responseText = "";
 
             responseText = SortInfoBll.MiddleSortNameInfo();
+            responseText = responseText.Replace("\n", " ");
+            responseText = responseText.Replace("\r", " ");
+            responseText = responseText.Replace("\\", "/");
             return Content(responseText);
         }
         public ActionResult PersonInfo(string user_id)

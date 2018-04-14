@@ -39,6 +39,10 @@ var clickevent = function () {
                 {
                     alert("您已注册，无需重复注册");
                 }
+                else if(data=="factorymember")
+                {
+                    alert("企业会员不能注册");
+                }
                 else
                 {
                     alert("注册成功");

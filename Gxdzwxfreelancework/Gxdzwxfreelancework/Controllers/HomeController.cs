@@ -67,7 +67,7 @@ namespace Gxdzwxfreelancework.Controllers
                     {
                         if (user_name == "")//信息未完善
                         {
-                            System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"请先完善会员信息\")" + "</script>");
+                            //System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"请先完善会员信息\")" + "</script>");
                             return View("GxFreelanceWxPersonal");
                         }
 

@@ -128,12 +128,22 @@
 
     </div>
     <footer class="footer-nav dis-box">
-        <a href="@Url.Action("GxFreelanceWxClassification","Home")" class="box-flex nav-list active">
+        @*<a href="@Url.Action("GxFreelanceWxClassification","Home")" class="box-flex nav-list active">
             <i class="nav-box i-cate"></i><span>分类</span>
         </a>
         <a href="@Url.Action("GxFreelanceWxLogin","Home")" class="box-flex nav-list">
             <i class="nav-box i-flow"></i><span>注册</span>
-        </a>
+        </a>*@
+        <div class="weui-tabbar">
+            <a href="@Url.Action("GxFreelanceWxClassification","Home")" class="weui-tabbar__item">
+                <img src="@Url.Content("~/gxfreelance/images/nav/nav1.png")" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">分类</p>
+            </a>
+            <a href="@Url.Action("GxFreelanceWxLogin","Home")" class="weui-tabbar__item">
+                <img src="@Url.Content("~/gxfreelance/images/nav/nav2.png")" alt="" class="weui-tabbar__icon">
+                <p class="weui-tabbar__label">注册</p>
+            </a>
+        </div>
     </footer>
     @*<div class="search-div ts-3">
         <section class="search">

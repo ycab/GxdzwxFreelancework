@@ -202,6 +202,8 @@
     <Content Include="gxfreelance\images\lunbo1.jpg" />
     <Content Include="gxfreelance\images\lunbo2.jpeg" />
     <Content Include="gxfreelance\images\lunbo3.jpg" />
+    <Content Include="gxfreelance\images\nav\nav1.png" />
+    <Content Include="gxfreelance\images\nav\nav2.png" />
     <Content Include="gxfreelance\images\nav\nav_0.png" />
     <Content Include="gxfreelance\images\nav\nav_1.png" />
     <Content Include="gxfreelance\images\nav\nav_2.png" />

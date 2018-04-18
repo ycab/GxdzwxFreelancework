@@ -86,9 +86,9 @@ namespace Gxdz.WechatFreelancework.Dal
 
             return responseText;
         }
-        public user GetPersonInfo(string user_id)//获取单个人员的整体信息
+        public user GetPersonInfo(string search_id)//获取单个人员的整体信息
         {
-            string sql = string.Format("select * from GXFW_INFO t where USER_ID='{0}' ", user_id);
+            string sql = string.Format("select * from GXFW_INFO t where SEARCH_ID='{0}' ", search_id);
             DataTable dt = OracleHelper.GetTable(sql, null);
             user user1=new user();
             user1.UserID = dt.Rows[0]["USER_ID"].ToString();

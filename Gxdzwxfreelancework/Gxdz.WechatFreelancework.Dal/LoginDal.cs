@@ -13,8 +13,8 @@ namespace Gxdz.WechatFreelancework.Dal
     {
         public string Register(user user1)
         {
-            
-            var sql = string.Format("insert into GXFW_INFO(USER_ID,SEX,PROFESSION,FUNCTION,EDUCATION,FIELD,SELFINTRODUCTION) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}')",  user1.UserID, user1.Sex, user1.Profession,user1.Function,user1.Education,user1.Field,user1.Selfintroduction);
+
+            var sql = string.Format("insert into GXFW_INFO(USER_ID,SEX,PROFESSION,FUNCTION,EDUCATION,FIELD,SELFINTRODUCTION,SEARCH_ID) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", user1.UserID, user1.Sex, user1.Profession, user1.Function, user1.Education, user1.Field, user1.Selfintroduction, user1.SearchID);
             int flag = OracleHelper.ExecuteNonQuery(sql, null);
             return flag.ToString();
         }
@@ -42,6 +42,21 @@ namespace Gxdz.WechatFreelancework.Dal
 
             return responseText;
         }
+        public string IsRegistered(string userid,string profession)
+        {
+            string sql = string.Format("select * from GXFW_INFO where USER_ID='{0}' and PROFESSION='{1}' ", userid, profession);
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            if (dt.Rows.Count != 0)
+            {
+                return "yes";
+            }
+            else
+            {
+                return "no";
+            }
+        }
+             
+             
 
     }
 }

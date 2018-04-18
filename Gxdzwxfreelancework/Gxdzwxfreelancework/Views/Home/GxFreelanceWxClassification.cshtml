@@ -432,7 +432,7 @@
                         //var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
                         var domli = '<div class="weui-cells">';
                         for (var j = 0; j < info.length; j++) {
-                            domli += ' <a class="weui-cell weui-cell_access" href="javascript:;"onclick="javascript:person_list(\'' + info[j].USER_ID + '\');">' +
+                            domli += ' <a class="weui-cell weui-cell_access" href="javascript:;"onclick="javascript:person_list(\'' + info[j].SEARCH_ID + '\');">' +
                                                ' <div class="weui-cell__bd">'+
                                                  '<p>'+info[j].USER_ID+'</p>'+
                                                   ' </div>'+
@@ -501,10 +501,10 @@
         });
 
     }
-    function person_list(user_id) {
+    function person_list(search_id) {
 
 
-        window.location.href = rootUrl + "PersonSort/PersonInfo?user_id=" + user_id + "&random=" + Math.floor(Math.random() * (100000 + 1));
+        window.location.href = rootUrl + "PersonSort/PersonInfo?search_id=" + search_id + "&random=" + Math.floor(Math.random() * (100000 + 1));
     }
 
 

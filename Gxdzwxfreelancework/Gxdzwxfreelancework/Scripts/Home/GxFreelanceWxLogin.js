@@ -43,6 +43,10 @@ var clickevent = function () {
                 {
                     alert("企业会员不能注册");
                 }
+                else if (data == "fail")
+                {
+                    alert("注册失败，当前职业已经注册");
+                }
                 else
                 {
                     alert("注册成功");

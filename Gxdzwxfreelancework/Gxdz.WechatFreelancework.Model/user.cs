@@ -24,5 +24,7 @@ namespace Gxdz.WechatFreelancework.Model
         public virtual string Selfintroduction { get; set; }
         public virtual string ChatHead { get; set; }
 
+        public virtual string SearchID { get; set; }
+
     }
 }

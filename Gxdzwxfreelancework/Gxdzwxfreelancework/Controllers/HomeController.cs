@@ -25,26 +25,41 @@ namespace Gxdzwxfreelancework.Controllers
             {
 
 
-                openid = "oXx_Mw-hx0yNF3wIELsf_RP6cJoA";
-                string user_id = getuserinfodal.GetUserID(openid);
-                string username = getuserinfodal.GetUserName(user_id);
-                CookieHelper.ClearCookie("openid");
-                CookieHelper.SetCookie("openid", openid);
-                Session["user_id"] = user_id;
-                Session["user_name"] = username;
-                string url1 = System.Web.HttpContext.Current.Request.Url.AbsoluteUri;//获取当前url端木雲 2018/3/26 21:22:46
-                string url2 = "http://egov.jinyuc.com/gxdzwx/gxdzwxlogin/?openid= " + openid + "&url1=" + url1;
-                Session["RegisterUrl"] = url2;
-                string url3 = System.Web.HttpContext.Current.Request.Url.AbsoluteUri;//获取当前url端木雲 2018/3/26 21:22:46
-                string url4 = "http://egov.jinyuc.com/gxdzwx/gxdzwxlogin/Register/GxLoginRegisterPersonal/?openid= " + openid + "&url1=" + url3;
-                Session["FinishRegisterUrl"] = url4;
-                ViewBag.openid = openid;
+                //openid = "oXx_Mw-hx0yNF3wIELsf_RP6cJoA";
+                //string user_id = getuserinfodal.GetUserID(openid);
+                //string username = getuserinfodal.GetUserName(user_id);
+                //CookieHelper.ClearCookie("openid");
+                //CookieHelper.SetCookie("openid", openid);
+                //Session["user_id"] = user_id;
+                //Session["user_name"] = username;
+                //string url1 = System.Web.HttpContext.Current.Request.Url.AbsoluteUri;//获取当前url端木雲 2018/3/26 21:22:46
+                //string url2 = "http://egov.jinyuc.com/gxdzwx/gxdzwxlogin/?openid= " + openid + "&url1=" + url1;
+                //Session["RegisterUrl"] = url2;
+                //string url3 = System.Web.HttpContext.Current.Request.Url.AbsoluteUri;//获取当前url端木雲 2018/3/26 21:22:46
+                //string url4 = "http://egov.jinyuc.com/gxdzwx/gxdzwxlogin/Register/GxLoginRegisterPersonal/?openid= " + openid + "&url1=" + url3;
+                //Session["FinishRegisterUrl"] = url4;
+                //ViewBag.openid = openid;
             }
             else
             {
-                ViewBag.openid = openid;
-                CookieHelper.ClearCookie("openid");
-                CookieHelper.SetCookie("openid", openid);
+
+                //openid = "oXx_Mw-hx0yNF3wIELsf_RP6cJoA";
+                //string user_id = getuserinfodal.GetUserID(openid);
+                //string username = getuserinfodal.GetUserName(user_id);
+                //CookieHelper.ClearCookie("openid");
+                //CookieHelper.SetCookie("openid", openid);
+                //Session["user_id"] = user_id;
+                //Session["user_name"] = username;
+                //string url1 = System.Web.HttpContext.Current.Request.Url.AbsoluteUri;//获取当前url端木雲 2018/3/26 21:22:46
+                //string url2 = "http://egov.jinyuc.com/gxdzwx/gxdzwxlogin/?openid= " + openid + "&url1=" + url1;
+                //Session["RegisterUrl"] = url2;
+                //string url3 = System.Web.HttpContext.Current.Request.Url.AbsoluteUri;//获取当前url端木雲 2018/3/26 21:22:46
+                //string url4 = "http://egov.jinyuc.com/gxdzwx/gxdzwxlogin/Register/GxLoginRegisterPersonal/?openid= " + openid + "&url1=" + url3;
+                //Session["FinishRegisterUrl"] = url4;
+                //ViewBag.openid = openid;
+                //ViewBag.openid = openid;
+                //CookieHelper.ClearCookie("openid");
+                //CookieHelper.SetCookie("openid", openid);
             }
             return View();
         }
@@ -58,8 +73,9 @@ namespace Gxdzwxfreelancework.Controllers
             string membership = getuserinfodal.GetMemberType(user_id);
             if (getuserinfodal.IsRegister(user_id) == "yes")//注册过
             {
-                System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"您已注册，无需重复注册\")" + "</script>");
-                return View("GxFreelanceWxClassification");
+                //System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"您已注册，无需重复注册\")" + "</script>");
+                //return View("GxFreelanceWxClassification");
+                return View();
             }
             else
             {
@@ -123,9 +139,19 @@ namespace Gxdzwxfreelancework.Controllers
             user1.Field = Request["field"];
             user1.Sex = Request["sex"];
             user1.Selfintroduction = Request["selfintroduction"];
+            user1.SearchID = Guid.NewGuid().ToString("N");
             LoginBll login = new LoginBll();
-            login.Register(user1);
-            return Content("ok");
+            string isregistered=login.IsRegistered(user_id, user1.Profession);
+            if(isregistered=="yes")
+            {
+                return Content("fail");
+            }
+            else
+            {
+                login.Register(user1);
+                return Content("ok");
+            }
+
 
 
           
@@ -182,6 +208,13 @@ namespace Gxdzwxfreelancework.Controllers
             }
             responseText = LoginInfoBll.SetPersonalInfo(Personal, filename, user_id);
             return Content(responseText);
+        }
+        public ActionResult fakeindex(string openid)
+        {
+            ViewBag.openid=openid;
+            CookieHelper.ClearCookie("openid");
+            CookieHelper.SetCookie("openid", openid);
+            return View();
         }
 
     }

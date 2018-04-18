@@ -35,11 +35,11 @@ namespace Gxdzwxfreelancework.Controllers
             responseText = responseText.Replace("\\", "/");
             return Content(responseText);
         }
-        public ActionResult PersonInfo(string user_id)
+        public ActionResult PersonInfo(string search_id)
         {
             Session.Clear();
             user user1 = new user();
-            user1 = SortInfoBll.GetPersonInfo(user_id);
+            user1 = SortInfoBll.GetPersonInfo(search_id);
             Session["user_id"] = user1.UserID;
             Session["user_name"] =user1.UserName;
             Session["sex"] = user1.Sex;

@@ -10,19 +10,19 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Gxdz.WechatFreelancework.Bll.dll">
-      <publishTime>04/17/2018 23:04:51</publishTime>
+      <publishTime>04/18/2018 20:15:36</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Dal.dll">
-      <publishTime>04/17/2018 23:04:51</publishTime>
+      <publishTime>04/18/2018 20:15:35</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Model.dll">
-      <publishTime>04/17/2018 23:04:50</publishTime>
+      <publishTime>04/18/2018 19:28:42</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Utilities.dll">
       <publishTime>04/17/2018 23:04:50</publishTime>
     </File>
     <File Include="bin/Gxdzwxfreelancework.dll">
-      <publishTime>04/17/2018 23:06:41</publishTime>
+      <publishTime>04/18/2018 20:30:20</publishTime>
     </File>
     <File Include="bin/Microsoft.CSharp.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>
@@ -574,7 +574,7 @@
       <publishTime>03/06/2018 22:20:34</publishTime>
     </File>
     <File Include="Scripts/Home/GxFreelanceWxLogin.js">
-      <publishTime>04/13/2018 20:48:58</publishTime>
+      <publishTime>04/18/2018 20:01:43</publishTime>
     </File>
     <File Include="Scripts/Jquery/jquery-1.10.2.js">
       <publishTime>03/06/2018 22:20:33</publishTime>
@@ -615,11 +615,14 @@
     <File Include="Scripts/user/UserLogin.js">
       <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
+    <File Include="Views/Home/fakeindex.cshtml">
+      <publishTime>04/18/2018 19:02:56</publishTime>
+    </File>
     <File Include="Views/Home/GxFreelanceWxCheck.cshtml">
       <publishTime>03/25/2018 19:53:20</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxClassification.cshtml">
-      <publishTime>04/17/2018 23:03:48</publishTime>
+      <publishTime>04/18/2018 19:27:51</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxExample.cshtml">
       <publishTime>12/25/2017 21:38:21</publishTime>
@@ -628,7 +631,7 @@
       <publishTime>03/23/2018 18:09:07</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxLogin.cshtml">
-      <publishTime>04/13/2018 20:32:18</publishTime>
+      <publishTime>04/18/2018 17:12:25</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxPersonal.cshtml">
       <publishTime>04/14/2018 16:41:59</publishTime>

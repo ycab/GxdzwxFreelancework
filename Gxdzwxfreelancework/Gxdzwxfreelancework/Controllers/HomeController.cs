@@ -25,7 +25,7 @@ namespace Gxdzwxfreelancework.Controllers
             {
 
 
-                //openid = "oXx_Mw-hx0yNF3wIELsf_RP6cJoA";
+                ////openid = "oXx_Mw-hx0yNF3wIELsf_RP6cJoA";
                 //string user_id = getuserinfodal.GetUserID(openid);
                 //string username = getuserinfodal.GetUserName(user_id);
                 //CookieHelper.ClearCookie("openid");
@@ -71,36 +71,26 @@ namespace Gxdzwxfreelancework.Controllers
             string user_id = getuserinfodal.GetUserID(openid);
             string user_name = getuserinfodal.GetUserName(user_id);
             string membership = getuserinfodal.GetMemberType(user_id);
-            if (getuserinfodal.IsRegister(user_id) == "yes")//注册过
+
+            if (membership == "个人会员")
             {
-                //System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"您已注册，无需重复注册\")" + "</script>");
-                //return View("GxFreelanceWxClassification");
-                return View();
+               if (user_name == "")//信息未完善
+                {
+                            //System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"请先完善会员信息\")" + "</script>");
+                  return View("GxFreelanceWxPersonal");
+                }
+                else
+                {
+                  return View();
+                 }
             }
             else
             {
-                    if (membership == "个人会员")
-                    {
-                        if (user_name == "")//信息未完善
-                        {
-                            //System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"请先完善会员信息\")" + "</script>");
-                            return View("GxFreelanceWxPersonal");
-                        }
-
-                        else
-                        {
-                            return View();
-                        }
- 
-                    }
-                    else
-                    {
-                        System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"企业会员，无法注册\")" + "</script>");
-                        return View("GxFreelanceWxClassification");
-                    }
+                System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"企业会员，无法注册\")" + "</script>");
+                 return View("GxFreelanceWxClassification");
+             }
 
 
-            }
 
         }
         public ActionResult GxFreelanceWxExample()
@@ -140,6 +130,7 @@ namespace Gxdzwxfreelancework.Controllers
             user1.Sex = Request["sex"];
             user1.Selfintroduction = Request["selfintroduction"];
             user1.SearchID = Guid.NewGuid().ToString("N");
+            user1.Success = "0";
             LoginBll login = new LoginBll();
             string isregistered=login.IsRegistered(user_id, user1.Profession);
             if(isregistered=="yes")

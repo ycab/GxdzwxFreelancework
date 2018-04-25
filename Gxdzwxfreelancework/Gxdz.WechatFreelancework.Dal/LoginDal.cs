@@ -14,7 +14,7 @@ namespace Gxdz.WechatFreelancework.Dal
         public string Register(user user1)
         {
 
-            var sql = string.Format("insert into GXFW_INFO(USER_ID,SEX,PROFESSION,FUNCTION,EDUCATION,FIELD,SELFINTRODUCTION,SEARCH_ID) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", user1.UserID, user1.Sex, user1.Profession, user1.Function, user1.Education, user1.Field, user1.Selfintroduction, user1.SearchID);
+            var sql = string.Format("insert into GXFW_INFO(USER_ID,SEX,PROFESSION,FUNCTION,EDUCATION,FIELD,SELFINTRODUCTION,SEARCH_ID,SUCCESS) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", user1.UserID, user1.Sex, user1.Profession, user1.Function, user1.Education, user1.Field, user1.Selfintroduction, user1.SearchID,user1.Success);
             int flag = OracleHelper.ExecuteNonQuery(sql, null);
             return flag.ToString();
         }

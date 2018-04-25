@@ -10,19 +10,19 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Gxdz.WechatFreelancework.Bll.dll">
-      <publishTime>04/18/2018 20:15:36</publishTime>
+      <publishTime>04/25/2018 10:22:07</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Dal.dll">
-      <publishTime>04/18/2018 20:15:35</publishTime>
+      <publishTime>04/25/2018 10:22:07</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Model.dll">
-      <publishTime>04/18/2018 19:28:42</publishTime>
+      <publishTime>04/25/2018 10:09:31</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Utilities.dll">
-      <publishTime>04/17/2018 23:04:50</publishTime>
+      <publishTime>04/25/2018 10:09:31</publishTime>
     </File>
     <File Include="bin/Gxdzwxfreelancework.dll">
-      <publishTime>04/18/2018 20:30:20</publishTime>
+      <publishTime>04/25/2018 10:22:09</publishTime>
     </File>
     <File Include="bin/Microsoft.CSharp.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>

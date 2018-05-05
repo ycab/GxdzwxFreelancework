@@ -461,6 +461,7 @@
     <None Include="Properties\PublishProfiles\Gxdzwxfreelancework.pubxml" />
     <Content Include="Views\Home\GxFreelanceWxPersonal.cshtml" />
     <Content Include="Views\Home\fakeindex.cshtml" />
+    <Content Include="Views\Home\specification.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Gxdz.WechatFreelancework.Bll\Gxdz.WechatFreelancework.Bll.csproj">

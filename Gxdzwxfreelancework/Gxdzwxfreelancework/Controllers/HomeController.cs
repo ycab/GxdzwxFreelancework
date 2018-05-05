@@ -14,6 +14,10 @@ namespace Gxdzwxfreelancework.Controllers
     public class HomeController : Controller
     {
         LoginBll LoginInfoBll = new LoginBll();
+        public ActionResult specification()
+        {
+            return View();
+        }
         public ActionResult GxFreelanceWxIndex(string openid)
         {
             return View();

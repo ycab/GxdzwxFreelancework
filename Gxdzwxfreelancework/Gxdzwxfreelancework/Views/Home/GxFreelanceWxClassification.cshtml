@@ -97,25 +97,48 @@
             </section>
         </div>
     </div>*@
+    @*<div>
+        <p style="text-align:center">自由职业</p>
+    </div>*@
     <div class="con">
+        <div style="width: 100%;left: 0rem;right: 0rem;top: 0rem;height: 3.2rem;position: fixed;display: block;background: #FFFFFF;">
+            <span style="float:right;margin-right:1rem"><button id="describe" style="border:1px solid #1AAD19 ; background-color:#f6f6f9;font-size:12px;width:60px;height:2rem;border-radius: 5px;">相关说明</button></span>
+
+        </div>
         <div class="category-top">
+ 
+            @*<div style="width: 100%;left: 0rem;right: 0rem;top: 0rem;height: 3.2rem;position: fixed;">
+                <div style="text-align:center;margin-left:5rem;"><span style="float:right;margin-right:1rem"><button id="describe" style="border:1px solid #1AAD19 ; background-color:#f6f6f9;font-size:12px;width:60px;height:2rem;border-radius: 5px;">相关说明</button></span></div>
+
+            </div>*@
             <header>
+
                 <section class="search">
+
                     <div class="text-all  text-all-back j-text-all">
                         <div class="input-text n-input-text i-search-input">
-                            @*j-search-input为click事件*@
+
                             <a class="a-search-input j-search-input" href="javascript:void(0)"></a>
                             <i class="iconfont icon-sousuo"></i>
                             <input type="text" placeholder="请输入您搜索的关键词!" />
 
                             <i class="iconfont icon-guanbi is-null j-is-null"></i>
+
                         </div>
+
                     </div>
                 </section>
 
             </header>
         </div>
 
+        @*<div class="category-top">
+            <header>
+                <div>
+                    <p style="text-align:center">自由职业</p>
+                </div>
+            </header>
+        </div>*@
         <aside>
             <div class="menu-left scrollbar-none" id="sidebar">
 
@@ -304,6 +327,32 @@
                     color: #999;
                     float: right;
                     font-size: 15px;
+                }
+                .menu-left {
+                    position: fixed;
+                    left: 0;
+                    top: 9rem;
+                    bottom: 0;
+                    margin-bottom: 5rem;
+                }
+                .menu-right {
+                    background: #fff;
+                    position: inherit;
+                    margin-left: 8.6rem;
+                    margin-top: 9rem;
+                    right: 0;
+                    bottom: 0;
+                    left: 8.6rem;
+                    margin-bottom: 5.6rem;
+                }
+                .category-top .search {
+                    border-bottom: 1px solid #e8e8e8;
+                    position: fixed;
+                    left: 0;
+                    top: 3.2rem;
+                    right: 0;
+                    z-index: 1;
+                    background: #F6F6F9;
                 }
     </style>
     <script type="text/javascript">
@@ -506,7 +555,10 @@
 
         window.location.href = rootUrl + "PersonSort/PersonInfo?search_id=" + search_id + "&random=" + Math.floor(Math.random() * (100000 + 1));
     }
-
+    $("#describe").click(function () {
+ 
+        window.location.href = rootUrl + "Home/specification?&random=" + Math.floor(Math.random() * (100000 + 1));
+    })
 
 </script>
 

@@ -15,7 +15,24 @@
     <link href="@Url.Content("~/weui-master/dist/style/weui.css")" rel="stylesheet" />
     <link href="@Url.Content("~/weui-master/dist/style/weui.min.css")" rel="stylesheet" />
     <link href="@Url.Content("~/weui-master/dist/example/example.css")" rel="stylesheet" />
-    <script src="@Url.Content("~/weui-master/dist/example/example.js")"></script>
+    <link href="@Url.Content("~/gxfreelance/statics/css/swiper.min.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/gxfreelance/statics/css/bootstrap.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/member.css")" rel="stylesheet" />
+    @*<link href="@Url.Content("~/gxfreelance/loadmore/dropload.css")" rel="stylesheet" />*@
+    <link href="@Url.Content("~/gxfreelance/statics/css/style.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/gxfreelance/statics/css/user.css")" rel="stylesheet" />
+
+    <script src="@Url.Content("~/gxfreelance/statics/js/swiper.min.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/ectouch.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery.json.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/utils.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery-ui-1.10.1.custom.min.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/jquery.scrollUp.min.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/simple-inheritance.min.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/code-photoswipe-1.0.11.min.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/gxfreelance/statics/js/validform.js")"></script>
     <script type="text/javascript">var rootUrl = "@Url.Content("~")";//获取根路径，防止iis部署位置不同</script>
     @*<script src="@Url.Content("~/Scripts/PersonSort/PersonSort.js")"></script>*@
 </head>
@@ -100,74 +117,103 @@
     @*<div>
         <p style="text-align:center">自由职业</p>
     </div>*@
-    <div class="con">
-        <div style="width: 100%;left: 0rem;right: 0rem;top: 0rem;height: 3.2rem;position: fixed;display: block;background: #FFFFFF;">
-            <span style="float:right;margin-right:1rem"><button id="describe" style="border:1px solid #1AAD19 ; background-color:#f6f6f9;font-size:12px;width:60px;height:2rem;border-radius: 5px;">相关说明</button></span>
+    <div class="con m-b7 new-maxbox">
+        @*<div style="width: 100%;left: 0rem;right: 0rem;top: 0rem;height: 3.2rem;position: fixed;display: block;background: #FFFFFF;">
+                <span style="float:right;margin-right:1rem"><button id="describe" style="border:1px solid #1AAD19 ; background-color:#f6f6f9;font-size:12px;width:60px;height:2rem;border-radius: 5px;">相关说明</button></span>
 
-        </div>
-        <div class="category-top">
- 
-            @*<div style="width: 100%;left: 0rem;right: 0rem;top: 0rem;height: 3.2rem;position: fixed;">
-                <div style="text-align:center;margin-left:5rem;"><span style="float:right;margin-right:1rem"><button id="describe" style="border:1px solid #1AAD19 ; background-color:#f6f6f9;font-size:12px;width:60px;height:2rem;border-radius: 5px;">相关说明</button></span></div>
+            </div>
+            <div class="category-top">
 
-            </div>*@
-            <header>
+                <header>
 
-                <section class="search">
+                    <section class="search">
 
-                    <div class="text-all  text-all-back j-text-all">
-                        <div class="input-text n-input-text i-search-input">
+                        <div class="text-all  text-all-back j-text-all">
+                            <div class="input-text n-input-text i-search-input">
 
-                            <a class="a-search-input j-search-input" href="javascript:void(0)"></a>
-                            <i class="iconfont icon-sousuo"></i>
-                            <input type="text" placeholder="请输入您搜索的关键词!" />
+                                <a class="a-search-input j-search-input" href="javascript:void(0)"></a>
+                                <i class="iconfont icon-sousuo"></i>
+                                <input type="text" placeholder="请输入您搜索的关键词!" />
 
-                            <i class="iconfont icon-guanbi is-null j-is-null"></i>
+                                <i class="iconfont icon-guanbi is-null j-is-null"></i>
+
+                            </div>
 
                         </div>
+                    </section>
 
-                    </div>
-                </section>
+                </header>
+            </div>*@
+    
+        <div class="index-banner swiper-container box position-rel banner-first">
+            <div class="swiper-wrapper">
 
-            </header>
-        </div>
-
-        @*<div class="category-top">
-            <header>
-                <div>
-                    <p style="text-align:center">自由职业</p>
+                <div class="swiper-slide" swiper-slide-active style="width:640px;">
+                    <a target='_blank'>
+                        <img src="@Url.Content("~/gxfreelance/statics/img/lunbo_1.jpg")" style="height:231px" border="0" />
+                    </a>
                 </div>
-            </header>
-        </div>*@
-        <aside>
-            <div class="menu-left scrollbar-none" id="sidebar">
-
-                <ul id="sortul"></ul>
+                <div class="swiper-slide">
+                    <a target='_blank'>
+                        <img src="@Url.Content("~/gxfreelance/statics/img/lunbo_2.jpg")" style="height:231px" border="0" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a target='_blank'>
+                        <img src="@Url.Content("~/gxfreelance/statics/img/lunbo_3.jpg")" style="height:231px" border="0" />
+                    </a>
+                </div>
             </div>
-        </aside>
-        <div id="showgoods">
-
+            <div class="swiper-pagination banner-first-pagination"></div>
+            <div class="linear"></div>
+        </div>
+        <div class="main">
+            <div class="tao-title">
+                <div class="tao" id="is_style">职业类型</div>
+            </div>
+            <ul class="tao-title-list" id="is_styleList" style="display:none;">
+                <li id="-1" class="is_stylelist" value="全部">全部</li>
+                <li id="1" class="is_stylelist" value="体系工程师">体系工程师</li>
+                <li id="2" class="is_stylelist" value="硬件工程师">硬件工程师</li>
+                <li id="3" class="is_stylelist" value="pcb工程师">pcb工程师</li>
+                <li id="4" class="is_stylelist" value="结构工程师">结构工程师</li>
+                <li id="8" class="is_stylelist" value="其他">其他</li>
+            </ul>
         </div>
 
-    </div>
-    <footer class="footer-nav dis-box">
-        @*<a href="@Url.Action("GxFreelanceWxClassification","Home")" class="box-flex nav-list active">
-            <i class="nav-box i-cate"></i><span>分类</span>
-        </a>
-        <a href="@Url.Action("GxFreelanceWxLogin","Home")" class="box-flex nav-list">
-            <i class="nav-box i-flow"></i><span>注册</span>
-        </a>*@
-        <div class="weui-tabbar">
-            <a href="@Url.Action("GxFreelanceWxClassification","Home")" class="weui-tabbar__item">
-                <img src="@Url.Content("~/gxfreelance/images/nav/nav1.png")" alt="" class="weui-tabbar__icon">
-                <p class="weui-tabbar__label">分类</p>
-            </a>
-            <a href="@Url.Action("GxFreelanceWxLogin","Home")" class="weui-tabbar__item">
-                <img src="@Url.Content("~/gxfreelance/images/nav/nav2.png")" alt="" class="weui-tabbar__icon">
-                <p class="weui-tabbar__label">注册</p>
-            </a>
+        <div class="ect-pro-list example-list" style="border-bottom:none">
+            <ul id="showgoods">
+                <div class="weui-cells__title">自由职业</div>
+                <div class="weui-cells">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>cell standard</p>
+                        </div>
+                        <div class="weui-cell__ft">说明文字</div>
+                    </a>
+                    <a class="weui-cell weui-cell_access" href="javascript:;">
+                        <div class="weui-cell__bd">
+                            <p>cell standard</p>
+                        </div>
+                        <div class="weui-cell__ft">说明文字</div>
+                    </a>
+
+                </div>
+
+            </ul>
         </div>
-    </footer>
+        <footer class="footer-nav dis-box">
+            <div class="weui-tabbar">
+                <a href="@Url.Action("GxFreelanceWxClassification","Home")" class="weui-tabbar__item">
+                    <img src="@Url.Content("~/gxfreelance/images/nav/nav1.png")" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">分类</p>
+                </a>
+                <a href="@Url.Action("GxFreelanceWxLogin","Home")" class="weui-tabbar__item">
+                    <img src="@Url.Content("~/gxfreelance/images/nav/nav2.png")" alt="" class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">注册</p>
+                </a>
+            </div>
+        </footer>
     @*<div class="search-div ts-3">
         <section class="search">
             <form action="/v2/index.php?m=default&c=category&a=index&u=0" method="post">
@@ -357,210 +403,321 @@
     </style>
     <script type="text/javascript">
 
-    window.onload = function () {
-        get_asynclist("", "");
-    }
-    var HS_pageIndex = 0;
-    var HS_pageSize = 10;
-    var HS_pageCount = 0;
-    var HS_policeName = "";
-    var HS_policeId = "";
-    var SortName_Last = 0;//取大分类数据的截止与开始
-    var SortName_Amount = 10;//每次取大分类数据的总和
-    var MiddleSortName_Last = 0;//取中分类数据的截止与开始
-    var MiddleSortName_Amount = 10;//每次取中分类数据的总和
-
-
-
-    var page_Init = 0;//页面初始化变量,SortNameInfo与SortGoodsInfo函数异步请求结束后再显示页面
-    //初始化，异步加载大分类名字
-    function SortNameInfo() {
-
-
-        $.ajax({
-            type: "POST",
-            url: rootUrl + "PersonSort/SortNameInfo?random=" + Math.floor(Math.random() * (100000 + 1)),
-            dataType: "json",
-            data: { sortname_last: SortName_Last, sortname_amount: SortName_Amount },
-            async: true,
-            success: function (obj) {
-                if (obj.msg == "success") {
-                    if (SortName_Last == 0) {
-                        $("#sortul").append(
-                                  "<li class='active' data-cat_id='" + obj.sortinfo[0].PROFESSION_ID + "'>" + obj.sortinfo[0].PROFESSION_NAME + "</li>"
-                                  );
-                    }
-                    for (var i = 1; i < obj.sortinfo.length; i++) {
-                        var sortname = obj.sortinfo[i];
-
-                        $("#sortul").append(
-                                 "<li  data-cat_id='" + sortname.PROFESSION_ID + "'>" + sortname.PROFESSION_NAME + "</li>"
-
-                            );
-                    }
-
-
-                    SortName_Last += 10;
-                    if (++page_Init == 2) {
-                        $('#loading').hide();
-                    }
-                }
-                else {
-                    $('#loading').hide();
-                }
-
-            },
-            error: function () {
-                alert("ajax wrong!");
-                $('#loading').hide();
-            }
-        });
-
-
-    }
-    ///初始化，异步加载中分类的名字信息
-    function MiddleSortNameInfo() {
-        $.ajax({
-            type: "POST",
-            url: rootUrl + "PersonSort/MiddleSortNameInfo?random=" + Math.floor(Math.random() * (100000 + 1)),
-            dataType: "json",
-            data: { middlesortname_last: MiddleSortName_Last, middlesortname_amount: MiddleSortName_Amount },
-            async: true,
-            success: function (obj) {
-                if (obj.msg == "success") {
-                    var middleinfo = obj.middlesortinfo;//middleinfo是整个信息
-                    $("#showgoods").html("");
-                    for (var i = 0; i < middleinfo.length; i++) {
-                        var middle = middleinfo[i];//{parentid:1,parentname:'',info:[{:'',...},{},{}]}
-                        //var parentid = middle.parentid;middle是一个职业的所有信息
-                        var profession_name = middle.profession_name;
-                        var profession_id = middle.profession_id;
-                        var info = middle.info;//[{:'',.....},{},{}]某个职业单条数据的集合.例如：info[0].USER_NAME，某职业第一条数据的人名
-                        if (i == 0) {
-                            $("#showgoods").append(
-                            "<section class='menu-right padding-all j-content' data-parentid='" + profession_id + "'>"
-                           + "<h5>" + profession_name + "</h5>"
-                           + "</section>");
-
-                        }
-                        else {
-                            $("#showgoods").append(
-                            "<section class='menu-right padding-all j-content' style='display:none' data-parentid='" + profession_id + "'>"
-                            + "<h5>" + profession_name + "</h5>"
-                            + "</section>");
-                        }
-                        @*var domli="";
-                        for (var j = 0; j < info.length; j++) {
-                            domli += "<ul class='fb-list'>"
-                                      + '<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');">'
-
-                                       + "<li style='height:70px'>"
-                                         + "<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\"" + " style='float:left;height:80px;width:auto'>"
-                                          + "<div class='middle' style='width:41%;'>"
-                                            + "<h4>姓名："+info[j].USER_ID+"</h4>"
-                                             + "<p style='font-size:15px;margin-left:10px;margin-top:-0.5em'>编号：" + info[j].USER_ID + "</p>"
-                                           + "</div>  </li>    </a>  </ul>"
-
-                        }
-                        $("section[data-parentid='" + profession_id + "']").append(domli);*@
-
-                        @*保存版本  var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
-                        for (var j = 0; j < info.length; j++) {
-
-
-                            domli += '<li class="w-3" id="' + info[j].USER_ID + '">' +
-                            '<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');"></a>' +
-                            '<img src=\"@Url.Content("~/gxfreelance/statics/img/3333333333.png")\" /><span style="font-size:12px">' + info[j].USER_NAME + '</span>' +
-                            '</li>';
-
-                        }
-                        domli += '</ul>';
-                        $("section[data-parentid='" + profession_id + "']").append(domli);*@
-                        var domain_name = "http://egov.jinyuc.com";
-                        var server_imgurl1 = "/gxdzwx/gxdzimages/gxdzwxlogin/personal/chat_head/";
-                        //var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
-                        var domli = '<div class="weui-cells">';
-                        for (var j = 0; j < info.length; j++) {
-                            domli += ' <a class="weui-cell weui-cell_access" href="javascript:;"onclick="javascript:person_list(\'' + info[j].SEARCH_ID + '\');">' +
-                                               ' <div class="weui-cell__bd">'+
-                                                 '<p>'+info[j].USER_ID+'</p>'+
-                                                  ' </div>'+
-                                                ' <div class="weui-cell__ft">' + info[j].USER_NAME + '</div>' +
-                                                '</a>'
-
-                            //domli += '<li class="w-3" id="' + info[j].USER_ID + '">' +
-                            //'<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');"></a>' +
-                            //'<img src="' + domain_name + server_imgurl1 + info[j].CHAT_HEAD + '" style=\"height:80px;width:80px\"/><span style="font-size:12px">' + info[j].USER_NAME + '</span>' +
-                            //'</li>';
-
-                        }
-                        domli += '</div>';
-                       // domli += '</ul>';
-                       
-
-                        //var domli2 = '<div class="weui-cells">'+
-                        //                     ' <a class="weui-cell weui-cell_access" href="javascript:;">'+
-                        //                       ' <div class="weui-cell__bd">'+
-                        //                         '<p>'+info[j].USER_ID+'</p>'+
-                        //                          ' </div>'+
-                        //                        ' <div class="weui-cell__ft">' + info[j].USER_NAME + '</div>' +
-                        //                        '</a>'+
-                        //                      '</div>';
-                        $("section[data-parentid='" + profession_id + "']").append(domli);
-                    }
-                }
-                else {
-                    $('#loading').hide();
-                }
-
-            },
-            error: function () {
-                alert("ajax wrong!");
-                $('#loading').hide();
-            }
-        });
-    }
+    //window.onload = function () {
+    //    MiddleSortNameInfo();
+    //}
     $(document).ready(function () {
-        //   SortNameInfo();
+        MiddleSortNameInfo("全部");
+    })
+    $(".is_stylelist").click(function () {
+        var is_stylename = $(this).attr('value');
+        var instrumentdiv = '';
+        $("#J_ItemList").html("");
+        MiddleSortNameInfo(is_stylename);
+        ///初始化，异步加载中分类的名字信息
+   
+    })
+    function MiddleSortNameInfo(profession) {
+        $.ajax({
+            type: "POST",
+            url: rootUrl + "PersonSort/GetPersonList?&profession=" + profession + "&random=" + Math.floor(Math.random() * (100000 + 1)),
+            dataType: "json",
+            data: { middlesortname_last: "" },
+            async: true,
+            success: function (obj) {
+                   $("#showgoods").html("");
+                   var info = obj.sortinfo;
+                   var domli = "";
+                    for (var i = 0; i < info.length; i++)
+                    {
+                        domli += ' <a class="weui-cell weui-cell_access" href="javascript:;"onclick="javascript:person_list(\'' + info[i].SEARCH_ID + '\');">' +
+                      ' <div class="weui-cell__bd">' +
+                        '<p>' + info[i].USER_ID + '</p>' +
+                         ' </div>' +
+                       ' <div class="weui-cell__ft">' + info[i].USER_NAME + '</div>' +
+                       '</a>'
+                    }
+                    $("#showgoods").append(domli);
+                    //var middleinfo = obj.middlesortinfo;//middleinfo是整个信息
+                    //$("#showgoods").html("");
+                    //for (var i = 0; i < middleinfo.length; i++) {
+                    //    var middle = middleinfo[i];//{parentid:1,parentname:'',info:[{:'',...},{},{}]}
+                    //    //var parentid = middle.parentid;middle是一个职业的所有信息
+                    //    var profession_name = middle.profession_name;
+                    //    var profession_id = middle.profession_id;
+                    //    var info = middle.info;//[{:'',.....},{},{}]某个职业单条数据的集合.例如：info[0].USER_NAME，某职业第一条数据的人名
 
-        //因为使用ajax动态加载了dom，所以使用普通的click无法绑定click事件，用了$('id').on('click','id',function(){})委托形式
-        $('#sidebar').on('click', '#sortul li', function () {
-            $(this).addClass('active').siblings('li').removeClass('active');
-            var index = $(this).index();
-            $('.j-content').eq(index).show().siblings('.j-content').hide();
-            $(window).scrollTop(0);
-        })
+                    //    var domain_name = "http://egov.jinyuc.com";
+                    //    var server_imgurl1 = "/gxdzwx/gxdzimages/gxdzwxlogin/personal/chat_head/";
+                    //    //var domli = '<ul id="' + profession_id + '" class="showul' + profession_id + '">';
+                    //    var domli = '<div class="weui-cells">';
+                    //    for (var j = 0; j < info.length; j++) {
+                    //        domli += ' <a class="weui-cell weui-cell_access" href="javascript:;"onclick="javascript:person_list(\'' + info[j].SEARCH_ID + '\');">' +
+                    //                           ' <div class="weui-cell__bd">' +
+                    //                             '<p>' + info[j].USER_ID + '</p>' +
+                    //                              ' </div>' +
+                    //                            ' <div class="weui-cell__ft">' + info[j].USER_NAME + '</div>' +
+                    //                            '</a>'
 
-    });
+                    //        //domli += '<li class="w-3" id="' + info[j].USER_ID + '">' +
+                    //        //'<a href="javascript:void(0);" onclick="javascript:person_list(\'' + info[j].USER_ID + '\');"></a>' +
+                    //        //'<img src="' + domain_name + server_imgurl1 + info[j].CHAT_HEAD + '" style=\"height:80px;width:80px\"/><span style="font-size:12px">' + info[j].USER_NAME + '</span>' +
+                    //        //'</li>';
 
-    function get_asynclist(url, src) {
-        SortNameInfo();
-        MiddleSortNameInfo();
-        $(window).scroll(function () {
-            if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-                //   SortNameInfo();
-                //取出所有div，并遍历
-                //  $("div").each(){
-                //判断每一个div，其css中display是否为block
-                //     if($(this).css("display")=="block"){
-                //  alert('您想要的元素');
-                //    }
-                //  };
+                    //    }
+                    //    domli += '</div>';
+
+                    //    $("#showgoods").append(domli);
+                    //}
+       
+
+
+            },
+            error: function () {
+                alert("ajax wrong!");
+                $('#loading').hide();
             }
         });
-
     }
-    function person_list(search_id) {
+        //$(document).ready(function () {
+        //    //   SortNameInfo();
+
+        //    //因为使用ajax动态加载了dom，所以使用普通的click无法绑定click事件，用了$('id').on('click','id',function(){})委托形式
+        //    $('#sidebar').on('click', '#sortul li', function () {
+        //        $(this).addClass('active').siblings('li').removeClass('active');
+        //        var index = $(this).index();
+        //        $('.j-content').eq(index).show().siblings('.j-content').hide();
+        //        $(window).scrollTop(0);
+        //    })
+
+        //});
+
+        //function get_asynclist(url, src) {
+        //    SortNameInfo();
+        //    MiddleSortNameInfo();
+        //    $(window).scroll(function () {
+        //        if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+        //            //   SortNameInfo();
+        //            //取出所有div，并遍历
+        //            //  $("div").each(){
+        //            //判断每一个div，其css中display是否为block
+        //            //     if($(this).css("display")=="block"){
+        //            //  alert('您想要的元素');
+        //            //    }
+        //            //  };
+        //        }
+        //    });
+
+        //}
+
+        function person_list(search_id) {
 
 
-        window.location.href = rootUrl + "PersonSort/PersonInfo?search_id=" + search_id + "&random=" + Math.floor(Math.random() * (100000 + 1));
-    }
-    $("#describe").click(function () {
+            window.location.href = rootUrl + "PersonSort/PersonInfo?search_id=" + search_id + "&random=" + Math.floor(Math.random() * (100000 + 1));
+        }
+        $("#describe").click(function () {
  
-        window.location.href = rootUrl + "Home/specification?&random=" + Math.floor(Math.random() * (100000 + 1));
-    })
-
+            window.location.href = rootUrl + "Home/specification?&random=" + Math.floor(Math.random() * (100000 + 1));
+        })
+ 
 </script>
+<script>
+    $("#is_style").click(function () {
+        $("#is_brands").removeClass('on');
+        $("#is_address").removeClass('on');
+        $("#is_sx").removeClass('on');
+        $(this).addClass('on');
+        $("#is_brandsList").hide();
+        $("#is_addressList").hide();
+        $("#sxBox").hide();
+        $("#is_styleList").slideToggle();
+    });
+</script>
+        <script type="text/javascript">
+    //轮播图代码
+    $(function ($) {
+        $('#loading').hide();
+        var mySwiper = new Swiper('.banner-first', {
+            pagination: '.banner-first-pagination',
+            loop: false,
+            grabCursor: true,
+            paginationClickable: true,
+            autoplayDisableOnInteraction: false,
+            autoplay: 3000
+        });
+    });
+    /*立即关注*/
+    if ($(".index-weixin-box").hasClass("index-weixin-box")) {
+        $(".index-banner").css({
+            "marginTop": "0rem",
 
+        })
+    } else {
+        $(".index-banner").css({
+            "marginTop": "0rem",
+
+        })
+    }
+        </script>
+
+    <style>
+        .main {
+            width: 100%;
+            overflow: hidden;
+            font-size: 16px;
+        }
+
+        .tao-title {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tao-left {
+            width: 25%;
+            text-align: center;
+            float: left;
+        }
+
+        .tao {
+            width: 100%;
+            text-align: center;
+            float: left;
+        }
+
+        .tao-right {
+            width: 25%;
+            text-align: center;
+            float: right;
+        }
+
+        .tao-title-list {
+            width: 100%;
+            background: #eee;
+            float: left;
+            padding-bottom: 10px;
+            display: none;
+        }
+
+            .tao-title-list li {
+                width: 28%;
+                margin-left: 4%;
+                float: left;
+                background: #fff;
+                margin-top: 10px;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+            }
+
+        .main .on {
+            border-bottom: 1px solid #0978cd;
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-weight: normal;
+        }
+
+        .falb-sx-title {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: left;
+            text-indent: 10px;
+            font-size: 14px;
+            background: #eee;
+        }
+
+            .falb-sx-title span {
+                float: right;
+                margin-right: 5px;
+            }
+
+                .falb-sx-title span img {
+                    height: 25px;
+                }
+
+        .falb-sx {
+            float: left;
+            background: #eee;
+            width: 100%;
+            display: none;
+        }
+
+            .falb-sx ul {
+                width: 100%;
+                float: left;
+                border-bottom: 1px solid #ccc;
+            }
+
+                .falb-sx ul li {
+                    width: 22%;
+                    float: left;
+                    margin-left: 10px;
+                    height: 40px;
+                    background: #ffffff;
+                    margin-bottom: 10px;
+                    line-height: 40px;
+                    text-align: center;
+                }
+
+            .falb-sx .sx-list {
+                height: 50px;
+                overflow: hidden;
+            }
+
+            .falb-sx .xz {
+                -webkit-transform: rotate(180deg); /*Safari 4+,Google Chrome 1+ */
+                -moz-transform: rotate(180deg); /*Firefox 3.5+*/
+                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie*/
+            }
+
+            .falb-sx .right {
+                width: 30%;
+                background: #ccc;
+                height: 50px;
+                float: left;
+                color: #fff;
+                line-height: 50px;
+                text-align: center;
+            }
+
+            .falb-sx .left {
+                width: 70%;
+                background: #13AB53;
+                color: #fff;
+                height: 50px;
+                line-height: 50px;
+                float: left;
+                text-align: center;
+            }
+
+            .falb-sx ul .on {
+                background: #13AB53;
+                color: #fff;
+            }
+            .index-banner {
+    margin-top: 0rem;
+}
+    </style>
+    <style>
+        .hblank10 {
+            width: 100%;
+            height: 10px;
+            background: #eee;
+            clear: both;
+        }
+
+        .photo {
+            height: auto;
+            width: 150px;
+            margin-left: 70px;
+        }
+    </style>
 </body>
 </html>

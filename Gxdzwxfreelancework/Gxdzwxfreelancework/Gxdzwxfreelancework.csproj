@@ -295,6 +295,7 @@
     <Content Include="gxfreelance\statics\js\TouchSlide.1.1.js" />
     <Content Include="gxfreelance\statics\js\utils.js" />
     <Content Include="gxfreelance\statics\js\validform.js" />
+    <Content Include="Scripts\Home\GxFreelanceWxClassification.js" />
     <Content Include="Scripts\Home\GxFreelanceWxLogin.js" />
     <Content Include="Scripts\Jquery\jquery-1.10.2.js" />
     <Content Include="Scripts\Jquery\jquery-1.9.1.js" />

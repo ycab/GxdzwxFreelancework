@@ -17,8 +17,6 @@ namespace Gxdz.WechatFreelancework.Bll
         {
             string guid = Guid.NewGuid().ToString();
             string responseText = "";
-           // int sortnamelast = Convert.ToInt32(sortname_last);//对于null不会报异常,使用int.Parse报异常
-           // int sortnameamount = Convert.ToInt32(sortname_amount);
             responseText = SortInfoDal.SortNameInfo();
             return responseText;
         }
@@ -26,19 +24,20 @@ namespace Gxdz.WechatFreelancework.Bll
         {
             string guid = Guid.NewGuid().ToString();
             string responseText = "";
-            // int sortnamelast = Convert.ToInt32(sortname_last);//对于null不会报异常,使用int.Parse报异常
-            // int sortnameamount = Convert.ToInt32(sortname_amount);
-            responseText = SortInfoDal.MiddleSortNameInfo();
             return responseText;
         }
         public user GetPersonInfo(string search_id)
         {
             string guid = Guid.NewGuid().ToString();
             user user1 = new user();
-            // int sortnamelast = Convert.ToInt32(sortname_last);//对于null不会报异常,使用int.Parse报异常
-            // int sortnameamount = Convert.ToInt32(sortname_amount);
             user1 = SortInfoDal.GetPersonInfo(search_id);
             return user1;
+        }
+          public string GetPersonListByProfession(string profession)
+        {
+            string responseText = "";
+            responseText = SortInfoDal.GetPersonListByProfession(profession);
+            return responseText;
         }
     }
 }

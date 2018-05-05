@@ -51,6 +51,15 @@ namespace Gxdzwxfreelancework.Controllers
             Session["chathead"] = user1.ChatHead;
             return View();
         }
+        public ActionResult GetPersonList()
+        {
+            string profession = Request["profession"];
+            string responseText=SortInfoBll.GetPersonListByProfession(profession);
+            responseText = responseText.Replace("\n", " ");
+            responseText = responseText.Replace("\r", " ");
+            responseText = responseText.Replace("\\", "/");
+            return Content(responseText);
+        }
 
     }
 }

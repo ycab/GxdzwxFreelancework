@@ -118,6 +118,51 @@ namespace Gxdz.WechatFreelancework.Dal
            }
             return user1;
         }
+        public string GetPersonListByProfession(string profession)
+        {
+            string responseText = "";
+            string sql = "";
+            if(profession=="全部")
+            {
+                sql = "select * from GXFW_INFO where SUCCESS='1' order by USER_ID";
+            }
+            else
+            {
+                sql = string.Format("select * from GXFW_INFO t where PROFESSION='{0}' and SUCCESS='{1}' order by USER_ID", profession, "1");
+            }
+
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            if (dt.Rows.Count != 0)
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    string sql2 = string.Format("select * from GX_USER_MEMBER_PERSONAL t where USER_ID='{0}' ", dt.Rows[i]["USER_ID"]);
+                    DataTable dt2 = OracleHelper.GetTable(sql2, null);
+                    if (dt2.Rows.Count != 0)
+                    {
+                        dt.Rows[i]["USER_NAME"] = dt2.Rows[0]["NICK_NAME"];
+                        if (dt2.Rows[0]["CHAT_HEAD"].ToString() == "")
+                        {
+                            dt.Rows[i]["CHAT_HEAD"] = "avatar.jpg";
+                        }
+                        else
+                        {
+
+                            dt.Rows[i]["CHAT_HEAD"] = dt2.Rows[0]["CHAT_HEAD"];
+                        }
+
+                    }
+                }
+                responseText = JsonHelper.getRecordJson(dt);
+                responseText = "{\"msg\":\"success\",\"sortinfo\":[" + responseText + "]}";
+            }
+            else
+            {
+                responseText = "{\"msg\":\"fail\",\"failinfo\":\"查询出错\"}";
+            }
+            
+            return responseText;
+        }
     }
 
 }

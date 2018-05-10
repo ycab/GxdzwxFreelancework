@@ -42,6 +42,8 @@ namespace Gxdzwxfreelancework.Controllers
             user1 = SortInfoBll.GetPersonInfo(search_id);
             Session["user_id"] = user1.UserID;
             Session["user_name"] =user1.UserName;
+            Session["user_number"] = user1.UserNumber.ToString().PadLeft(3, '0'); //不足3位补0;
+            Session["nick_name"] = user1.NickName;
             Session["sex"] = user1.Sex;
             Session["profession"] = user1.Profession;
             Session["function"] = user1.Function;
@@ -49,6 +51,7 @@ namespace Gxdzwxfreelancework.Controllers
             Session["field"] = user1.Field;
             Session["selfintroduction"] = user1.Selfintroduction;
             Session["chathead"] = user1.ChatHead;
+            Session["otherprofession"] = SortInfoBll.GetOtherProfession(user1.UserID, user1.Profession);
             return View();
         }
         public ActionResult GetPersonList()

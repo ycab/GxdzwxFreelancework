@@ -29,7 +29,7 @@ namespace Gxdzwxfreelancework.Controllers
             {
 
 
-                ////openid = "oXx_Mw-hx0yNF3wIELsf_RP6cJoA";
+                //openid = "oXx_Mw-hx0yNF3wIELsf_RP6cJoA";
                 //string user_id = getuserinfodal.GetUserID(openid);
                 //string username = getuserinfodal.GetUserName(user_id);
                 //CookieHelper.ClearCookie("openid");
@@ -75,7 +75,7 @@ namespace Gxdzwxfreelancework.Controllers
             string user_id = getuserinfodal.GetUserID(openid);
             string user_name = getuserinfodal.GetUserName(user_id);
             string membership = getuserinfodal.GetMemberType(user_id);
-
+            
             if (membership == "个人会员")
             {
                if (user_name == "")//信息未完善
@@ -105,20 +105,7 @@ namespace Gxdzwxfreelancework.Controllers
         {
             return View();
         }
-        public string GxFreelanceWxRegister()   //用户注册
-        {
-            user user1 = new user();
-            user1.UserID = Guid.NewGuid().ToString("N");
-            user1.Profession = Request["zhiye"];
-            user1.Function = Request["zhineng"];
-            user1.Education = Request["xueli"];
-            user1.Field = Request["zhuanzhulingyu"];
-            user1.Sex = Request["sex"];
-            user1.Selfintroduction = Request["user_desc"];
-            LoginBll login = new LoginBll();
-            login.Register(user1);
-            return "ok";
-        }
+
         public ActionResult Register()   //用户注册2.0测试版本
         {
 
@@ -143,6 +130,18 @@ namespace Gxdzwxfreelancework.Controllers
             }
             else
             {
+                string isregistered2 = login.IsRegistered(user_id);
+                if(isregistered2=="yes")
+                {
+                    user1.UserNumber = login.GetUserNumberByUserId(user_id);
+                }
+                else
+                {
+                    string number = login.GetLastNumber();
+                    int a=Convert.ToInt32(number)+1;
+                    user1.UserNumber = a.ToString();
+                    login.UpdateLastNumber(a.ToString());
+                }
                 login.Register(user1);
                 return Content("ok");
             }

@@ -99,11 +99,13 @@ namespace Gxdz.WechatFreelancework.Dal
             user1.Field = dt.Rows[0]["FIELD"].ToString();
             user1.Education = dt.Rows[0]["EDUCATION"].ToString();
             user1.Function = dt.Rows[0]["FUNCTION"].ToString();
+            user1.UserNumber = dt.Rows[0]["USER_NUMBER"].ToString();
             string sql2 = string.Format("select * from GX_USER_MEMBER_PERSONAL t where USER_ID='{0}' ", dt.Rows[0]["USER_ID"]);
             DataTable dt2 = OracleHelper.GetTable(sql2, null);
            if (dt2.Rows.Count != 0)
             {
-                 user1.UserName = dt2.Rows[0]["NICK_NAME"].ToString();
+                 user1.UserName = dt2.Rows[0]["NAME"].ToString();
+                 user1.NickName = dt2.Rows[0]["NICK_NAME"].ToString();
                  string jpg = dt2.Rows[0]["CHAT_HEAD"].ToString();
                  if (dt2.Rows[0]["CHAT_HEAD"].ToString()=="")
                 {
@@ -138,6 +140,7 @@ namespace Gxdz.WechatFreelancework.Dal
                 {
                     string sql2 = string.Format("select * from GX_USER_MEMBER_PERSONAL t where USER_ID='{0}' ", dt.Rows[i]["USER_ID"]);
                     DataTable dt2 = OracleHelper.GetTable(sql2, null);
+                   dt.Rows[i]["USER_NUMBER"] = dt.Rows[i]["USER_NUMBER"].ToString().PadLeft(3,'0');
                     if (dt2.Rows.Count != 0)
                     {
                         dt.Rows[i]["USER_NAME"] = dt2.Rows[0]["NICK_NAME"];
@@ -161,6 +164,22 @@ namespace Gxdz.WechatFreelancework.Dal
                 responseText = "{\"msg\":\"fail\",\"failinfo\":\"查询出错\"}";
             }
             
+            return responseText;
+        }
+        public string GetOtherProfession(string userid, string profession)//查询该用户注册的其他职业信息
+        {
+            string sql = string.Format("select * from GXFW_INFO t where USER_ID='{0}' and PROFESSION!='{1}' ", userid,profession);
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            string responseText = "";
+            if(dt.Rows.Count!=0)
+            {
+                 for (int i = 0; i < dt.Rows.Count; i++)
+                 {
+
+                        responseText +=  "/"+dt.Rows[i]["PROFESSION"].ToString() ;
+
+                 }
+            }
             return responseText;
         }
     }

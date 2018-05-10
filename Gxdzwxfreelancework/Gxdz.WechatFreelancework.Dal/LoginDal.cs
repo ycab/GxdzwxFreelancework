@@ -14,7 +14,7 @@ namespace Gxdz.WechatFreelancework.Dal
         public string Register(user user1)
         {
 
-            var sql = string.Format("insert into GXFW_INFO(USER_ID,SEX,PROFESSION,FUNCTION,EDUCATION,FIELD,SELFINTRODUCTION,SEARCH_ID,SUCCESS) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", user1.UserID, user1.Sex, user1.Profession, user1.Function, user1.Education, user1.Field, user1.Selfintroduction, user1.SearchID,user1.Success);
+            var sql = string.Format("insert into GXFW_INFO(USER_ID,SEX,PROFESSION,FUNCTION,EDUCATION,FIELD,SELFINTRODUCTION,SEARCH_ID,SUCCESS,USER_NUMBER) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}')", user1.UserID, user1.Sex, user1.Profession, user1.Function, user1.Education, user1.Field, user1.Selfintroduction, user1.SearchID,user1.Success,user1.UserNumber);
             int flag = OracleHelper.ExecuteNonQuery(sql, null);
             return flag.ToString();
         }
@@ -42,7 +42,7 @@ namespace Gxdz.WechatFreelancework.Dal
 
             return responseText;
         }
-        public string IsRegistered(string userid,string profession)
+        public string IsRegistered(string userid,string profession)//该用户是否注册某个具体职业
         {
             string sql = string.Format("select * from GXFW_INFO where USER_ID='{0}' and PROFESSION='{1}' ", userid, profession);
             DataTable dt = OracleHelper.GetTable(sql, null);
@@ -55,8 +55,55 @@ namespace Gxdz.WechatFreelancework.Dal
                 return "no";
             }
         }
+        public string IsRegistered(string userid)//该用户是否注册过任意职业
+        {
+            string sql = string.Format("select * from GXFW_INFO where USER_ID='{0}'", userid);
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            if (dt.Rows.Count != 0)
+            {
+                return "yes";
+            }
+            else
+            {
+                return "no";
+            }
+        }
+        public string GetUserNumberByUserId(string userid)  //得到用户编号
+        {
+            string sql = string.Format("select * from GXFW_INFO where USER_ID='{0}'", userid);
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            string response = "";
+            if(dt.Rows.Count !=0)
+            {
+                response = dt.Rows[0]["USER_NUMBER"].ToString();
+            }
+            return response;
+        }
              
-             
+        public string GetLastNumber() //得到当前最大的编号
+        {
+            string sql = "select * from GXFW_INFO_NUMBER";
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            string response = "";
+            if(dt.Rows.Count !=0)
+            {
+                response = dt.Rows[0]["USER_NUMBER"].ToString();
+            }
+            return response;
+        }
+        public string UpdateLastNumber(string number) //更新最新的编号
+        {
+            string sql = string.Format("update GXFW_INFO_NUMBER set USER_NUMBER='{0}'",number);
+            int flag = OracleHelper.ExecuteNonQuery(sql, null);
+            string responseText;
+            if (flag > 0)
+            {
+                responseText = "success";
+            }
+            else
+                responseText = "fail";
 
+            return responseText;
+        }
     }
 }

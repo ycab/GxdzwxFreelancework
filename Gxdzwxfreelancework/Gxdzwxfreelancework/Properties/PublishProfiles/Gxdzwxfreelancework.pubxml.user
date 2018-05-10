@@ -10,19 +10,19 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Gxdz.WechatFreelancework.Bll.dll">
-      <publishTime>05/04/2018 14:59:51</publishTime>
+      <publishTime>05/09/2018 21:41:07</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Dal.dll">
-      <publishTime>05/04/2018 14:59:51</publishTime>
+      <publishTime>05/09/2018 21:41:06</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Model.dll">
-      <publishTime>05/04/2018 14:59:50</publishTime>
+      <publishTime>05/09/2018 20:51:34</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Utilities.dll">
       <publishTime>05/04/2018 14:59:50</publishTime>
     </File>
     <File Include="bin/Gxdzwxfreelancework.dll">
-      <publishTime>05/04/2018 14:59:54</publishTime>
+      <publishTime>05/09/2018 21:41:08</publishTime>
     </File>
     <File Include="bin/Microsoft.CSharp.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>
@@ -489,6 +489,15 @@
     <File Include="gxfreelance/statics/img/loading_shop.png">
       <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
+    <File Include="gxfreelance/statics/img/lunbo_1.jpg">
+      <publishTime>05/05/2018 20:22:56</publishTime>
+    </File>
+    <File Include="gxfreelance/statics/img/lunbo_2.jpg">
+      <publishTime>05/05/2018 20:32:59</publishTime>
+    </File>
+    <File Include="gxfreelance/statics/img/lunbo_3.jpg">
+      <publishTime>05/05/2018 20:28:40</publishTime>
+    </File>
     <File Include="gxfreelance/statics/img/no_picture.gif">
       <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
@@ -559,7 +568,7 @@
       <publishTime>03/06/2018 22:20:33</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/swiper.min.js">
-      <publishTime>03/06/2018 22:20:33</publishTime>
+      <publishTime>12/06/2017 16:11:50</publishTime>
     </File>
     <File Include="gxfreelance/statics/js/TouchSlide.1.1.js">
       <publishTime>03/06/2018 22:20:33</publishTime>
@@ -572,6 +581,9 @@
     </File>
     <File Include="packages.config">
       <publishTime>03/06/2018 22:20:34</publishTime>
+    </File>
+    <File Include="Scripts/Home/GxFreelanceWxClassification.js">
+      <publishTime>05/05/2018 21:29:11</publishTime>
     </File>
     <File Include="Scripts/Home/GxFreelanceWxLogin.js">
       <publishTime>04/18/2018 20:01:43</publishTime>
@@ -622,7 +634,7 @@
       <publishTime>03/25/2018 19:53:20</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxClassification.cshtml">
-      <publishTime>05/04/2018 17:30:21</publishTime>
+      <publishTime>05/09/2018 20:28:59</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxExample.cshtml">
       <publishTime>12/25/2017 21:38:21</publishTime>
@@ -631,7 +643,7 @@
       <publishTime>03/23/2018 18:09:07</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxLogin.cshtml">
-      <publishTime>04/18/2018 17:12:25</publishTime>
+      <publishTime>05/08/2018 11:38:52</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxPersonal.cshtml">
       <publishTime>04/14/2018 16:41:59</publishTime>
@@ -640,7 +652,7 @@
       <publishTime>05/04/2018 14:55:27</publishTime>
     </File>
     <File Include="Views/PersonSort/PersonInfo.cshtml">
-      <publishTime>04/16/2018 21:10:31</publishTime>
+      <publishTime>05/09/2018 20:30:18</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>03/06/2018 22:20:33</publishTime>

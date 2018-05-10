@@ -34,5 +34,30 @@ namespace Gxdz.WechatFreelancework.Bll
             responText = LoginInfoDal.IsRegistered(userid, profession);
             return responText;
         }
+         public string IsRegistered(string userid)
+         {
+             string responText = "";
+             responText = LoginInfoDal.IsRegistered(userid);
+             return responText;
+         }
+         public string GetUserNumberByUserId(string userid)  //得到用户编号
+        {
+            string responseText = "";
+            responseText = LoginInfoDal.GetUserNumberByUserId(userid);
+            return responseText;
+        }
+
+         public string GetLastNumber() //得到当前最大的编号
+         {
+             string responseText = "";
+             responseText = LoginInfoDal.GetLastNumber();
+             return responseText;
+         }
+         public string UpdateLastNumber(string number) //更新最新的编号
+         {
+             string responseText = "";
+             responseText = LoginInfoDal.UpdateLastNumber(number);
+             return responseText;
+         }
     }
 }

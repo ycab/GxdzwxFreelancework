@@ -8,8 +8,11 @@ namespace Gxdz.WechatFreelancework.Model
     public class user
     {
         public virtual string UserID { get; set; }
+        public virtual string UserNumber { get; set; }
 
         public virtual string UserName { get; set; }
+
+        public virtual string NickName { get; set; }
 
         public virtual string Sex { get; set; }
 

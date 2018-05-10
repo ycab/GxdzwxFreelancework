@@ -64,10 +64,17 @@
             <div class="weui_cells">
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
-                        <p>昵称：</p>
+                        <p>姓名：</p>
                     </div>
                     <div class="weui_cell_ft">@Session["user_name"]</div>
                 </div>
+                <div class="weui_cell">
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <p>昵称：</p>
+                    </div>
+                    <div class="weui_cell_ft">@Session["nick_name"]</div>
+                </div>
+
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>性别：</p>
@@ -78,13 +85,13 @@
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>编号：</p>
                     </div>
-                    <div class="weui_cell_ft">@Session["user_id"]</div>
+                    <div class="weui_cell_ft">@Session["user_number"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
-                        <p>职业：</p>
+                        <p style="white-space:nowrap;">职业：</p>
                     </div>
-                    <div class="weui_cell_ft">@Session["profession"]</div>
+                    <div class="weui_cell_ft"><span style="color:#0f8a18">@Session["profession"]</span>@Session["otherprofession"]</div>
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
@@ -92,6 +99,7 @@
                     </div>
                     <div class="weui_cell_ft">@Session["function"]</div>
                 </div>
+ 
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
                         <p>学历：</p>
@@ -106,7 +114,7 @@
                 </div>
                 <div class="weui_cell">
                     <div class="weui_cell_bd weui_cell_primary">
-                        <p>个人介绍：</p>
+                        <p>从业经历：</p>
                     </div>                    
                 </div>
                 <article style="margin-left:10px">
@@ -129,5 +137,56 @@
         $("#show_chathead").append(domli);
         });
         </script>
+    <style>
+        #star-five {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid red;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid red;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+ 
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid red;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+    </style>
 </body>
 </html>

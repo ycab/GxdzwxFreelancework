@@ -57,7 +57,9 @@ namespace Gxdzwxfreelancework.Controllers
         public ActionResult GetPersonList()
         {
             string profession = Request["profession"];
-            string responseText=SortInfoBll.GetPersonListByProfession(profession);
+            string score = Request["score"];
+            string address = Request["address"];
+            string responseText=SortInfoBll.GetPersonList(profession,score,address);
             responseText = responseText.Replace("\n", " ");
             responseText = responseText.Replace("\r", " ");
             responseText = responseText.Replace("\\", "/");

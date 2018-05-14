@@ -37,114 +37,7 @@
     @*<script src="@Url.Content("~/Scripts/PersonSort/PersonSort.js")"></script>*@
 </head>
 <body style="max-width:640px;">
-    @*<div id="loading">
-            <img src="~/gxfreelance/statics/img/loading.gif" />
-        </div>*@
-    @*<div class="con m-b7 new-maxbox">
-        <div class="con">
-            <div class="category-top">
-                <header>
-                    <section class="search">
-                        <div class="text-all  text-all-back j-text-all">
-                            <div class="input-text n-input-text i-search-input">
-                                <a class="a-search-input j-search-input" href="javascript:void(0)"></a>
-                                <i class="iconfont icon-sousuo"></i>
-                                <input type="text" placeholder="请输入您搜索的关键词!" />
-                                <i class="iconfont icon-guanbi is-null j-is-null"></i>
-                            </div>
-                        </div>
-                    </section>
-                </header>
-            </div>
-            <aside>
-                <div class="menu-left scrollbar-none" id="sidebar">
-                    <ul>
-                        <li class="active">体系工程师</li>
-                        <li>软件工程师</li>
-                        <li>工艺工程师</li>
-                        <li>其他</li>
-                    </ul>
-                </div>
-            </aside>
-            <section class="menu-right padding-all j-content">
-                <h5>体系工程师</h5>
-                <ul class="fb-list">
-                    <a href="@Url.Action("GxFreelanceWxExample", "home")">
-                        <li style="height:70px">
-                            <img src="@Url.Content("~/gxfreelance/statics/img/1111111111.png")" style="float:left;height:80px;width:auto">
-                            <div class="middle" style="width:41%;">
-                                <h4>李经纬</h4>
-                                <p style="font-size:15px;margin-left:10px;margin-top:-0.5em">编号：117110022223</p>
-                            </div>
-                        </li>
-                    </a>
-                </ul>
-            </section>
-            <section class="menu-right padding-all j-content" style="display:none">
-                <h5>软件工程师</h5>
-                <ul class="fb-list">
-                    <a href="@Url.Action("GxFreelanceWxExample", "home")">
-                        <li style="height:70px">
-                            <img src="@Url.Content("~/gxfreelance/statics/img/2222222222.png")" style="float:left;height:80px;width:auto">
-                            <div class="middle" style="width:41%;">
-                                <h4>彭伟峰</h4>
-                                <p style="font-size:15px;margin-left:10px;margin-top:-0.5em">编号：117110022224</p>
-                            </div>
-                        </li>
-                    </a>
-                </ul>
-            </section>
-            <section class="menu-right padding-all j-content" style="display:none">
-                <h5>工艺工程师</h5>
-                <ul class="fb-list">
-                    <a href="@Url.Action("GxFreelanceWxExample", "home")">
-                        <li style="height:70px">
-                            <img src="@Url.Content("~/gxfreelance/statics/img/3333333333.png")" style="float:left;height:80px;width:auto">
-                            <div class="middle" style="width:41%;">
-                                <h4>王曦晨</h4>
-                                <p style="font-size:15px;margin-left:10px;margin-top:-0.5em">编号：117110022225</p>
-                            </div>
-                        </li>
-                    </a>
-                </ul>
-            </section>
-            <section class="menu-right padding-all j-content" style="display:none">
-                <h5>其他</h5>
-                <ul class="fb-list"></ul>
-            </section>
-        </div>
-    </div>*@
-    @*<div>
-        <p style="text-align:center">自由职业</p>
-    </div>*@
-    <div class="con m-b7 new-maxbox">
-        @*<div style="width: 100%;left: 0rem;right: 0rem;top: 0rem;height: 3.2rem;position: fixed;display: block;background: #FFFFFF;">
-                <span style="float:right;margin-right:1rem"><button id="describe" style="border:1px solid #1AAD19 ; background-color:#f6f6f9;font-size:12px;width:60px;height:2rem;border-radius: 5px;">相关说明</button></span>
-
-            </div>
-            <div class="category-top">
-
-                <header>
-
-                    <section class="search">
-
-                        <div class="text-all  text-all-back j-text-all">
-                            <div class="input-text n-input-text i-search-input">
-
-                                <a class="a-search-input j-search-input" href="javascript:void(0)"></a>
-                                <i class="iconfont icon-sousuo"></i>
-                                <input type="text" placeholder="请输入您搜索的关键词!" />
-
-                                <i class="iconfont icon-guanbi is-null j-is-null"></i>
-
-                            </div>
-
-                        </div>
-                    </section>
-
-                </header>
-            </div>*@
-    
+    <div class="con m-b7 new-maxbox"> 
         <div class="index-banner swiper-container box position-rel banner-first">
             <div class="swiper-wrapper">
 
@@ -169,7 +62,9 @@
         </div>
         <div class="main">
             <div class="tao-title">
-                <div class="tao" id="is_style">职业类型</div>
+                <div class="tao-left" id="is_style">职业</div>
+                <div class="tao" id="is_score">评级</div>
+                <div class="tao-right" id="is_address">地区</div>
             </div>
             <ul class="tao-title-list" id="is_styleList" style="display:none;">
                 <li id="-1" class="is_stylelist" value="全部">全部</li>
@@ -179,9 +74,84 @@
                 <li id="4" class="is_stylelist" value="结构工程师">结构工程师</li>
                 <li id="8" class="is_stylelist" value="其他">其他</li>
             </ul>
+            <ul class="tao-title-list" id="is_scoreList" style="display:none;">
+                <li id="-1" class="is_scorelist" value="全部">全部</li>
+                <li id="1" class="is_scorelist" value="一星">一星</li>
+                <li id="2" class="is_scorelist" value="二星">二星</li>
+                <li id="3" class="is_scorelist" value="三星">三星</li>
+                <li id="4" class="is_scorelist" value="四星">四星</li>
+                <li id="8" class="is_scorelist" value="五星">五星</li>
+            </ul>
+            <ul class="tao-title-list" id="is_addressList" style="display:none;">
+                <li id="-1" class="is_addresslist" value="全部">全部</li>
+                <li id="1" class="is_addresslist" value="玄武区">玄武区</li>
+                <li id="2" class="is_addresslist" value="秦淮区">秦淮区</li>
+                <li id="3" class="is_addresslist" value="鼓楼区">鼓楼区</li>
+                <li id="4" class="is_addresslist" value="建邺区">建邺区</li>
+                <li id="5" class="is_addresslist" value="雨花台区">雨花台区</li>
+                <li id="6" class="is_addresslist" value="浦口区">浦口区</li>
+                <li id="7" class="is_addresslist" value="六合区">六合区</li>
+                <li id="8" class="is_addresslist" value="栖霞区">栖霞区</li>
+                <li id="9" class="is_addresslist" value="江宁区">江宁区</li>
+                <li id="10" class="is_addresslist" value="溧水区">溧水区</li>
+                <li id="11" class="is_addresslist" value="高淳区">高淳区</li>
+                <li id="12" class="is_addresslist" value="其他">其他</li>
+            </ul>
         </div>
 
         <div class="ect-pro-list example-list" style="border-bottom:none">
+            @*<div class="weui-cells">*@
+                @*<a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                         <div  style="width:33%;float:left"id="is_style">酸菜鱼</div>
+                         <div  style="width:34%;float:left" id="is_score">pcb设计</div>
+                         <div  style="width:33%;float:right" id="is_address">五星</div>
+                    </div>
+                    <div>
+                        <div class="weui-cell__ft">
+                            <div id="is_style">南京雨花台区</div>
+                        </div>
+                    </div>
+
+                </a>
+                <a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <div style="width:33%;float:left" id="is_style">酸菜鱼鱼鱼</div>
+                        <div style="width:34%;float:left" id="is_score">结构设计</div>
+                        <div style="width:33%;float:right" id="is_address">五星</div>
+                    </div>
+                    <div>
+                        <div class="weui-cell__ft">
+                            <div id="is_style">南京鼓楼区</div>
+                        </div>
+                    </div>
+
+                </a>*@
+                @*<a class="weui-cell weui-cell_access" href="javascript:;">
+                    <div class="weui-cell__bd">
+                        <div>
+                            <div style="width:33%;float:left" id="is_style">酸菜鱼</div>
+                            <div style="width:34%;float:left" id="is_score">pcb设计</div>
+                            <div style="width:33%;float:right" id="is_address">五星</div>
+                        </div>
+                        <div>
+                            <div style="width:33%;float:left;height:24.8px" id="is_style"></div>
+                            <div style="width:34%;float:left" id="is_score">管理体系</div>
+                            <div style="width:33%;float:right" id="is_address">三星</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="weui-cell__ft">
+                            <div id="is_style">南京雨花台区</div>
+                        </div>
+                        <div style="height:24.8px">
+                            <div id=" is_style"></div>
+                        </div>
+                    </div>
+                </a>*@
+
+
+            @*</div>*@
             <ul id="showgoods">
            </ul>
         </div>
@@ -390,20 +360,68 @@
     //    MiddleSortNameInfo();
     //}
     $(document).ready(function () {
-        MiddleSortNameInfo("全部");
+        MiddleSortNameInfo("全部","全部","全部");
     })
+    var is_stylename = "全部";
+    var is_scorename = "全部";
+    var is_addressname = "全部";
     $(".is_stylelist").click(function () {
-        var is_stylename = $(this).attr('value');
-        var instrumentdiv = '';
+        is_stylename = $(this).attr('value');
+        document.getElementById("is_style").innerHTML = is_stylename;
         $("#J_ItemList").html("");
-        MiddleSortNameInfo(is_stylename);
+        $("#is_styleList").slideToggle();//下拉滑动
+        MiddleSortNameInfo(is_stylename,is_scorename,is_addressname);
         ///初始化，异步加载中分类的名字信息
    
     })
-    function MiddleSortNameInfo(profession) {
+    $(".is_scorelist").click(function () {
+        is_scorename = $(this).attr('value');
+        document.getElementById("is_score").innerHTML = is_scorename;
+        $("#J_ItemList").html("");
+        $("#is_scoreList").slideToggle();//下拉滑动
+        MiddleSortNameInfo(is_stylename, is_scorename, is_addressname);
+        //MiddleSortNameInfo(is_stylename);
+        ///初始化，异步加载中分类的名字信息
+
+    })
+    $(".is_addresslist").click(function () {
+        is_addressname = $(this).attr('value');
+        document.getElementById("is_address").innerHTML = is_addressname;
+        $("#J_ItemList").html("");
+        $("#is_addressList").slideToggle();//下拉滑动
+        MiddleSortNameInfo(is_stylename, is_scorename, is_addressname);
+        //MiddleSortNameInfo(is_stylename);
+        ///初始化，异步加载中分类的名字信息
+
+    })
+    $("#is_style").click(function () {
+        $("#is_score").removeClass('on');
+        $("#is_address").removeClass('on')
+        $(this).addClass('on');
+        $("#is_scoreList").hide();
+        $("#is_addressList").hide();
+        $("#is_styleList").slideToggle();//下拉滑动
+    });
+    $("#is_score").click(function () {
+        $("#is_style").removeClass('on');
+        $("#is_address").removeClass('on')
+        $(this).addClass('on');
+        $("#is_styleList").hide();
+        $("#is_addressList").hide();
+        $("#is_scoreList").slideToggle();//下拉滑动
+    });
+    $("#is_address").click(function () {
+        $("#is_style").removeClass('on');
+        $("#is_score").removeClass('on')
+        $(this).addClass('on');
+        $("#is_styleList").hide();
+        $("#is_scoreList").hide();
+        $("#is_addressList").slideToggle();//下拉滑动
+    });
+    function MiddleSortNameInfo(profession,score,address) {
         $.ajax({
             type: "POST",
-            url: rootUrl + "PersonSort/GetPersonList?&profession=" + profession + "&random=" + Math.floor(Math.random() * (100000 + 1)),
+            url: rootUrl + "PersonSort/GetPersonList?&profession=" + profession + "&score=" + score + "&address=" + address + "&random=" + Math.floor(Math.random() * (100000 + 1)),
             dataType: "json",
             data: { middlesortname_last: "" },
             async: true,
@@ -414,11 +432,17 @@
                     for (var i = 0; i < info.length; i++)
                     {
                         domli += ' <a class="weui-cell weui-cell_access" href="javascript:;"onclick="javascript:person_list(\'' + info[i].SEARCH_ID + '\');">' +
-                      ' <div class="weui-cell__bd">' +
-                        '<p>' + info[i].USER_NUMBER + '</p>' +
-                         ' </div>' +
-                       ' <div class="weui-cell__ft">' + info[i].USER_NAME + '</div>' +
-                       '</a>'
+                                     '<div class="weui-cell__bd">'+
+                                       '<div  style="width:33%;float:left"id="is_style">'+info[i].USER_NAME+'</div>'+
+                                       '<div  style="width:34%;float:left" id="is_score">'+info[i].PROFESSION+'</div>'+
+                                       '<div  style="width:33%;float:right" id="is_address">'+info[i].SCORE+'</div>'+
+                                     '</div>'+
+                                    '<div>'+
+                                       '<div class="weui-cell__ft">'+
+                                         '<div id="is_style">'+info[i].ADDRESS+'</div>'+
+                                       '</div>'+
+                                    '</div>'+
+                                  '</a>'
                     }
                     $("#showgoods").append(domli);
                     //var middleinfo = obj.middlesortinfo;//middleinfo是整个信息
@@ -505,16 +529,7 @@
  
 </script>
 <script>
-    $("#is_style").click(function () {
-        $("#is_brands").removeClass('on');
-        $("#is_address").removeClass('on');
-        $("#is_sx").removeClass('on');
-        $(this).addClass('on');
-        $("#is_brandsList").hide();
-        $("#is_addressList").hide();
-        $("#sxBox").hide();
-        $("#is_styleList").slideToggle();
-    });
+
 </script>
         <script type="text/javascript">
     //轮播图代码
@@ -543,164 +558,162 @@
     }
         </script>
 
-    <style>
-        .main {
-            width: 100%;
-            overflow: hidden;
-            font-size: 16px;
-        }
+        <style>
+            .main {
+                width: 100%;
+                overflow: hidden;
+                font-size: 16px;
+            }
 
-        .tao-title {
-            width: 100%;
-            height: 40px;
-            line-height: 40px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .tao-left {
-            width: 25%;
-            text-align: center;
-            float: left;
-        }
-
-        .tao {
-            width: 100%;
-            text-align: center;
-            float: left;
-        }
-
-        .tao-right {
-            width: 25%;
-            text-align: center;
-            float: right;
-        }
-
-        .tao-title-list {
-            width: 100%;
-            background: #eee;
-            float: left;
-            padding-bottom: 10px;
-            display: none;
-        }
-
-            .tao-title-list li {
-                width: 28%;
-                margin-left: 4%;
-                float: left;
-                background: #fff;
-                margin-top: 10px;
-                text-align: center;
+            .tao-title {
+                width: 100%;
                 height: 40px;
                 line-height: 40px;
-            }
-
-        .main .on {
-            border-bottom: 1px solid #0978cd;
-        }
-    </style>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            font-weight: normal;
-        }
-
-        .falb-sx-title {
-            width: 100%;
-            height: 30px;
-            line-height: 30px;
-            text-align: left;
-            text-indent: 10px;
-            font-size: 14px;
-            background: #eee;
-        }
-
-            .falb-sx-title span {
-                float: right;
-                margin-right: 5px;
-            }
-
-                .falb-sx-title span img {
-                    height: 25px;
-                }
-
-        .falb-sx {
-            float: left;
-            background: #eee;
-            width: 100%;
-            display: none;
-        }
-
-            .falb-sx ul {
-                width: 100%;
-                float: left;
                 border-bottom: 1px solid #ccc;
             }
 
-                .falb-sx ul li {
-                    width: 22%;
+            .tao-left {
+                width: 33%;
+                text-align: center;
+                float: left;
+            }
+
+            .tao {
+                width: 34%;
+                text-align: center;
+                float: left;
+            }
+
+            .tao-right {
+                width: 33%;
+                text-align: center;
+                float: right;
+            }
+
+            .tao-title-list {
+                width: 100%;
+                background: #eee;
+                float: left;
+                padding-bottom: 10px;
+                display: none;
+            }
+
+                .tao-title-list li {
+                    width: 28%;
+                    margin-left: 4%;
                     float: left;
-                    margin-left: 10px;
+                    background: #fff;
+                    margin-top: 10px;
+                    text-align: center;
                     height: 40px;
-                    background: #ffffff;
-                    margin-bottom: 10px;
                     line-height: 40px;
+                }
+
+            .main .on {
+                border-bottom: 1px solid #0978cd;
+            }
+        </style>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                font-weight: normal;
+            }
+
+            .falb-sx-title {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                text-align: left;
+                text-indent: 10px;
+                font-size: 14px;
+                background: #eee;
+            }
+
+                .falb-sx-title span {
+                    float: right;
+                    margin-right: 5px;
+                }
+
+                    .falb-sx-title span img {
+                        height: 25px;
+                    }
+
+            .falb-sx {
+                float: left;
+                background: #eee;
+                width: 100%;
+                display: none;
+            }
+
+                .falb-sx ul {
+                    width: 100%;
+                    float: left;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                    .falb-sx ul li {
+                        width: 22%;
+                        float: left;
+                        margin-left: 10px;
+                        height: 40px;
+                        background: #ffffff;
+                        margin-bottom: 10px;
+                        line-height: 40px;
+                        text-align: center;
+                    }
+
+                .falb-sx .sx-list {
+                    height: 50px;
+                    overflow: hidden;
+                }
+
+                .falb-sx .xz {
+                    -webkit-transform: rotate(180deg); /*Safari 4+,Google Chrome 1+ */
+                    -moz-transform: rotate(180deg); /*Firefox 3.5+*/
+                    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie*/
+                }
+
+                .falb-sx .right {
+                    width: 30%;
+                    background: #ccc;
+                    height: 50px;
+                    float: left;
+                    color: #fff;
+                    line-height: 50px;
                     text-align: center;
                 }
 
-            .falb-sx .sx-list {
-                height: 50px;
-                overflow: hidden;
+                .falb-sx .left {
+                    width: 70%;
+                    background: #13AB53;
+                    color: #fff;
+                    height: 50px;
+                    line-height: 50px;
+                    float: left;
+                    text-align: center;
+                }
+
+                .falb-sx ul .on {
+                    background: #13AB53;
+                    color: #fff;
+                }
+        </style>
+        <style>
+            .hblank10 {
+                width: 100%;
+                height: 10px;
+                background: #eee;
+                clear: both;
             }
 
-            .falb-sx .xz {
-                -webkit-transform: rotate(180deg); /*Safari 4+,Google Chrome 1+ */
-                -moz-transform: rotate(180deg); /*Firefox 3.5+*/
-                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); /*ie*/
+            .photo {
+                height: auto;
+                width: 150px;
+                margin-left: 70px;
             }
+        </style>
 
-            .falb-sx .right {
-                width: 30%;
-                background: #ccc;
-                height: 50px;
-                float: left;
-                color: #fff;
-                line-height: 50px;
-                text-align: center;
-            }
-
-            .falb-sx .left {
-                width: 70%;
-                background: #13AB53;
-                color: #fff;
-                height: 50px;
-                line-height: 50px;
-                float: left;
-                text-align: center;
-            }
-
-            .falb-sx ul .on {
-                background: #13AB53;
-                color: #fff;
-            }
-            .index-banner {
-    margin-top: 0rem;
-}
-    </style>
-    <style>
-        .hblank10 {
-            width: 100%;
-            height: 10px;
-            background: #eee;
-            clear: both;
-        }
-
-        .photo {
-            height: auto;
-            width: 150px;
-            margin-left: 70px;
-        }
-    </style>
 </body>
 </html>

@@ -166,6 +166,73 @@ namespace Gxdz.WechatFreelancework.Dal
             
             return responseText;
         }
+        public string GetPersonList(string profession,string score,string address)
+        {
+            string sql1 = "select * from GXFW_INFO t where  SUCCESS='1'";
+            string sql2="";
+            string sql3="";
+            string sql4="";
+            string sql5="order by USER_NUMBER";
+            string responseText = "";
+            if(profession=="全部")
+            {
+                sql2 = "";
+            }
+            else
+            {
+                sql2 = string.Format("and PROFESSION='{0}'", profession);
+            }
+            if(score=="全部")
+            {
+                sql3 = "";
+            }
+            else
+            {
+                sql3 = string.Format("and SCORE='{0}'", score);
+            }
+            if (address == "全部")
+            {
+                sql4 = "";
+            }
+            else
+            {
+                sql4 = string.Format("and ADDRESS='{0}'", address);
+            }
+            string sql = sql1 + sql2 + sql3 + sql4 + sql5;
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            if (dt.Rows.Count != 0)
+            {
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    string sql6 = string.Format("select * from GX_USER_MEMBER_PERSONAL t where USER_ID='{0}' ", dt.Rows[i]["USER_ID"]);
+                    DataTable dt2 = OracleHelper.GetTable(sql6, null);
+                    dt.Rows[i]["USER_NUMBER"] = dt.Rows[i]["USER_NUMBER"].ToString().PadLeft(3, '0');
+                    if (dt2.Rows.Count != 0)
+                    {
+                        dt.Rows[i]["USER_NAME"] = dt2.Rows[0]["NICK_NAME"];
+                        if (dt2.Rows[0]["CHAT_HEAD"].ToString() == "")
+                        {
+                            dt.Rows[i]["CHAT_HEAD"] = "avatar.jpg";
+                        }
+                        else
+                        {
+
+                            dt.Rows[i]["CHAT_HEAD"] = dt2.Rows[0]["CHAT_HEAD"];
+                        }
+
+                    }
+                }
+                responseText = JsonHelper.getRecordJson(dt);
+                responseText = "{\"msg\":\"success\",\"sortinfo\":[" + responseText + "]}";
+            }
+            else
+            {
+                responseText = "{\"msg\":\"fail\",\"failinfo\":\"查询出错\"}";
+            }
+
+            return responseText;
+
+        }
         public string GetOtherProfession(string userid, string profession)//查询该用户注册的其他职业信息
         {
             string sql = string.Format("select * from GXFW_INFO t where USER_ID='{0}' and PROFESSION!='{1}' ", userid,profession);

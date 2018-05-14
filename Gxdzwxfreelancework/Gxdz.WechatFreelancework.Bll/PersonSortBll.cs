@@ -39,6 +39,12 @@ namespace Gxdz.WechatFreelancework.Bll
             responseText = SortInfoDal.GetPersonListByProfession(profession);
             return responseText;
         }
+          public string GetPersonList(string profession,string score,string address)
+          {
+              string responseText = "";
+              responseText = SortInfoDal.GetPersonList(profession,score,address);
+              return responseText;
+          }
         public string GetOtherProfession(string userid, string profession)//查询该用户注册的其他职业信息
        {
            string responseText = "";

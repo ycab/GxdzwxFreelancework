@@ -90,8 +90,10 @@ namespace Gxdzwxfreelancework.Controllers
             }
             else
             {
-                System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"企业会员，无法注册\")" + "</script>");
-                 return View("GxFreelanceWxClassification");
+                System.Web.HttpContext.Current.Response.Write("<script language=javascript>alert(\"企业会员，无法注册\");window.location.href = \"GxFreelanceWxClassification\" ;</script>");
+                //System.Web.HttpContext.Current.Response.Redirect("~/Home/GxFreelanceWxClassification");
+                 //return View("GxFreelanceWxClassification");
+                return View();
              }
 
 
@@ -122,28 +124,38 @@ namespace Gxdzwxfreelancework.Controllers
             user1.Selfintroduction = Request["selfintroduction"];
             user1.SearchID = Guid.NewGuid().ToString("N");
             user1.Success = "0";
+            user1.Address = Request["address"];
             LoginBll login = new LoginBll();
             string isregistered=login.IsRegistered(user_id, user1.Profession);
-            if(isregistered=="yes")
+            int registernumber=login.RegisterNumber(user_id);
+            if(isregistered=="yes")//注册过当前职业
             {
                 return Content("fail");
             }
             else
             {
-                string isregistered2 = login.IsRegistered(user_id);
-                if(isregistered2=="yes")
+                if(registernumber>=2)
                 {
-                    user1.UserNumber = login.GetUserNumberByUserId(user_id);
+                    return Content("registermax");
                 }
                 else
                 {
-                    string number = login.GetLastNumber();
-                    int a=Convert.ToInt32(number)+1;
-                    user1.UserNumber = a.ToString();
-                    login.UpdateLastNumber(a.ToString());
+                    string isregistered2 = login.IsRegistered(user_id);
+                    if (isregistered2 == "yes")
+                    {
+                        user1.UserNumber = login.GetUserNumberByUserId(user_id);
+                    }
+                    else
+                    {
+                        string number = login.GetLastNumber();   //得到最新的编号
+                        int a = Convert.ToInt32(number) + 1;
+                        user1.UserNumber = a.ToString();
+                        login.UpdateLastNumber(a.ToString());    //跟新最新的编号
+                    }
+                    login.Register(user1);
+                    return Content("ok");
                 }
-                login.Register(user1);
-                return Content("ok");
+
             }
 
 

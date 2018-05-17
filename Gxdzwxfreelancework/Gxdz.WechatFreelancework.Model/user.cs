@@ -30,5 +30,7 @@ namespace Gxdz.WechatFreelancework.Model
         public virtual string SearchID { get; set; }
 
         public virtual string Success { get; set; }
+
+        public virtual string Address { get; set; }
     }
 }

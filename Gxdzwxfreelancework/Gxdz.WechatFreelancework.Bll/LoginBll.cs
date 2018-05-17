@@ -59,5 +59,9 @@ namespace Gxdz.WechatFreelancework.Bll
              responseText = LoginInfoDal.UpdateLastNumber(number);
              return responseText;
          }
+         public int RegisterNumber(string userid)//该用户注册过的自由职业的数量
+         { 
+            return  LoginInfoDal.RegisterNumber(userid);    
+         }
     }
 }

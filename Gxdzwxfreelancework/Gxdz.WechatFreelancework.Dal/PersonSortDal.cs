@@ -100,6 +100,7 @@ namespace Gxdz.WechatFreelancework.Dal
             user1.Education = dt.Rows[0]["EDUCATION"].ToString();
             user1.Function = dt.Rows[0]["FUNCTION"].ToString();
             user1.UserNumber = dt.Rows[0]["USER_NUMBER"].ToString();
+            user1.Address = dt.Rows[0]["ADDRESS"].ToString();
             string sql2 = string.Format("select * from GX_USER_MEMBER_PERSONAL t where USER_ID='{0}' ", dt.Rows[0]["USER_ID"]);
             DataTable dt2 = OracleHelper.GetTable(sql2, null);
            if (dt2.Rows.Count != 0)

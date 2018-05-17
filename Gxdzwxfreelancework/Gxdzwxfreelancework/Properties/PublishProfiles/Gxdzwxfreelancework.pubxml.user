@@ -10,19 +10,19 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Gxdz.WechatFreelancework.Bll.dll">
-      <publishTime>05/14/2018 23:22:51</publishTime>
+      <publishTime>05/16/2018 21:15:33</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Dal.dll">
-      <publishTime>05/14/2018 23:22:50</publishTime>
+      <publishTime>05/16/2018 21:15:32</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Model.dll">
-      <publishTime>05/14/2018 23:22:50</publishTime>
+      <publishTime>05/16/2018 21:15:32</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Utilities.dll">
       <publishTime>05/04/2018 14:59:50</publishTime>
     </File>
     <File Include="bin/Gxdzwxfreelancework.dll">
-      <publishTime>05/14/2018 23:22:53</publishTime>
+      <publishTime>05/16/2018 21:15:34</publishTime>
     </File>
     <File Include="bin/Microsoft.CSharp.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>
@@ -586,7 +586,7 @@
       <publishTime>05/05/2018 21:29:11</publishTime>
     </File>
     <File Include="Scripts/Home/GxFreelanceWxLogin.js">
-      <publishTime>04/18/2018 20:01:43</publishTime>
+      <publishTime>05/16/2018 19:40:41</publishTime>
     </File>
     <File Include="Scripts/Jquery/jquery-1.10.2.js">
       <publishTime>03/06/2018 22:20:33</publishTime>
@@ -643,7 +643,7 @@
       <publishTime>03/23/2018 18:09:07</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxLogin.cshtml">
-      <publishTime>05/08/2018 11:38:52</publishTime>
+      <publishTime>05/16/2018 19:41:16</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxPersonal.cshtml">
       <publishTime>04/14/2018 16:41:59</publishTime>
@@ -652,7 +652,7 @@
       <publishTime>05/04/2018 14:55:27</publishTime>
     </File>
     <File Include="Views/PersonSort/PersonInfo.cshtml">
-      <publishTime>05/09/2018 20:30:18</publishTime>
+      <publishTime>05/16/2018 21:05:33</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>03/06/2018 22:20:33</publishTime>

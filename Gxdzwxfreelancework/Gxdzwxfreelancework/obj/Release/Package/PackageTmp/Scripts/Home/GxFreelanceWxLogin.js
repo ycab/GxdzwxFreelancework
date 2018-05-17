@@ -25,27 +25,14 @@ var clickevent = function () {
             dataType: 'text',
             async: true,
             success: function (data) {
-                if (data == "none") {
-                    alert("请先注册会员用户");
-                    window.location.href = rootUrl + "Home/RedirectToRegisterUser";
-                }
-                else if(data=="nousername")
-                {
-                    alert("请先完善用户信息");
-                    window.location.href = rootUrl + "Home/RedirectToFinishRegisterUser";
 
-                }
-                else if(data=="registered")
-                {
-                    alert("您已注册，无需重复注册");
-                }
-                else if(data=="factorymember")
-                {
-                    alert("企业会员不能注册");
-                }
-                else if (data == "fail")
+                if (data == "fail")
                 {
                     alert("注册失败，当前职业已经注册");
+                }
+                else if(data=="registermax")
+                {
+                    alert("注册失败，最多多注册两种职业")
                 }
                 else
                 {

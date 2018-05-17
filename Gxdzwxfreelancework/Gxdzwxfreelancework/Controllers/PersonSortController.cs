@@ -51,6 +51,7 @@ namespace Gxdzwxfreelancework.Controllers
             Session["field"] = user1.Field;
             Session["selfintroduction"] = user1.Selfintroduction;
             Session["chathead"] = user1.ChatHead;
+            Session["address"] = user1.Address;
             Session["otherprofession"] = SortInfoBll.GetOtherProfession(user1.UserID, user1.Profession);
             return View();
         }

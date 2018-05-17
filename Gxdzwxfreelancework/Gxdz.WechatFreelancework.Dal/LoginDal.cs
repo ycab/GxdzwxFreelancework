@@ -14,7 +14,7 @@ namespace Gxdz.WechatFreelancework.Dal
         public string Register(user user1)
         {
 
-            var sql = string.Format("insert into GXFW_INFO(USER_ID,SEX,PROFESSION,FUNCTION,EDUCATION,FIELD,SELFINTRODUCTION,SEARCH_ID,SUCCESS,USER_NUMBER) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}')", user1.UserID, user1.Sex, user1.Profession, user1.Function, user1.Education, user1.Field, user1.Selfintroduction, user1.SearchID,user1.Success,user1.UserNumber);
+            var sql = string.Format("insert into GXFW_INFO(USER_ID,SEX,PROFESSION,FUNCTION,EDUCATION,FIELD,SELFINTRODUCTION,SEARCH_ID,SUCCESS,USER_NUMBER,ADDRESS) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", user1.UserID, user1.Sex, user1.Profession, user1.Function, user1.Education, user1.Field, user1.Selfintroduction, user1.SearchID,user1.Success,user1.UserNumber,user1.Address);
             int flag = OracleHelper.ExecuteNonQuery(sql, null);
             return flag.ToString();
         }
@@ -67,6 +67,12 @@ namespace Gxdz.WechatFreelancework.Dal
             {
                 return "no";
             }
+        }
+        public int RegisterNumber(string userid)//该用户注册过的自由职业的数量
+        {
+            string sql = string.Format("select * from GXFW_INFO where USER_ID='{0}'", userid);
+            DataTable dt = OracleHelper.GetTable(sql, null);
+            return dt.Rows.Count;
         }
         public string GetUserNumberByUserId(string userid)  //得到用户编号
         {

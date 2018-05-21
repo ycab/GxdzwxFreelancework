@@ -10,19 +10,19 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Gxdz.WechatFreelancework.Bll.dll">
-      <publishTime>05/16/2018 21:15:33</publishTime>
+      <publishTime>05/21/2018 22:26:25</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Dal.dll">
-      <publishTime>05/16/2018 21:15:32</publishTime>
+      <publishTime>05/21/2018 22:26:25</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Model.dll">
-      <publishTime>05/16/2018 21:15:32</publishTime>
+      <publishTime>05/21/2018 22:26:24</publishTime>
     </File>
     <File Include="bin/Gxdz.WechatFreelancework.Utilities.dll">
-      <publishTime>05/04/2018 14:59:50</publishTime>
+      <publishTime>05/21/2018 22:26:25</publishTime>
     </File>
     <File Include="bin/Gxdzwxfreelancework.dll">
-      <publishTime>05/16/2018 21:15:34</publishTime>
+      <publishTime>05/21/2018 22:26:30</publishTime>
     </File>
     <File Include="bin/Microsoft.CSharp.dll">
       <publishTime>03/18/2010 19:31:26</publishTime>
@@ -634,7 +634,7 @@
       <publishTime>03/25/2018 19:53:20</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxClassification.cshtml">
-      <publishTime>05/14/2018 23:21:05</publishTime>
+      <publishTime>05/21/2018 22:24:26</publishTime>
     </File>
     <File Include="Views/Home/GxFreelanceWxExample.cshtml">
       <publishTime>12/25/2017 21:38:21</publishTime>

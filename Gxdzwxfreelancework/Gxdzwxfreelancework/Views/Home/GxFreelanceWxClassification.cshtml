@@ -64,8 +64,12 @@
             <div class="tao-title">
                 <div class="tao-left" id="is_style">职业</div>
                 <div class="tao" id="is_score">评级</div>
-                <div class="tao-right" id="is_address">地区</div>
+                <div class="tao" id="is_address">地区</div>
+                @*<div class="tao-right" id="is_address">地区</div>*@
+                @*<div class="tao-right" id="describe"><button id="describe" style="border: 1px solid #1AAD19;background-color: #f6f6f9;font-size: 12px; width: 60px;height: 2rem;border-radius: 5px;margin-top: 0.7rem;line-height: normal;text-align: center;display: block;margin-left: 2.4rem;">相关说明</button></div>*@
+                <div class="tao-right" id="describe"><input type="button" value="相关说明" id="describe" style="border: 1px solid #1AAD19;background-color: #f6f6f9;font-size: 12px;width: 60px;height: 2rem;border-radius: 5px;line-height: normal;margin-right: 10px;"/></div>
             </div>
+        
             <ul class="tao-title-list" id="is_styleList" style="display:none;">
                 <li id="-1" class="is_stylelist" value="全部">全部</li>
                 <li id="1" class="is_stylelist" value="体系工程师">体系工程师</li>
@@ -486,6 +490,7 @@
             }
         });
     }
+
         //$(document).ready(function () {
         //    //   SortNameInfo();
 
@@ -573,20 +578,20 @@
             }
 
             .tao-left {
-                width: 33%;
+                width: 25%;
                 text-align: center;
                 float: left;
             }
 
             .tao {
-                width: 34%;
+                width: 25%;
                 text-align: center;
                 float: left;
             }
 
             .tao-right {
-                width: 33%;
-                text-align: center;
+                width: 25%;
+                text-align: right;
                 float: right;
             }
 
